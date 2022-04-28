@@ -12,19 +12,25 @@ class ConfigurationsViewController: UIViewController {
     // MARK: - Model
 
     var totalTime = 60
+    var categoryImageName = CellModel.categoryName
 
     // MARK: - Subviews
 
+    @IBOutlet weak var categoryImageView: UIImageView!
     @IBOutlet weak var timerLabel: UILabel!
     @IBOutlet weak var decreaseTimeButton: UIButton!
     @IBOutlet weak var increaseTimeButton: UIButton!
-    
+
     // MARK: - Lifecycle
 
     override func viewDidLoad() {
         super.viewDidLoad()
 
         timerLabel.text = timeFormatted(totalTime)
+
+        guard let categoryImageName = categoryImageName else { return }
+
+        categoryImageView.image = UIImage(named: categoryImageName)
     }
 
     // MARK: - Helpers
@@ -43,6 +49,7 @@ class ConfigurationsViewController: UIViewController {
             totalTime -= 30
             timerLabel.text = timeFormatted(totalTime)
         }
+
         UIView.animate(
             withDuration: 0.3,
             delay: 0,
@@ -59,6 +66,7 @@ class ConfigurationsViewController: UIViewController {
             totalTime += 30
             timerLabel.text = timeFormatted(totalTime)
         }
+
         UIView.animate(
             withDuration: 0.3,
             delay: 0,

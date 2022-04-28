@@ -8,5 +8,6 @@
 import UIKit
 
 class MainCollectionViewCell: UICollectionViewCell {
-
+    var categoryName: String?
+    var categoryImage: UIImage?
 }

@@ -11,6 +11,12 @@ private let reuseIdentifier = "Cell"
 
 class MainCollectionViewController: UICollectionViewController {
 
+    // MARK: - Model
+
+    var cellModel = CellModel()
+
+    // MARK: - Lifecycle
+
     override func viewDidLoad() {
         super.viewDidLoad()
 
@@ -39,7 +45,8 @@ class MainCollectionViewController: UICollectionViewController {
                 widthDimension: .fractionalWidth(1),
                 heightDimension: .fractionalWidth(0.6)
             ),
-            subitem: item, count: 2
+            subitem: item,
+            count: 2
         )
 
         let section = NSCollectionLayoutSection(group: group)
@@ -50,18 +57,26 @@ class MainCollectionViewController: UICollectionViewController {
     // MARK: UICollectionViewDataSource
 
     override func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
-        return 4
+        return cellModel.categoryNames.count
     }
 
     override func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
-        let cell = collectionView.dequeueReusableCell(withReuseIdentifier: reuseIdentifier, for: indexPath)
+        let cell = collectionView.dequeueReusableCell(
+            withReuseIdentifier: reuseIdentifier,
+            for: indexPath
+        )
 
-        cell.layer.cornerRadius = 10.0
+        var config = UIListContentConfiguration.cell()
+        config.image = UIImage(named: cellModel.categoryNames[indexPath.row])
+        config.directionalLayoutMargins = NSDirectionalEdgeInsets(top: 0, leading: 0, bottom: 0, trailing: 0)
+        config.imageProperties.cornerRadius = 10
+        cell.contentConfiguration = config
 
         return cell
     }
 
     override func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
-
+        CellModel.categoryName = cellModel.categoryNames[indexPath.row]
+        performSegue(withIdentifier: "Configurations", sender: UICollectionViewCell.self)
     }
 }

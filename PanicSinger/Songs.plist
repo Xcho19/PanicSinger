@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>ArmenianGoldenEdition</key>
+	<array>
+		<string>Aram Khachatryan - Suserov Par</string>
+		<string>Grisha Aghaxanyan - 50 tari</string>
+		<string>Elvira Makaryan - Aranc ser chka garun</string>
+	</array>
+	<key>ArmenianRabiz</key>
+	<array>
+		<string>Tatul Avoyan - Garune </string>
+		<string>Harout Pambukchyan - Zoqanch </string>
+		<string>Aram Asatryan - Draxti alvan caxik</string>
+	</array>
+	<key>ArmenianRap</key>
+	<array>
+		<string>Mi Qani Hogi - Axchik-Chxchik</string>
+		<string>Ht Hayko - Ancac Etap</string>
+		<string>Misho(ft Goga) - Chimanair</string>
+	</array>
+</dict>
+</plist>

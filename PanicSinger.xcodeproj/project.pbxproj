@@ -7,12 +7,18 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		EE0841FA2819E94A00294585 /* Media.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = EE0841F92819E94A00294585 /* Media.xcassets */; };
+		EE0841FC281A06CC00294585 /* GamePlay.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EE0841FB281A06CB00294585 /* GamePlay.storyboard */; };
+		EE084200281A075000294585 /* GamePlayViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE0841FF281A075000294585 /* GamePlayViewController.swift */; };
+		EE084202281A083B00294585 /* Songs.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE084201281A083B00294585 /* Songs.swift */; };
+		EE084204281A8C1A00294585 /* AppUtility.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE084203281A8C1A00294585 /* AppUtility.swift */; };
 		EE0D0748280CBF3E00225886 /* Configurations.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EE0D0747280CBF3E00225886 /* Configurations.storyboard */; };
+		EE301A2428196DE10022E03E /* CellModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE301A2328196DE10022E03E /* CellModel.swift */; };
+		EE30EDFA2819A2A900639B98 /* Songs.plist in Resources */ = {isa = PBXBuildFile; fileRef = EE30EDF92819A2A900639B98 /* Songs.plist */; };
 		EE346DEA28101A3D009AE78A /* ConfigurationsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE346DE928101A3D009AE78A /* ConfigurationsViewController.swift */; };
 		EE893B7A2807453B004F1B5E /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE893B792807453B004F1B5E /* AppDelegate.swift */; };
 		EE893B7C2807453B004F1B5E /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE893B7B2807453B004F1B5E /* SceneDelegate.swift */; };
 		EE893B812807453B004F1B5E /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EE893B7F2807453B004F1B5E /* Main.storyboard */; };
-		EE893B832807453C004F1B5E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = EE893B822807453C004F1B5E /* Assets.xcassets */; };
 		EE893B862807453C004F1B5E /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EE893B842807453C004F1B5E /* LaunchScreen.storyboard */; };
 		EE893B912807453C004F1B5E /* PanicSingerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE893B902807453C004F1B5E /* PanicSingerTests.swift */; };
 		EE893B9B2807453C004F1B5E /* PanicSingerUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE893B9A2807453C004F1B5E /* PanicSingerUITests.swift */; };
@@ -39,13 +45,19 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		EE0841F92819E94A00294585 /* Media.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Media.xcassets; sourceTree = "<group>"; };
+		EE0841FB281A06CB00294585 /* GamePlay.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = GamePlay.storyboard; sourceTree = "<group>"; };
+		EE0841FF281A075000294585 /* GamePlayViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GamePlayViewController.swift; sourceTree = "<group>"; };
+		EE084201281A083B00294585 /* Songs.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Songs.swift; sourceTree = "<group>"; };
+		EE084203281A8C1A00294585 /* AppUtility.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppUtility.swift; sourceTree = "<group>"; };
 		EE0D0747280CBF3E00225886 /* Configurations.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Configurations.storyboard; sourceTree = "<group>"; };
+		EE301A2328196DE10022E03E /* CellModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CellModel.swift; sourceTree = "<group>"; };
+		EE30EDF92819A2A900639B98 /* Songs.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Songs.plist; sourceTree = "<group>"; };
 		EE346DE928101A3D009AE78A /* ConfigurationsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConfigurationsViewController.swift; sourceTree = "<group>"; };
 		EE893B762807453B004F1B5E /* PanicSinger.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PanicSinger.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		EE893B792807453B004F1B5E /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		EE893B7B2807453B004F1B5E /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
 		EE893B802807453B004F1B5E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
-		EE893B822807453C004F1B5E /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		EE893B852807453C004F1B5E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		EE893B872807453C004F1B5E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		EE893B8C2807453C004F1B5E /* PanicSingerTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = PanicSingerTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -109,8 +121,10 @@
 				EE893BAC280746A7004F1B5E /* StoryBoards */,
 				EE893BA928074683004F1B5E /* Controllers */,
 				EE893B792807453B004F1B5E /* AppDelegate.swift */,
+				EE084203281A8C1A00294585 /* AppUtility.swift */,
 				EE893B7B2807453B004F1B5E /* SceneDelegate.swift */,
-				EE893B822807453C004F1B5E /* Assets.xcassets */,
+				EE0841F92819E94A00294585 /* Media.xcassets */,
+				EE30EDF92819A2A900639B98 /* Songs.plist */,
 				EE893B872807453C004F1B5E /* Info.plist */,
 			);
 			path = PanicSinger;
@@ -138,6 +152,7 @@
 			children = (
 				EEF4E0762808AAFF002696CC /* MainCollectionViewController.swift */,
 				EE346DE928101A3D009AE78A /* ConfigurationsViewController.swift */,
+				EE0841FF281A075000294585 /* GamePlayViewController.swift */,
 				EEF4E0782808AB58002696CC /* Cell */,
 			);
 			path = Controllers;
@@ -149,6 +164,7 @@
 				EE893B842807453C004F1B5E /* LaunchScreen.storyboard */,
 				EE893B7F2807453B004F1B5E /* Main.storyboard */,
 				EE0D0747280CBF3E00225886 /* Configurations.storyboard */,
+				EE0841FB281A06CB00294585 /* GamePlay.storyboard */,
 			);
 			path = StoryBoards;
 			sourceTree = "<group>";
@@ -156,6 +172,8 @@
 		EE893BAD280746C5004F1B5E /* Models */ = {
 			isa = PBXGroup;
 			children = (
+				EE301A2328196DE10022E03E /* CellModel.swift */,
+				EE084201281A083B00294585 /* Songs.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -272,9 +290,11 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				EE0841FA2819E94A00294585 /* Media.xcassets in Resources */,
+				EE30EDFA2819A2A900639B98 /* Songs.plist in Resources */,
 				EE893B862807453C004F1B5E /* LaunchScreen.storyboard in Resources */,
-				EE893B832807453C004F1B5E /* Assets.xcassets in Resources */,
 				EE893B812807453B004F1B5E /* Main.storyboard in Resources */,
+				EE0841FC281A06CC00294585 /* GamePlay.storyboard in Resources */,
 				EE0D0748280CBF3E00225886 /* Configurations.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -300,11 +320,15 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				EE084202281A083B00294585 /* Songs.swift in Sources */,
 				EE893B7A2807453B004F1B5E /* AppDelegate.swift in Sources */,
+				EE084204281A8C1A00294585 /* AppUtility.swift in Sources */,
 				EE346DEA28101A3D009AE78A /* ConfigurationsViewController.swift in Sources */,
 				EEF4E0772808AAFF002696CC /* MainCollectionViewController.swift in Sources */,
+				EE084200281A075000294585 /* GamePlayViewController.swift in Sources */,
 				EE893B7C2807453B004F1B5E /* SceneDelegate.swift in Sources */,
 				EEF4E07A2808AB78002696CC /* MainCollectionViewCell.swift in Sources */,
+				EE301A2428196DE10022E03E /* CellModel.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -481,6 +505,7 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 3X949GH6N8;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = PanicSinger/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
@@ -508,6 +533,7 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 3X949GH6N8;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = PanicSinger/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;

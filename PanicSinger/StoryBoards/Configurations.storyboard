@@ -16,7 +16,7 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Untitled Design-2" translatesAutoresizingMaskIntoConstraints="NO" id="PtJ-MA-Jwd">
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="PtJ-MA-Jwd">
                                 <rect key="frame" x="0.0" y="44" width="414" height="808"/>
                             </imageView>
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="oUq-q2-Phw">
@@ -69,6 +69,9 @@
                                             <fontDescription key="titleFontDescription" name="AppleColorEmoji" family="Apple Color Emoji" pointSize="21"/>
                                             <color key="baseForegroundColor" systemColor="secondarySystemBackgroundColor"/>
                                         </buttonConfiguration>
+                                        <connections>
+                                            <segue destination="68A-e7-UsF" kind="presentation" modalTransitionStyle="crossDissolve" id="l3y-J2-tq5"/>
+                                        </connections>
                                     </button>
                                 </subviews>
                             </stackView>
@@ -77,16 +80,16 @@
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
                             <constraint firstItem="vDu-zF-Fre" firstAttribute="trailing" secondItem="oUq-q2-Phw" secondAttribute="trailing" id="3Wf-fE-ioe"/>
+                            <constraint firstItem="PtJ-MA-Jwd" firstAttribute="leading" secondItem="oUq-q2-Phw" secondAttribute="leading" id="7QA-YL-c3j"/>
                             <constraint firstItem="oUq-q2-Phw" firstAttribute="leading" secondItem="vDu-zF-Fre" secondAttribute="leading" id="B4U-fH-y3w"/>
+                            <constraint firstItem="PtJ-MA-Jwd" firstAttribute="trailing" secondItem="oUq-q2-Phw" secondAttribute="trailing" id="Qnq-wi-qwu"/>
                             <constraint firstItem="vDu-zF-Fre" firstAttribute="bottom" secondItem="oUq-q2-Phw" secondAttribute="bottom" id="R3w-LJ-p02"/>
-                            <constraint firstItem="vDu-zF-Fre" firstAttribute="trailing" secondItem="PtJ-MA-Jwd" secondAttribute="trailing" id="Wdc-S4-VZX"/>
-                            <constraint firstItem="PtJ-MA-Jwd" firstAttribute="centerY" secondItem="5EZ-qb-Rvc" secondAttribute="centerY" id="gf8-2T-Ebc"/>
-                            <constraint firstItem="PtJ-MA-Jwd" firstAttribute="leading" secondItem="vDu-zF-Fre" secondAttribute="leading" id="hgk-4L-RYW"/>
-                            <constraint firstItem="PtJ-MA-Jwd" firstAttribute="top" secondItem="vDu-zF-Fre" secondAttribute="top" id="jqW-5T-8wu"/>
-                            <constraint firstItem="PtJ-MA-Jwd" firstAttribute="centerX" secondItem="5EZ-qb-Rvc" secondAttribute="centerX" id="mr3-4d-erg"/>
+                            <constraint firstItem="PtJ-MA-Jwd" firstAttribute="centerY" secondItem="5EZ-qb-Rvc" secondAttribute="centerY" id="mJG-53-LFA"/>
+                            <constraint firstItem="PtJ-MA-Jwd" firstAttribute="top" secondItem="vDu-zF-Fre" secondAttribute="top" id="wVK-qh-F1b"/>
                         </constraints>
                     </view>
                     <connections>
+                        <outlet property="categoryImageView" destination="PtJ-MA-Jwd" id="bQE-MA-czt"/>
                         <outlet property="decreaseTimeButton" destination="TEX-9Z-ADv" id="jD2-bx-sVY"/>
                         <outlet property="increaseTimeButton" destination="iIi-lm-GJ2" id="mxL-2t-Qh7"/>
                         <outlet property="timerLabel" destination="U2W-rg-CEe" id="hCH-Nn-qPj"/>
@@ -96,9 +99,18 @@
             </objects>
             <point key="canvasLocation" x="34.782608695652179" y="79.6875"/>
         </scene>
+        <!--GamePlay-->
+        <scene sceneID="uMQ-H6-ivU">
+            <objects>
+                <viewControllerPlaceholder storyboardName="GamePlay" id="68A-e7-UsF" sceneMemberID="viewController">
+                    <navigationItem key="navigationItem" id="BuA-CE-xtN"/>
+                </viewControllerPlaceholder>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="7oz-xd-frA" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="956" y="80"/>
+        </scene>
     </scenes>
     <resources>
-        <image name="Untitled Design-2" width="800" height="800"/>
         <image name="minus" width="48" height="48"/>
         <image name="plus" width="48" height="48"/>
         <systemColor name="secondarySystemBackgroundColor">
