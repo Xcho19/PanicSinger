@@ -1,11 +1,12 @@
 {
   "images" : [
     {
-      "filename" : "ArmenianClassic.png",
+      "filename" : "ArmenianRabiz.png",
       "idiom" : "universal",
       "scale" : "1x"
     },
     {
+      "filename" : "ArmenianRabiz-1.png",
       "idiom" : "universal",
       "scale" : "2x"
     },

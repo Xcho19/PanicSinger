@@ -1,12 +1,11 @@
 {
   "images" : [
     {
-      "filename" : "ArmenianRap.png",
       "idiom" : "universal",
       "scale" : "1x"
     },
     {
-      "filename" : "ArmenianRap-1.png",
+      "filename" : "PanicSingerBackgroundImage.jpg",
       "idiom" : "universal",
       "scale" : "2x"
     },

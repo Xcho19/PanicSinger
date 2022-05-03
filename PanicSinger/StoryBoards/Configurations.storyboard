@@ -16,9 +16,6 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="PtJ-MA-Jwd">
-                                <rect key="frame" x="0.0" y="44" width="414" height="808"/>
-                            </imageView>
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="oUq-q2-Phw">
                                 <rect key="frame" x="0.0" y="730" width="414" height="132"/>
                                 <subviews>
@@ -66,32 +63,61 @@
                                         <state key="normal" title="Button"/>
                                         <buttonConfiguration key="configuration" style="plain" title="START">
                                             <backgroundConfiguration key="background" cornerRadius="0.0"/>
-                                            <fontDescription key="titleFontDescription" name="AppleColorEmoji" family="Apple Color Emoji" pointSize="21"/>
+                                            <fontDescription key="titleFontDescription" name="ArialRoundedMTBold" family="Arial Rounded MT Bold" pointSize="25"/>
                                             <color key="baseForegroundColor" systemColor="secondarySystemBackgroundColor"/>
                                         </buttonConfiguration>
                                         <connections>
-                                            <segue destination="68A-e7-UsF" kind="presentation" modalTransitionStyle="crossDissolve" id="l3y-J2-tq5"/>
+                                            <action selector="didTapStartButton:" destination="Y6W-OH-hqX" eventType="touchUpInside" id="8F5-bh-dIL"/>
+                                            <segue destination="68A-e7-UsF" kind="show" id="l3y-J2-tq5"/>
                                         </connections>
                                     </button>
                                 </subviews>
                             </stackView>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="O8v-bj-fkj">
+                                <rect key="frame" x="20" y="44" width="374" height="656"/>
+                            </imageView>
+                            <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" ambiguous="YES" showsHorizontalScrollIndicator="NO" translatesAutoresizingMaskIntoConstraints="NO" id="wHP-qQ-U4w">
+                                <rect key="frame" x="9" y="44" width="396" height="676"/>
+                                <subviews>
+                                    <stackView opaque="NO" contentMode="scaleToFill" ambiguous="YES" axis="vertical" spacing="5" translatesAutoresizingMaskIntoConstraints="NO" id="11S-0b-Nhl">
+                                        <rect key="frame" x="0.0" y="0.0" width="394" height="676"/>
+                                        <directionalEdgeInsets key="directionalLayoutMargins" top="20" leading="8" bottom="8" trailing="8"/>
+                                    </stackView>
+                                </subviews>
+                                <color key="backgroundColor" red="0.52941179279999995" green="0.35686278339999999" blue="0.86274516580000005" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                <constraints>
+                                    <constraint firstItem="11S-0b-Nhl" firstAttribute="leading" secondItem="NPU-ge-Uhz" secondAttribute="leading" id="1cN-Or-zKC"/>
+                                    <constraint firstItem="11S-0b-Nhl" firstAttribute="bottom" secondItem="NPU-ge-Uhz" secondAttribute="bottom" id="Joq-55-wMS"/>
+                                    <constraint firstItem="11S-0b-Nhl" firstAttribute="width" secondItem="vq9-6t-MzQ" secondAttribute="width" multiplier="0.994949" id="WfP-Ts-SCJ"/>
+                                    <constraint firstItem="11S-0b-Nhl" firstAttribute="top" secondItem="NPU-ge-Uhz" secondAttribute="top" id="pT5-Pd-0Qa"/>
+                                    <constraint firstItem="11S-0b-Nhl" firstAttribute="trailing" secondItem="NPU-ge-Uhz" secondAttribute="trailing" id="wlQ-zY-ivy"/>
+                                </constraints>
+                                <viewLayoutGuide key="contentLayoutGuide" id="NPU-ge-Uhz"/>
+                                <viewLayoutGuide key="frameLayoutGuide" id="vq9-6t-MzQ"/>
+                            </scrollView>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="vDu-zF-Fre"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
                             <constraint firstItem="vDu-zF-Fre" firstAttribute="trailing" secondItem="oUq-q2-Phw" secondAttribute="trailing" id="3Wf-fE-ioe"/>
-                            <constraint firstItem="PtJ-MA-Jwd" firstAttribute="leading" secondItem="oUq-q2-Phw" secondAttribute="leading" id="7QA-YL-c3j"/>
+                            <constraint firstItem="O8v-bj-fkj" firstAttribute="leading" secondItem="vDu-zF-Fre" secondAttribute="leading" constant="20" id="9J8-uW-qni"/>
                             <constraint firstItem="oUq-q2-Phw" firstAttribute="leading" secondItem="vDu-zF-Fre" secondAttribute="leading" id="B4U-fH-y3w"/>
-                            <constraint firstItem="PtJ-MA-Jwd" firstAttribute="trailing" secondItem="oUq-q2-Phw" secondAttribute="trailing" id="Qnq-wi-qwu"/>
+                            <constraint firstItem="vDu-zF-Fre" firstAttribute="trailing" secondItem="wHP-qQ-U4w" secondAttribute="trailing" constant="9" id="IzC-i5-J6Y"/>
+                            <constraint firstItem="wHP-qQ-U4w" firstAttribute="leading" secondItem="vDu-zF-Fre" secondAttribute="leading" constant="9" id="NEu-Rh-6EJ"/>
                             <constraint firstItem="vDu-zF-Fre" firstAttribute="bottom" secondItem="oUq-q2-Phw" secondAttribute="bottom" id="R3w-LJ-p02"/>
-                            <constraint firstItem="PtJ-MA-Jwd" firstAttribute="centerY" secondItem="5EZ-qb-Rvc" secondAttribute="centerY" id="mJG-53-LFA"/>
-                            <constraint firstItem="PtJ-MA-Jwd" firstAttribute="top" secondItem="vDu-zF-Fre" secondAttribute="top" id="wVK-qh-F1b"/>
+                            <constraint firstItem="vDu-zF-Fre" firstAttribute="trailing" secondItem="O8v-bj-fkj" secondAttribute="trailing" constant="20" id="byX-pr-bQy"/>
+                            <constraint firstItem="O8v-bj-fkj" firstAttribute="top" secondItem="vDu-zF-Fre" secondAttribute="top" id="lcx-IN-eai"/>
+                            <constraint firstItem="oUq-q2-Phw" firstAttribute="top" secondItem="O8v-bj-fkj" secondAttribute="bottom" constant="30" id="mVz-wy-W9i"/>
+                            <constraint firstItem="wHP-qQ-U4w" firstAttribute="top" secondItem="vDu-zF-Fre" secondAttribute="top" id="rhm-nM-RIr"/>
+                            <constraint firstItem="oUq-q2-Phw" firstAttribute="top" secondItem="wHP-qQ-U4w" secondAttribute="bottom" constant="10" id="wPX-P6-Frh"/>
                         </constraints>
                     </view>
                     <connections>
-                        <outlet property="categoryImageView" destination="PtJ-MA-Jwd" id="bQE-MA-czt"/>
+                        <outlet property="categoryImageView" destination="O8v-bj-fkj" id="s6O-uh-XW3"/>
                         <outlet property="decreaseTimeButton" destination="TEX-9Z-ADv" id="jD2-bx-sVY"/>
                         <outlet property="increaseTimeButton" destination="iIi-lm-GJ2" id="mxL-2t-Qh7"/>
+                        <outlet property="resultsScrollView" destination="wHP-qQ-U4w" id="f3L-HB-wRb"/>
+                        <outlet property="resultsStackView" destination="11S-0b-Nhl" id="onE-fL-9b4"/>
                         <outlet property="timerLabel" destination="U2W-rg-CEe" id="hCH-Nn-qPj"/>
                     </connections>
                 </viewController>
@@ -107,7 +133,7 @@
                 </viewControllerPlaceholder>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="7oz-xd-frA" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="956" y="80"/>
+            <point key="canvasLocation" x="879" y="80"/>
         </scene>
     </scenes>
     <resources>

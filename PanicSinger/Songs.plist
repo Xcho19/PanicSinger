@@ -2,20 +2,466 @@
 <!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
 <plist version="1.0">
 <dict>
+	<key>RussianGoldenEdition</key>
+	<array/>
+	<key>RussianPop</key>
+	<array/>
+	<key>RussianRap</key>
+	<array/>
+	<key>InternationalRockHits</key>
+	<array>
+		<string></string>
+		<string></string>
+		<string></string>
+		<string></string>
+		<string></string>
+		<string></string>
+		<string></string>
+		<string></string>
+		<string></string>
+		<string></string>
+		<string></string>
+		<string></string>
+		<string></string>
+		<string></string>
+		<string></string>
+		<string></string>
+		<string></string>
+		<string></string>
+		<string></string>
+		<string></string>
+		<string></string>
+		<string></string>
+		<string></string>
+		<string></string>
+		<string></string>
+		<string></string>
+		<string></string>
+		<string></string>
+		<string></string>
+		<string></string>
+		<string></string>
+		<string></string>
+		<string></string>
+		<string></string>
+		<string></string>
+		<string></string>
+		<string></string>
+		<string></string>
+		<string></string>
+		<string></string>
+		<string></string>
+		<string></string>
+		<string></string>
+		<string></string>
+		<string></string>
+		<string></string>
+		<string></string>
+		<string></string>
+		<string></string>
+		<string></string>
+		<string></string>
+		<string></string>
+		<string></string>
+		<string></string>
+		<string></string>
+		<string></string>
+		<string></string>
+		<string></string>
+		<string></string>
+		<string></string>
+		<string></string>
+		<string></string>
+		<string></string>
+		<string></string>
+		<string></string>
+	</array>
+	<key>InternationalRapHits</key>
+	<array>
+		<string></string>
+		<string></string>
+		<string></string>
+		<string></string>
+		<string></string>
+		<string></string>
+		<string></string>
+		<string></string>
+		<string></string>
+		<string></string>
+		<string></string>
+		<string></string>
+		<string></string>
+		<string></string>
+		<string></string>
+		<string></string>
+		<string></string>
+		<string></string>
+		<string></string>
+		<string></string>
+		<string></string>
+		<string></string>
+		<string></string>
+		<string></string>
+		<string></string>
+		<string></string>
+		<string></string>
+		<string></string>
+		<string></string>
+		<string></string>
+		<string></string>
+		<string></string>
+		<string></string>
+		<string></string>
+		<string></string>
+		<string></string>
+		<string></string>
+		<string></string>
+		<string></string>
+		<string></string>
+		<string></string>
+		<string></string>
+		<string></string>
+		<string></string>
+		<string></string>
+		<string></string>
+		<string></string>
+		<string></string>
+		<string></string>
+		<string></string>
+		<string></string>
+		<string></string>
+		<string></string>
+		<string></string>
+		<string></string>
+		<string></string>
+		<string></string>
+		<string></string>
+		<string></string>
+		<string></string>
+		<string></string>
+		<string></string>
+		<string></string>
+		<string></string>
+		<string></string>
+	</array>
+	<key>InternationalPopHits</key>
+	<array>
+		<string>Grisha Aghaxanyan - 50 tari</string>
+		<string>Spitakci Hayko - Inch Imani</string>
+		<string>Lada Niva - Qef Chi Lini</string>
+		<string>Sting - Shape Of My Heart</string>
+		<string>Елена Ваенга - Курю</string>
+		<string>Михаил Шуфутинский - 3-е сентября</string>
+		<string>Bon Jovi - It&apos;s My Life </string>
+		<string>Arame - Aravot</string>
+		<string>Harout Pamboukjian - Es Aranc Qez</string>
+		<string>Harout Pamboukjian - Tariner</string>
+		<string>Aram Asatryan - Sev Sev Acher</string>
+		<string>Aram Asatryan - Hay Es Du </string>
+		<string>Aram Asatryan - Surb Sargis</string>
+		<string>Misho - Tsar </string>
+		<string>David Greg Ft.  Raff - Qartez</string>
+		<string>REINCARNATION - Ov Sirun Sirun</string>
+		<string>Sting - Englishman In New York</string>
+		<string>ПИЦЦА - Оружие</string>
+		<string>Натали - О Боже, какой мужчина</string>
+		<string>Грибы - Тает лёд </string>
+		<string>Руки Вверх! - 18 мне уже</string>
+		<string>REINCARNATION - Tarm Caxikner</string>
+		<string>Գրիգոր Կյոկչյան - Երանի թե</string>
+		<string>Ara &amp; Alik Avetisyanner - Voch avel Voch pakas</string>
+		<string>Ваграм Вазян - Любовь и боль</string>
+		<string>Григорий Лепс - Я тебе не верю</string>
+		<string>БумБокс - Вахтерам</string>
+		<string>Алла Пугачева - Позови меня с собой</string>
+		<string>George Michael - Careless Whisper</string>
+		<string>Юрий Шатунов - Белые розы</string>
+		<string>Земляне - Трава у дома</string>
+		<string>Mike Posner - I Took A Pill In Ibiza</string>
+		<string>G-Eazy Ft. Bebe Rexha - Me, Myself &amp; I</string>
+		<string>Ariana Grande Ft. Nicki Minaj - Side To Side</string>
+		<string>Rihanna - Bitch Better Have My Money</string>
+		<string>The Weekend - Can&apos;t Feel My Face</string>
+		<string>Charlie Puth Ft. Wiz Khalifa - See You Again</string>
+		<string>Naughty Boy Ft. Sam Smith - La La La</string>
+		<string>Michael Jackson, Justin Timberlake - Love Never Felt So Good</string>
+		<string>The Neighbourhood - Sweater Weather</string>
+		<string>Pitbull Ft. Ke$ha - Timber</string>
+		<string>Armo - Ush e hima</string>
+		<string>Taylor Swift - Shake It Off</string>
+		<string>The Weekend - Blinding Lights</string>
+		<string>The Weekend - Save Your Tears</string>
+		<string>Razmik Amyan - Chuni ashkharhe qez nman</string>
+		<string>Юрий Шатунов -Седая ночь</string>
+		<string>Lil Nas X - Montero</string>
+		<string>The Kid Laroi Ft. Justin Bieber - Stay</string>
+		<string>Masked Wolf - Astronaut In The Ocean</string>
+		<string>Lil Nas X Ft. Jack Harlow - Industry Baby</string>
+		<string>Алла Пугачева - Миллион алых роз</string>
+		<string>Doja Cat Ft. SZA - Kiss Me More</string>
+		<string>Maneskin - Beggin</string>
+		<string>Ed Sheeran - Shape Of You</string>
+		<string>The Beatles - Hey Jude</string>
+		<string>Игорь Скляр - Комарово</string>
+		<string>The Chainsmokers Ft Halsey - Closer</string>
+		<string>Toni Braxton - Un-Break My Heart</string>
+		<string>Luis Fonsi &amp; Daddy Yankee - Despacito</string>
+		<string>Adele - Rolling In The Deep</string>
+		<string>Adele - Hello</string>
+		<string>Razmik Amyan - Sirem qez lianam</string>
+		<string>Adele - Someone Like You</string>
+		<string>Blondie -Call Me</string>
+		<string>Bee Gees - Stayin Alive</string>
+		<string>Timbaland Ft. OneRepublic - Apologize</string>
+		<string>Maroon 5 Ft. Christina Aguilera - Moves Like Jagger</string>
+		<string>Pharrell Williams - Happy</string>
+		<string>Bruno Mars - Just The Way You Are </string>
+		<string>Bruno Mars - Grenade</string>
+		<string>Bruno Mars - Lazy Song </string>
+		<string>Bruno Mars - Uptown Funk</string>
+		<string>Bruno Mars - When I Was Your Man</string>
+		<string>Silva Hakobyan - Ushacel Em</string>
+		<string>Michael Jackson - Billie Jean</string>
+		<string>Michael Jackson - Bad</string>
+		<string>Post Malone Ft. 21 Savage - Rockstar</string>
+		<string>Ed Sheeran - Perfect</string>
+		<string>Los des RIo - Macarena </string>
+		<string>The Black Eyed Peas - I Gotta Feeling</string>
+		<string>Gotye Ft. Kimbra - Somebody That I Used To Know</string>
+		<string>Lady Gaga - Alejandro</string>
+		<string>Pitbull Ft. Ne-Yo - Give Me Everything</string>
+		<string>Gym Class Heroes Ft. Adam Levine - Stereo Hearts</string>
+		<string>Carly Rae Jepsen - Call Me Maybe</string>
+		<string>Maroon 5 Ft. Wiz Khalifa - Payphone</string>
+		<string>Rihanna Ft. Calvin Harris - We Found Love</string>
+		<string>Adele - Set Fire To The Rain</string>
+		<string>Flo Rida - Whistle</string>
+		<string>Rihanna - Diamond </string>
+		<string>Imagine Dragons - Radiocative</string>
+		<string>Daft Punk Ft. Pharrell Williams - Get Lucky</string>
+		<string>Bruno Mars - Locked Out Of Heaven</string>
+		<string>Miley Cyrus - We Can&apos;t Stop</string>
+		<string>Avicii - Wake Me Up</string>
+		<string>Capital Cities - Safe And Sound</string>
+		<string>Lana Del Rey - Summertime Sadness</string>
+		<string>Silva Hakobyan - Gisher E</string>
+		<string>Miley Cyrus - Wrecking Ball</string>
+		<string>One Republic - Counting Stars</string>
+		<string>John Legend - All Of Me</string>
+		<string>Sia - Chandelier</string>
+		<string>Hozier - Take Me to Church</string>
+		<string>Maroon 5 - Sugar</string>
+		<string>Sam Smith - I&apos;m Not The Only One</string>
+		<string>Vance Joy - Riptide</string>
+		<string>21 Pilots - Stressed Out</string>
+		<string>Charlie Puth Ft. Selena Gomez - We Don&apos;t Talk Anymore</string>
+		<string>Charlie Puth - Attention</string>
+		<string> Billie Eilish - Bad Guy</string>
+		<string>Ariana Grande - 7 Rings</string>
+		<string>Maroon 5 - Memories</string>
+		<string>Macklemore Ft. Ryan Lewis - Thrift Shop</string>
+		<string>will.i.am Ft. Britney Spears - Scream and Shout</string>
+	</array>
 	<key>ArmenianGoldenEdition</key>
 	<array>
+		<string></string>
+		<string></string>
+		<string></string>
+		<string></string>
+		<string></string>
+		<string></string>
+		<string></string>
+		<string></string>
+		<string></string>
+		<string></string>
+		<string></string>
+		<string></string>
+		<string></string>
+		<string></string>
+		<string></string>
+		<string></string>
+		<string></string>
+		<string></string>
+		<string></string>
+		<string></string>
+		<string></string>
+		<string></string>
+		<string></string>
+		<string></string>
+		<string></string>
+		<string></string>
+		<string></string>
+		<string></string>
+		<string></string>
+		<string></string>
+		<string></string>
+		<string></string>
+		<string></string>
+		<string></string>
+		<string></string>
+		<string></string>
+		<string></string>
+		<string></string>
+		<string></string>
+		<string></string>
+		<string></string>
+		<string></string>
+		<string></string>
+		<string></string>
+		<string></string>
+		<string></string>
+		<string></string>
+		<string></string>
+		<string></string>
+		<string></string>
+		<string></string>
+		<string></string>
+		<string></string>
+		<string></string>
+		<string></string>
+		<string></string>
+		<string></string>
+		<string></string>
+		<string></string>
+		<string></string>
+		<string></string>
+		<string></string>
 		<string>Aram Khachatryan - Suserov Par</string>
 		<string>Grisha Aghaxanyan - 50 tari</string>
 		<string>Elvira Makaryan - Aranc ser chka garun</string>
 	</array>
 	<key>ArmenianRabiz</key>
 	<array>
-		<string>Tatul Avoyan - Garune </string>
-		<string>Harout Pambukchyan - Zoqanch </string>
-		<string>Aram Asatryan - Draxti alvan caxik</string>
+		<string></string>
+		<string></string>
+		<string></string>
+		<string></string>
+		<string></string>
+		<string></string>
+		<string></string>
+		<string></string>
+		<string></string>
+		<string></string>
+		<string></string>
+		<string></string>
+		<string></string>
+		<string></string>
+		<string></string>
+		<string></string>
+		<string></string>
+		<string></string>
+		<string></string>
+		<string></string>
+		<string></string>
+		<string></string>
+		<string></string>
+		<string></string>
+		<string></string>
+		<string></string>
+		<string></string>
+		<string></string>
+		<string></string>
+		<string></string>
+		<string></string>
+		<string></string>
+		<string></string>
+		<string></string>
+		<string></string>
+		<string></string>
+		<string></string>
+		<string></string>
+		<string></string>
+		<string></string>
+		<string></string>
+		<string></string>
+		<string></string>
+		<string></string>
+		<string></string>
+		<string></string>
+		<string></string>
+		<string></string>
+		<string></string>
+		<string></string>
+		<string></string>
+		<string></string>
+		<string></string>
+		<string></string>
+		<string></string>
+		<string></string>
+		<string></string>
+		<string></string>
+		<string></string>
+		<string></string>
+		<string></string>
+		<string></string>
+		<string></string>
+		<string></string>
+		<string></string>
 	</array>
 	<key>ArmenianRap</key>
 	<array>
+		<string></string>
+		<string></string>
+		<string></string>
+		<string></string>
+		<string></string>
+		<string></string>
+		<string></string>
+		<string></string>
+		<string></string>
+		<string></string>
+		<string></string>
+		<string></string>
+		<string></string>
+		<string></string>
+		<string></string>
+		<string></string>
+		<string></string>
+		<string></string>
+		<string></string>
+		<string></string>
+		<string></string>
+		<string></string>
+		<string></string>
+		<string></string>
+		<string></string>
+		<string></string>
+		<string></string>
+		<string></string>
+		<string></string>
+		<string></string>
+		<string></string>
+		<string></string>
+		<string></string>
+		<string></string>
+		<string></string>
+		<string></string>
+		<string></string>
+		<string></string>
+		<string></string>
+		<string></string>
+		<string></string>
+		<string></string>
+		<string></string>
+		<string></string>
+		<string></string>
+		<string></string>
+		<string></string>
+		<string></string>
+		<string></string>
+		<string></string>
+		<string></string>
+		<string></string>
+		<string></string>
+		<string></string>
+		<string></string>
+		<string></string>
+		<string></string>
+		<string></string>
+		<string></string>
+		<string></string>
+		<string></string>
+		<string></string>
 		<string>Mi Qani Hogi - Axchik-Chxchik</string>
 		<string>Ht Hayko - Ancac Etap</string>
 		<string>Misho(ft Goga) - Chimanair</string>

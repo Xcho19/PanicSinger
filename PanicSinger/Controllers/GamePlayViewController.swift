@@ -7,19 +7,32 @@
 
 import UIKit
 
+protocol GamePlayViewControllerDelegate: AnyObject {
+    func getResults(correct: [String], notCorrect: [String], usedSongs: [String])
+}
+
 class GamePlayViewController: UIViewController {
+
+    // MARK: - Dependencies
+
+    weak var delegate: GamePlayViewControllerDelegate?
 
     // MARK: - Subviews
 
-    @IBOutlet weak var songNameLabel: UILabel!
-
+    @IBOutlet var songNameLabel: UILabel!
+    @IBOutlet var timerLabel: UILabel!
+    @IBOutlet var answerImageView: UIImageView!
+    
     // MARK: - Model
 
     var usedSongs: [String] = []
     var songs: [String] = []
     var song: String = ""
     var guessedSongs: [String] = []
+    var failedSongs: [String] = []
     var initialCenter = CGPoint()
+    var timer: Timer?
+    var totalTime: Int!
 
     // MARK: - Lifecycle
 
@@ -27,26 +40,64 @@ class GamePlayViewController: UIViewController {
         super.viewDidLoad()
 
         initialCenter = view.center
-        getSongsFor(category: CellModel.categoryName!)
+        timerLabel.text = timeFormatted(totalTime)
+        getSongsFor(category: CellModel.categoryName)
 
         let panGesture = UIPanGestureRecognizer(target: self, action: #selector(handleSwipes(_:)))
-
         view.addGestureRecognizer(panGesture)
     }
 
     override func viewWillAppear(_ animated: Bool) {
         super.viewWillAppear(animated)
 
+        startOtpTimer()
         AppUtility.lockOrientation(.landscape, andRotateTo: .landscapeRight)
     }
 
     override func viewWillDisappear(_ animated: Bool) {
         super.viewWillDisappear(animated)
 
+        resetTimer()
         AppUtility.lockOrientation(.portrait, andRotateTo: .portrait)
     }
 
     // MARK: - Helpers
+
+    private func startOtpTimer() {
+        self.timer = Timer.scheduledTimer(
+            timeInterval: 1.0,
+            target: self,
+            selector: #selector(updateTimer),
+            userInfo: nil,
+            repeats: true
+        )
+    }
+
+    @objc private func updateTimer() {
+        self.timerLabel.text = self.timeFormatted(self.totalTime)
+        if totalTime != 0 {
+            totalTime -= 1
+        } else if let timer = self.timer {
+            timer.invalidate()
+            self.timer = nil
+            delegate?.getResults(correct: guessedSongs, notCorrect: failedSongs, usedSongs: usedSongs)
+            navigationController?.popViewController(animated: false)
+        }
+    }
+
+    private func timeFormatted(_ totalSeconds: Int) -> String {
+        let seconds: Int = totalSeconds % 60
+        let minutes: Int = (totalSeconds / 60) % 60
+
+        return String(format: "%02d:%02d", minutes, seconds)
+    }
+
+    private func resetTimer() {
+        if let timer = timer {
+            timer.invalidate()
+            timerLabel.text = timeFormatted(totalTime)
+        }
+    }
 
     private func getSongsFor(category: String) {
         guard let songURL = Bundle.main.url(forResource: "Songs", withExtension: "plist")
@@ -71,6 +122,17 @@ class GamePlayViewController: UIViewController {
         }
     }
 
+    private func animate(imageAlpha: Double) {
+        UIImageView.animate(
+            withDuration: 0.1,
+            delay: 0,
+            options: .curveEaseIn,
+            animations: {
+                self.answerImageView.alpha = imageAlpha
+            }
+        )
+    }
+
     // MARK: - Gesturehandler
 
     @objc func handleSwipes(_ sender: UIPanGestureRecognizer) {
@@ -79,12 +141,14 @@ class GamePlayViewController: UIViewController {
             case .began:
                 initialCenter = view.center
             case .changed:
-                view.backgroundColor = .red
+                answerImageView.image = UIImage(named: "pass")
+                animate(imageAlpha: 1.0)
             case .ended:
                 getNewSong(from: songs)
-                view.backgroundColor = .white
+                failedSongs.append(song)
+                animate(imageAlpha: 0)
             case .cancelled:
-                view.backgroundColor = .white
+                animate(imageAlpha: 0)
             default:
                 break
             }
@@ -93,18 +157,19 @@ class GamePlayViewController: UIViewController {
             case .began:
                 initialCenter = view.center
             case .changed:
-                view.backgroundColor = .green
+                answerImageView.image = UIImage(named: "correct")
+                animate(imageAlpha: 1.0)
             case .ended:
                 getNewSong(from: songs)
                 guessedSongs.append(song)
-                view.backgroundColor = .white
+                animate(imageAlpha: 0)
             case .cancelled:
-                view.backgroundColor = .white
+                animate(imageAlpha: 0)
             default:
                 break
             }
         } else {
-            view.backgroundColor = .white
+            animate(imageAlpha: 0)
         }
     }
 }

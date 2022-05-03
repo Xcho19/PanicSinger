@@ -10,9 +10,9 @@
 		EE0841FA2819E94A00294585 /* Media.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = EE0841F92819E94A00294585 /* Media.xcassets */; };
 		EE0841FC281A06CC00294585 /* GamePlay.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EE0841FB281A06CB00294585 /* GamePlay.storyboard */; };
 		EE084200281A075000294585 /* GamePlayViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE0841FF281A075000294585 /* GamePlayViewController.swift */; };
-		EE084202281A083B00294585 /* Songs.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE084201281A083B00294585 /* Songs.swift */; };
 		EE084204281A8C1A00294585 /* AppUtility.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE084203281A8C1A00294585 /* AppUtility.swift */; };
 		EE0D0748280CBF3E00225886 /* Configurations.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EE0D0747280CBF3E00225886 /* Configurations.storyboard */; };
+		EE1774BD281DE67A00A478D1 /* Reusable in Frameworks */ = {isa = PBXBuildFile; productRef = EE1774BC281DE67A00A478D1 /* Reusable */; };
 		EE301A2428196DE10022E03E /* CellModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE301A2328196DE10022E03E /* CellModel.swift */; };
 		EE30EDFA2819A2A900639B98 /* Songs.plist in Resources */ = {isa = PBXBuildFile; fileRef = EE30EDF92819A2A900639B98 /* Songs.plist */; };
 		EE346DEA28101A3D009AE78A /* ConfigurationsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE346DE928101A3D009AE78A /* ConfigurationsViewController.swift */; };
@@ -24,7 +24,6 @@
 		EE893B9B2807453C004F1B5E /* PanicSingerUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE893B9A2807453C004F1B5E /* PanicSingerUITests.swift */; };
 		EE893B9D2807453C004F1B5E /* PanicSingerUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE893B9C2807453C004F1B5E /* PanicSingerUITestsLaunchTests.swift */; };
 		EEF4E0772808AAFF002696CC /* MainCollectionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EEF4E0762808AAFF002696CC /* MainCollectionViewController.swift */; };
-		EEF4E07A2808AB78002696CC /* MainCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = EEF4E0792808AB78002696CC /* MainCollectionViewCell.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -48,7 +47,6 @@
 		EE0841F92819E94A00294585 /* Media.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Media.xcassets; sourceTree = "<group>"; };
 		EE0841FB281A06CB00294585 /* GamePlay.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = GamePlay.storyboard; sourceTree = "<group>"; };
 		EE0841FF281A075000294585 /* GamePlayViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GamePlayViewController.swift; sourceTree = "<group>"; };
-		EE084201281A083B00294585 /* Songs.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Songs.swift; sourceTree = "<group>"; };
 		EE084203281A8C1A00294585 /* AppUtility.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppUtility.swift; sourceTree = "<group>"; };
 		EE0D0747280CBF3E00225886 /* Configurations.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Configurations.storyboard; sourceTree = "<group>"; };
 		EE301A2328196DE10022E03E /* CellModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CellModel.swift; sourceTree = "<group>"; };
@@ -66,7 +64,6 @@
 		EE893B9A2807453C004F1B5E /* PanicSingerUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PanicSingerUITests.swift; sourceTree = "<group>"; };
 		EE893B9C2807453C004F1B5E /* PanicSingerUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PanicSingerUITestsLaunchTests.swift; sourceTree = "<group>"; };
 		EEF4E0762808AAFF002696CC /* MainCollectionViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainCollectionViewController.swift; sourceTree = "<group>"; };
-		EEF4E0792808AB78002696CC /* MainCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainCollectionViewCell.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -74,6 +71,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				EE1774BD281DE67A00A478D1 /* Reusable in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -153,7 +151,6 @@
 				EEF4E0762808AAFF002696CC /* MainCollectionViewController.swift */,
 				EE346DE928101A3D009AE78A /* ConfigurationsViewController.swift */,
 				EE0841FF281A075000294585 /* GamePlayViewController.swift */,
-				EEF4E0782808AB58002696CC /* Cell */,
 			);
 			path = Controllers;
 			sourceTree = "<group>";
@@ -173,17 +170,8 @@
 			isa = PBXGroup;
 			children = (
 				EE301A2328196DE10022E03E /* CellModel.swift */,
-				EE084201281A083B00294585 /* Songs.swift */,
 			);
 			path = Models;
-			sourceTree = "<group>";
-		};
-		EEF4E0782808AB58002696CC /* Cell */ = {
-			isa = PBXGroup;
-			children = (
-				EEF4E0792808AB78002696CC /* MainCollectionViewCell.swift */,
-			);
-			path = Cell;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -202,6 +190,9 @@
 			dependencies = (
 			);
 			name = PanicSinger;
+			packageProductDependencies = (
+				EE1774BC281DE67A00A478D1 /* Reusable */,
+			);
 			productName = PanicSinger;
 			productReference = EE893B762807453B004F1B5E /* PanicSinger.app */;
 			productType = "com.apple.product-type.application";
@@ -274,6 +265,9 @@
 				Base,
 			);
 			mainGroup = EE893B6D2807453B004F1B5E;
+			packageReferences = (
+				EE1774BB281DE67A00A478D1 /* XCRemoteSwiftPackageReference "Reusable" */,
+			);
 			productRefGroup = EE893B772807453B004F1B5E /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -320,14 +314,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				EE084202281A083B00294585 /* Songs.swift in Sources */,
 				EE893B7A2807453B004F1B5E /* AppDelegate.swift in Sources */,
 				EE084204281A8C1A00294585 /* AppUtility.swift in Sources */,
 				EE346DEA28101A3D009AE78A /* ConfigurationsViewController.swift in Sources */,
 				EEF4E0772808AAFF002696CC /* MainCollectionViewController.swift in Sources */,
 				EE084200281A075000294585 /* GamePlayViewController.swift in Sources */,
 				EE893B7C2807453B004F1B5E /* SceneDelegate.swift in Sources */,
-				EEF4E07A2808AB78002696CC /* MainCollectionViewCell.swift in Sources */,
 				EE301A2428196DE10022E03E /* CellModel.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -666,6 +658,25 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		EE1774BB281DE67A00A478D1 /* XCRemoteSwiftPackageReference "Reusable" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/AliSoftware/Reusable";
+			requirement = {
+				kind = upToNextMinorVersion;
+				minimumVersion = 4.1.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		EE1774BC281DE67A00A478D1 /* Reusable */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = EE1774BB281DE67A00A478D1 /* XCRemoteSwiftPackageReference "Reusable" */;
+			productName = Reusable;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = EE893B6E2807453B004F1B5E /* Project object */;
 }

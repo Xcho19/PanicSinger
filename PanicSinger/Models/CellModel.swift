@@ -8,9 +8,9 @@
 import Foundation
 
 class CellModel: Codable {
-    static var categoryName: String?
+    static var categoryName: String = ""
 
     var categoryNames = [
-        "ArmenianGoldenEdition", "ArmenianRabiz", "ArmenianRap"
+        "ArmenianGoldenEdition", "ArmenianRabiz", "ArmenianRap", "RussianRap", "RussianGoldenEdition", "RussianPop", "InternationalPopHits", "InternationalRapHits", "InternationalRockHits"
     ]
 }
