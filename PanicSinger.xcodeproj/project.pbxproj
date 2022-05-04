@@ -181,6 +181,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = EE893BA02807453C004F1B5E /* Build configuration list for PBXNativeTarget "PanicSinger" */;
 			buildPhases = (
+				EE889859282264E3003386CD /* ShellScript */,
 				EE893B722807453B004F1B5E /* Sources */,
 				EE893B732807453B004F1B5E /* Frameworks */,
 				EE893B742807453B004F1B5E /* Resources */,
@@ -308,6 +309,26 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		EE889859282264E3003386CD /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+			);
+			outputFileListPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "export PATH=\"$PATH:/opt/homebrew/bin\"\nif which swiftlint > /dev/null; then\n  swiftlint\nelse\n  echo \"warning: SwiftLint not installed, download from https://github.com/realm/SwiftLint\"\nfi\n";
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		EE893B722807453B004F1B5E /* Sources */ = {

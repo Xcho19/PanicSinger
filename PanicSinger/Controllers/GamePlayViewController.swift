@@ -22,7 +22,7 @@ class GamePlayViewController: UIViewController {
     @IBOutlet var songNameLabel: UILabel!
     @IBOutlet var timerLabel: UILabel!
     @IBOutlet var answerImageView: UIImageView!
-    
+
     // MARK: - Model
 
     var usedSongs: [String] = []
@@ -103,7 +103,7 @@ class GamePlayViewController: UIViewController {
         guard let songURL = Bundle.main.url(forResource: "Songs", withExtension: "plist")
         else { return }
 
-        if let categoriesDict = NSDictionary(contentsOf: songURL) as? Dictionary<String, [String]> {
+        if let categoriesDict = NSDictionary(contentsOf: songURL) as? [String: [String]] {
             songs = categoriesDict[category]!
             getNewSong(from: songs)
         }
