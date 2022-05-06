@@ -8,11 +8,11 @@
 import UIKit
 
 protocol GamePlayViewControllerDelegate: AnyObject {
-    func getResults(correct: [String], notCorrect: [String], usedSongs: [String])
+    func getResultsFrom(correct: [String], skipped: [String], usedSongs: [String])
+    func getTotalTime(time: Int)
 }
 
-class GamePlayViewController: UIViewController {
-
+final class GamePlayViewController: UIViewController {
     // MARK: - Dependencies
 
     weak var delegate: GamePlayViewControllerDelegate?
@@ -27,12 +27,12 @@ class GamePlayViewController: UIViewController {
 
     var usedSongs: [String] = []
     var songs: [String] = []
-    var song: String = ""
+    private var song: String = ""
     var guessedSongs: [String] = []
-    var failedSongs: [String] = []
-    var initialCenter = CGPoint()
-    var timer: Timer?
+    var skippedSongs: [String] = []
     var totalTime: Int!
+    private var initialCenter = CGPoint()
+    private var timer: Timer?
 
     // MARK: - Lifecycle
 
@@ -43,7 +43,10 @@ class GamePlayViewController: UIViewController {
         timerLabel.text = timeFormatted(totalTime)
         getSongsFor(category: CellModel.categoryName)
 
-        let panGesture = UIPanGestureRecognizer(target: self, action: #selector(handleSwipes(_:)))
+        let panGesture = UIPanGestureRecognizer(
+            target: self,
+            action: #selector(handleSwipes(_:))
+        )
         view.addGestureRecognizer(panGesture)
     }
 
@@ -58,13 +61,15 @@ class GamePlayViewController: UIViewController {
         super.viewWillDisappear(animated)
 
         resetTimer()
+        delegate?.getTotalTime(time: totalTime)
         AppUtility.lockOrientation(.portrait, andRotateTo: .portrait)
     }
 
     // MARK: - Helpers
 
     private func startOtpTimer() {
-        self.timer = Timer.scheduledTimer(
+        totalTime -= 1
+        timer = Timer.scheduledTimer(
             timeInterval: 1.0,
             target: self,
             selector: #selector(updateTimer),
@@ -74,14 +79,28 @@ class GamePlayViewController: UIViewController {
     }
 
     @objc private func updateTimer() {
-        self.timerLabel.text = self.timeFormatted(self.totalTime)
+        timerLabel.text = timeFormatted(totalTime)
         if totalTime != 0 {
             totalTime -= 1
-        } else if let timer = self.timer {
+        } else if let timer = timer {
             timer.invalidate()
             self.timer = nil
-            delegate?.getResults(correct: guessedSongs, notCorrect: failedSongs, usedSongs: usedSongs)
+            delegate?.getResultsFrom(correct: guessedSongs, skipped: skippedSongs, usedSongs: usedSongs)
             navigationController?.popViewController(animated: false)
+        }
+
+        switch totalTime {
+        case 2:
+            let generator = UIImpactFeedbackGenerator(style: .light)
+            generator.impactOccurred()
+        case 1:
+            let generator = UIImpactFeedbackGenerator(style: .medium)
+            generator.impactOccurred()
+        case 0:
+            let generator = UIImpactFeedbackGenerator(style: .heavy)
+            generator.impactOccurred()
+        default:
+            break
         }
     }
 
@@ -124,7 +143,7 @@ class GamePlayViewController: UIViewController {
 
     private func animate(imageAlpha: Double) {
         UIImageView.animate(
-            withDuration: 0.1,
+            withDuration: 0.2,
             delay: 0,
             options: .curveEaseIn,
             animations: {
@@ -133,10 +152,20 @@ class GamePlayViewController: UIViewController {
         )
     }
 
+    private func animateUserInteractions() {
+        let correctView = UIView()
+        correctView.translatesAutoresizingMaskIntoConstraints = false
+        view.addSubview(correctView)
+
+        
+    }
+
     // MARK: - Gesturehandler
 
-    @objc func handleSwipes(_ sender: UIPanGestureRecognizer) {
-        if sender.translation(in: view.superview).x < -50 {
+    @objc
+    // swiftlint:disable:next cyclomatic_complexity
+    func handleSwipes(_ sender: UIPanGestureRecognizer) {
+        if sender.translation(in: view.superview).y < -50 {
             switch sender.state {
             case .began:
                 initialCenter = view.center
@@ -144,15 +173,15 @@ class GamePlayViewController: UIViewController {
                 answerImageView.image = UIImage(named: "pass")
                 animate(imageAlpha: 1.0)
             case .ended:
+                skippedSongs.append(song)
                 getNewSong(from: songs)
-                failedSongs.append(song)
                 animate(imageAlpha: 0)
             case .cancelled:
                 animate(imageAlpha: 0)
             default:
                 break
             }
-        } else if sender.translation(in: view.superview).x > 50 {
+        } else if sender.translation(in: view.superview).y > 50 {
             switch sender.state {
             case .began:
                 initialCenter = view.center
@@ -160,8 +189,8 @@ class GamePlayViewController: UIViewController {
                 answerImageView.image = UIImage(named: "correct")
                 animate(imageAlpha: 1.0)
             case .ended:
-                getNewSong(from: songs)
                 guessedSongs.append(song)
+                getNewSong(from: songs)
                 animate(imageAlpha: 0)
             case .cancelled:
                 animate(imageAlpha: 0)

@@ -7,15 +7,14 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		EE0841FA2819E94A00294585 /* Media.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = EE0841F92819E94A00294585 /* Media.xcassets */; };
 		EE0841FC281A06CC00294585 /* GamePlay.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EE0841FB281A06CB00294585 /* GamePlay.storyboard */; };
 		EE084200281A075000294585 /* GamePlayViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE0841FF281A075000294585 /* GamePlayViewController.swift */; };
 		EE084204281A8C1A00294585 /* AppUtility.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE084203281A8C1A00294585 /* AppUtility.swift */; };
 		EE0D0748280CBF3E00225886 /* Configurations.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EE0D0747280CBF3E00225886 /* Configurations.storyboard */; };
-		EE1774BD281DE67A00A478D1 /* Reusable in Frameworks */ = {isa = PBXBuildFile; productRef = EE1774BC281DE67A00A478D1 /* Reusable */; };
 		EE301A2428196DE10022E03E /* CellModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE301A2328196DE10022E03E /* CellModel.swift */; };
 		EE30EDFA2819A2A900639B98 /* Songs.plist in Resources */ = {isa = PBXBuildFile; fileRef = EE30EDF92819A2A900639B98 /* Songs.plist */; };
 		EE346DEA28101A3D009AE78A /* ConfigurationsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE346DE928101A3D009AE78A /* ConfigurationsViewController.swift */; };
+		EE88986328234543003386CD /* Media.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = EE88986228234543003386CD /* Media.xcassets */; };
 		EE893B7A2807453B004F1B5E /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE893B792807453B004F1B5E /* AppDelegate.swift */; };
 		EE893B7C2807453B004F1B5E /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE893B7B2807453B004F1B5E /* SceneDelegate.swift */; };
 		EE893B812807453B004F1B5E /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EE893B7F2807453B004F1B5E /* Main.storyboard */; };
@@ -44,7 +43,6 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		EE0841F92819E94A00294585 /* Media.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Media.xcassets; sourceTree = "<group>"; };
 		EE0841FB281A06CB00294585 /* GamePlay.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = GamePlay.storyboard; sourceTree = "<group>"; };
 		EE0841FF281A075000294585 /* GamePlayViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GamePlayViewController.swift; sourceTree = "<group>"; };
 		EE084203281A8C1A00294585 /* AppUtility.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppUtility.swift; sourceTree = "<group>"; };
@@ -52,6 +50,7 @@
 		EE301A2328196DE10022E03E /* CellModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CellModel.swift; sourceTree = "<group>"; };
 		EE30EDF92819A2A900639B98 /* Songs.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Songs.plist; sourceTree = "<group>"; };
 		EE346DE928101A3D009AE78A /* ConfigurationsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConfigurationsViewController.swift; sourceTree = "<group>"; };
+		EE88986228234543003386CD /* Media.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Media.xcassets; sourceTree = "<group>"; };
 		EE893B762807453B004F1B5E /* PanicSinger.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PanicSinger.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		EE893B792807453B004F1B5E /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		EE893B7B2807453B004F1B5E /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -71,7 +70,6 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				EE1774BD281DE67A00A478D1 /* Reusable in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -118,10 +116,10 @@
 				EE893BAD280746C5004F1B5E /* Models */,
 				EE893BAC280746A7004F1B5E /* StoryBoards */,
 				EE893BA928074683004F1B5E /* Controllers */,
-				EE893B792807453B004F1B5E /* AppDelegate.swift */,
 				EE084203281A8C1A00294585 /* AppUtility.swift */,
+				EE893B792807453B004F1B5E /* AppDelegate.swift */,
 				EE893B7B2807453B004F1B5E /* SceneDelegate.swift */,
-				EE0841F92819E94A00294585 /* Media.xcassets */,
+				EE88986228234543003386CD /* Media.xcassets */,
 				EE30EDF92819A2A900639B98 /* Songs.plist */,
 				EE893B872807453C004F1B5E /* Info.plist */,
 			);
@@ -192,7 +190,6 @@
 			);
 			name = PanicSinger;
 			packageProductDependencies = (
-				EE1774BC281DE67A00A478D1 /* Reusable */,
 			);
 			productName = PanicSinger;
 			productReference = EE893B762807453B004F1B5E /* PanicSinger.app */;
@@ -267,7 +264,6 @@
 			);
 			mainGroup = EE893B6D2807453B004F1B5E;
 			packageReferences = (
-				EE1774BB281DE67A00A478D1 /* XCRemoteSwiftPackageReference "Reusable" */,
 			);
 			productRefGroup = EE893B772807453B004F1B5E /* Products */;
 			projectDirPath = "";
@@ -285,11 +281,11 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				EE0841FA2819E94A00294585 /* Media.xcassets in Resources */,
 				EE30EDFA2819A2A900639B98 /* Songs.plist in Resources */,
 				EE893B862807453C004F1B5E /* LaunchScreen.storyboard in Resources */,
 				EE893B812807453B004F1B5E /* Main.storyboard in Resources */,
 				EE0841FC281A06CC00294585 /* GamePlay.storyboard in Resources */,
+				EE88986328234543003386CD /* Media.xcassets in Resources */,
 				EE0D0748280CBF3E00225886 /* Configurations.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -526,6 +522,7 @@
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -554,6 +551,7 @@
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -575,7 +573,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				GENERATE_INFOPLIST_FILE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 15.4;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = PanicLLC.PanicSingerTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -594,7 +592,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				GENERATE_INFOPLIST_FILE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 15.4;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = PanicLLC.PanicSingerTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -679,25 +677,6 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
-
-/* Begin XCRemoteSwiftPackageReference section */
-		EE1774BB281DE67A00A478D1 /* XCRemoteSwiftPackageReference "Reusable" */ = {
-			isa = XCRemoteSwiftPackageReference;
-			repositoryURL = "https://github.com/AliSoftware/Reusable";
-			requirement = {
-				kind = upToNextMinorVersion;
-				minimumVersion = 4.1.0;
-			};
-		};
-/* End XCRemoteSwiftPackageReference section */
-
-/* Begin XCSwiftPackageProductDependency section */
-		EE1774BC281DE67A00A478D1 /* Reusable */ = {
-			isa = XCSwiftPackageProductDependency;
-			package = EE1774BB281DE67A00A478D1 /* XCRemoteSwiftPackageReference "Reusable" */;
-			productName = Reusable;
-		};
-/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = EE893B6E2807453B004F1B5E /* Project object */;
 }

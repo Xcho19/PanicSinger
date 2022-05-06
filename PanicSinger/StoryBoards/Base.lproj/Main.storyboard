@@ -14,7 +14,7 @@
                     <collectionView key="view" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="prototypes" id="xug-OM-rhF">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" red="0.52941179279999995" green="0.35686278339999999" blue="0.86274516580000005" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                        <color key="backgroundColor" red="0.0078431372549019607" green="0.0078431372549019607" blue="0.090196078431372548" alpha="1" colorSpace="calibratedRGB"/>
                         <collectionViewFlowLayout key="collectionViewLayout" automaticEstimatedItemSize="YES" minimumLineSpacing="10" minimumInteritemSpacing="10" id="N4Y-en-o8H">
                             <size key="itemSize" width="167" height="204"/>
                             <size key="headerReferenceSize" width="0.0" height="0.0"/>
@@ -25,7 +25,7 @@
                             <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="Cell" id="Fhj-nr-YLc">
                                 <rect key="frame" x="0.0" y="0.0" width="167" height="204"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <collectionViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" id="W8D-bX-bfa">
+                                <collectionViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" alpha="0.80000000000000004" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" id="W8D-bX-bfa">
                                     <rect key="frame" x="0.0" y="0.0" width="167" height="204"/>
                                     <autoresizingMask key="autoresizingMask"/>
                                 </collectionViewCellContentView>
@@ -39,26 +39,13 @@
                     </collectionView>
                     <navigationItem key="navigationItem" title="Categories" id="ueT-qN-QwW">
                         <barButtonItem key="rightBarButtonItem" title="Rules" id="Bmx-JF-Z7y">
-                            <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            <color key="tintColor" red="0.97647058819999999" green="0.98823529409999999" blue="0.79215686269999996" alpha="1" colorSpace="calibratedRGB"/>
                         </barButtonItem>
                     </navigationItem>
-                    <connections>
-                        <segue destination="apU-yu-NxH" kind="show" identifier="Configurations" id="CQo-1f-FJv"/>
-                    </connections>
                 </collectionViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="FF3-8l-cMV" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="614.49275362318849" y="127.90178571428571"/>
-        </scene>
-        <!--Configurations-->
-        <scene sceneID="Mux-fu-jzM">
-            <objects>
-                <viewControllerPlaceholder storyboardName="Configurations" id="apU-yu-NxH" sceneMemberID="viewController">
-                    <navigationItem key="navigationItem" id="bfc-xG-QnT"/>
-                </viewControllerPlaceholder>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="Zwg-7D-ysX" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="1407" y="128"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="wKD-ht-TgU">
@@ -66,14 +53,15 @@
                 <navigationController automaticallyAdjustsScrollViewInsets="NO" id="n43-K8-Kpn" sceneMemberID="viewController">
                     <toolbarItems/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" barStyle="black" largeTitles="YES" id="NUc-nl-7SZ">
-                        <rect key="frame" x="0.0" y="44" width="414" height="96"/>
+                        <rect key="frame" x="0.0" y="44" width="414" height="103"/>
                         <autoresizingMask key="autoresizingMask"/>
-                        <color key="barTintColor" red="0.52941179279999995" green="0.35686278339999999" blue="0.86274516580000005" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                        <color key="barTintColor" red="0.050674957482993201" green="0.071140331132551027" blue="0.2062675070014286" alpha="1" colorSpace="calibratedRGB"/>
                         <textAttributes key="titleTextAttributes">
-                            <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            <color key="textColor" red="0.97647058823529409" green="0.9882352941176471" blue="0.792156862745098" alpha="1" colorSpace="calibratedRGB"/>
                         </textAttributes>
                         <textAttributes key="largeTitleTextAttributes">
-                            <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            <fontDescription key="fontDescription" name="HelveticaNeue-Bold" family="Helvetica Neue" pointSize="44"/>
+                            <color key="textColor" red="0.97647058819999999" green="0.98823529409999999" blue="0.79215686269999996" alpha="1" colorSpace="calibratedRGB"/>
                         </textAttributes>
                     </navigationBar>
                     <nil name="viewControllers"/>

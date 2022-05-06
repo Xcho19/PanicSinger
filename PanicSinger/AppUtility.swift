@@ -9,9 +9,7 @@ import Foundation
 import UIKit
 
 struct AppUtility {
-
     static func lockOrientation(_ orientation: UIInterfaceOrientationMask) {
-
         if let delegate = UIApplication.shared.delegate as? AppDelegate {
             delegate.orientationLock = orientation
         }
@@ -27,5 +25,4 @@ struct AppUtility {
         UIDevice.current.setValue(rotateOrientation.rawValue, forKey: "orientation")
         UINavigationController.attemptRotationToDeviceOrientation()
     }
-
 }

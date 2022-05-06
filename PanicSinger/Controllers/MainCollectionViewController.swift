@@ -9,8 +9,7 @@ import UIKit
 
 private let reuseIdentifier = "Cell"
 
-class MainCollectionViewController: UICollectionViewController {
-
+final class MainCollectionViewController: UICollectionViewController {
     // MARK: - Model
 
     var cellModel = CellModel()
@@ -20,6 +19,8 @@ class MainCollectionViewController: UICollectionViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
 
+        navigationItem.backButtonTitle = ""
+        collectionView.contentInset = UIEdgeInsets(top: 25, left: 0, bottom: 0, right: 0)
         collectionView.setCollectionViewLayout(layout(), animated: false)
     }
 
@@ -80,6 +81,11 @@ class MainCollectionViewController: UICollectionViewController {
 
     override func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
         CellModel.categoryName = cellModel.categoryNames[indexPath.row]
-        performSegue(withIdentifier: "Configurations", sender: UICollectionViewCell.self)
+        if let configurationsViewController = UIStoryboard(
+            name: "Configurations",
+            bundle: nil
+        ).instantiateViewController(withIdentifier: "configurationsViewController") as? ConfigurationsViewController {
+            navigationController?.pushViewController(configurationsViewController, animated: true)
+        }
     }
 }

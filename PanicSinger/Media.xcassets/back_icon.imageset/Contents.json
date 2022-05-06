@@ -1,15 +1,17 @@
 {
   "images" : [
     {
+      "filename" : "icons8-chevron-left-24.png",
       "idiom" : "universal",
       "scale" : "1x"
     },
     {
-      "filename" : "PanicSingerBackgroundImage.jpg",
+      "filename" : "icons8-chevron-left-48.png",
       "idiom" : "universal",
       "scale" : "2x"
     },
     {
+      "filename" : "icons8-chevron-left-96.png",
       "idiom" : "universal",
       "scale" : "3x"
     }

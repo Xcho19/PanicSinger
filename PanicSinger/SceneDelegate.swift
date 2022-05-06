@@ -8,7 +8,6 @@
 import UIKit
 
 class SceneDelegate: UIResponder, UIWindowSceneDelegate {
-
     var window: UIWindow?
 
     func scene(
@@ -20,6 +19,8 @@ class SceneDelegate: UIResponder, UIWindowSceneDelegate {
         if (scene as? UIWindowScene) != nil {
             window?.overrideUserInterfaceStyle = .light
         }
+        UINavigationBar.appearance().backIndicatorImage = UIImage(named: "back_icon")
+        UINavigationBar.appearance().backIndicatorTransitionMaskImage = UIImage(named: "back_icon")
     }
 
     func sceneDidDisconnect(_ scene: UIScene) {
