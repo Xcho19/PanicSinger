@@ -5,10 +5,11 @@
 //  Created by Xcho on 28.04.22.
 //
 
+import SwiftySound
 import UIKit
 
 protocol GamePlayViewControllerDelegate: AnyObject {
-    func getResultsFrom(correct: [String], skipped: [String], usedSongs: [String])
+    func getResultsFrom(correctSongs: [String], skippedSongs: [String], usedSongs: [String])
     func getTotalTime(time: Int)
 }
 
@@ -16,12 +17,6 @@ final class GamePlayViewController: UIViewController {
     // MARK: - Dependencies
 
     weak var delegate: GamePlayViewControllerDelegate?
-
-    // MARK: - Subviews
-
-    @IBOutlet var songNameLabel: UILabel!
-    @IBOutlet var timerLabel: UILabel!
-    @IBOutlet var answerImageView: UIImageView!
 
     // MARK: - Model
 
@@ -34,20 +29,20 @@ final class GamePlayViewController: UIViewController {
     private var initialCenter = CGPoint()
     private var timer: Timer?
 
+    // MARK: - Subviews
+
+    @IBOutlet var songNameLabel: UILabel!
+    @IBOutlet var timerLabel: UILabel!
+    @IBOutlet var answerView: UIView!
+    @IBOutlet var answerLabel: UILabel!
+
     // MARK: - Lifecycle
 
     override func viewDidLoad() {
         super.viewDidLoad()
 
-        initialCenter = view.center
-        timerLabel.text = timeFormatted(totalTime)
+        configureSubviews()
         getSongsFor(category: CellModel.categoryName)
-
-        let panGesture = UIPanGestureRecognizer(
-            target: self,
-            action: #selector(handleSwipes(_:))
-        )
-        view.addGestureRecognizer(panGesture)
     }
 
     override func viewWillAppear(_ animated: Bool) {
@@ -67,6 +62,50 @@ final class GamePlayViewController: UIViewController {
 
     // MARK: - Helpers
 
+    // Subview Configurations
+    private func configureSubviews() {
+        addPanGesture(to: view)
+        initialCenter = view.center
+        answerView.layer.cornerRadius = 20
+        timerLabel.text = timeFormatted(totalTime)
+    }
+
+    private func configureViewColor(red: Double, green: Double, blue: Double) {
+        answerView.backgroundColor = UIColor(
+            red: red,
+            green: green,
+            blue: blue,
+            alpha: 0.9
+        )
+    }
+
+    private func animateView(viewAlpha: Double, labelAlpha: Double, transitionOption: UIView.AnimationOptions) {
+        UIView.transition(
+            with: answerView,
+            duration: 0.2,
+            options: transitionOption,
+            animations: {
+                self.answerView.alpha = viewAlpha
+            }
+        )
+
+        UILabel.animate(
+            withDuration: 0.2,
+            delay: 0,
+            options: transitionOption,
+            animations: {
+                self.songNameLabel.alpha = labelAlpha
+            }
+        )
+    }
+
+    // Haptic feedback configurations
+    private func addHaptics(style: UIImpactFeedbackGenerator.FeedbackStyle) {
+        let generator = UIImpactFeedbackGenerator(style: style)
+        generator.impactOccurred()
+    }
+
+    // Timer Configurations
     private func startOtpTimer() {
         totalTime -= 1
         timer = Timer.scheduledTimer(
@@ -85,20 +124,24 @@ final class GamePlayViewController: UIViewController {
         } else if let timer = timer {
             timer.invalidate()
             self.timer = nil
-            delegate?.getResultsFrom(correct: guessedSongs, skipped: skippedSongs, usedSongs: usedSongs)
+            delegate?.getResultsFrom(correctSongs: guessedSongs, skippedSongs: skippedSongs, usedSongs: usedSongs)
             navigationController?.popViewController(animated: false)
         }
 
         switch totalTime {
         case 2:
-            let generator = UIImpactFeedbackGenerator(style: .light)
-            generator.impactOccurred()
+            if let countdownUrl = Bundle.main.url(
+                forResource: "countdown",
+                withExtension: "wav"
+            ) {
+                Sound.play(url: countdownUrl)
+            }
+
+            addHaptics(style: .light)
         case 1:
-            let generator = UIImpactFeedbackGenerator(style: .medium)
-            generator.impactOccurred()
+            addHaptics(style: .medium)
         case 0:
-            let generator = UIImpactFeedbackGenerator(style: .heavy)
-            generator.impactOccurred()
+            addHaptics(style: .heavy)
         default:
             break
         }
@@ -106,7 +149,7 @@ final class GamePlayViewController: UIViewController {
 
     private func timeFormatted(_ totalSeconds: Int) -> String {
         let seconds: Int = totalSeconds % 60
-        let minutes: Int = (totalSeconds / 60) % 60
+        let minutes: Int = (totalSeconds/60) % 60
 
         return String(format: "%02d:%02d", minutes, seconds)
     }
@@ -118,6 +161,7 @@ final class GamePlayViewController: UIViewController {
         }
     }
 
+    // Dictionary data configurations
     private func getSongsFor(category: String) {
         guard let songURL = Bundle.main.url(forResource: "Songs", withExtension: "plist")
         else { return }
@@ -141,64 +185,57 @@ final class GamePlayViewController: UIViewController {
         }
     }
 
-    private func animate(imageAlpha: Double) {
-        UIImageView.animate(
-            withDuration: 0.2,
-            delay: 0,
-            options: .curveEaseIn,
-            animations: {
-                self.answerImageView.alpha = imageAlpha
-            }
+    // Pan gesture configurations
+    private func addPanGesture(to view: UIView) {
+        let pan = UIPanGestureRecognizer(
+            target: self,
+            action: #selector(handleSwipes(_:))
         )
+        view.addGestureRecognizer(pan)
     }
 
-    private func animateUserInteractions() {
-        let correctView = UIView()
-        correctView.translatesAutoresizingMaskIntoConstraints = false
-        view.addSubview(correctView)
-
-        
+    private func panConfigurations(
+        sender: UIPanGestureRecognizer,
+        labelText: String,
+        answerArray: inout [String]
+    ) {
+        switch sender.state {
+        case .began:
+            initialCenter = view.center
+        case .changed:
+            animateView(viewAlpha: 0.9, labelAlpha: 0, transitionOption: .transitionCrossDissolve)
+            answerLabel.text = labelText
+        case .ended:
+            answerArray.append(song)
+            getNewSong(from: songs)
+            animateView(viewAlpha: 0, labelAlpha: 1, transitionOption: .transitionCrossDissolve)
+        case .cancelled:
+            animateView(viewAlpha: 0, labelAlpha: 1, transitionOption: .transitionCrossDissolve)
+        default:
+            break
+        }
     }
 
     // MARK: - Gesturehandler
 
     @objc
-    // swiftlint:disable:next cyclomatic_complexity
-    func handleSwipes(_ sender: UIPanGestureRecognizer) {
-        if sender.translation(in: view.superview).y < -50 {
-            switch sender.state {
-            case .began:
-                initialCenter = view.center
-            case .changed:
-                answerImageView.image = UIImage(named: "pass")
-                animate(imageAlpha: 1.0)
-            case .ended:
-                skippedSongs.append(song)
-                getNewSong(from: songs)
-                animate(imageAlpha: 0)
-            case .cancelled:
-                animate(imageAlpha: 0)
-            default:
-                break
-            }
-        } else if sender.translation(in: view.superview).y > 50 {
-            switch sender.state {
-            case .began:
-                initialCenter = view.center
-            case .changed:
-                answerImageView.image = UIImage(named: "correct")
-                animate(imageAlpha: 1.0)
-            case .ended:
-                guessedSongs.append(song)
-                getNewSong(from: songs)
-                animate(imageAlpha: 0)
-            case .cancelled:
-                animate(imageAlpha: 0)
-            default:
-                break
-            }
+    private func handleSwipes(_ sender: UIPanGestureRecognizer) {
+        if sender.translation(in: view.superview).y > 50 {
+            configureViewColor(red: 89/255, green: 189/255, blue: 65/255)
+            panConfigurations(
+                sender: sender,
+                labelText: "CORRECT",
+                answerArray: &guessedSongs
+            )
+        } else if sender.translation(in: view.superview).y < -50 {
+            configureViewColor(red: 202/255, green: 133/255, blue: 46/255)
+            panConfigurations(
+                sender: sender,
+                labelText: "PASS",
+                answerArray: &skippedSongs
+            )
         } else {
-            animate(imageAlpha: 0)
+            animateView(viewAlpha: 0, labelAlpha: 1, transitionOption: .transitionCrossDissolve)
         }
     }
 }

@@ -2,12 +2,111 @@
 <!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
 <plist version="1.0">
 <dict>
+	<key>ArmenianPop</key>
+	<array>
+		<string>Silva Hakobyan - Ushacel Em</string>
+		<string>Silva Hakobyan - Gisher E</string>
+		<string>Razmik Amyan - Sirem qez lianam</string>
+		<string>Razmik Amyan - Chuni ashkharhe qez nman</string>
+		<string>Armo - Ush e hima</string>
+		<string>REINCARNATION - Tarm Caxikner</string>
+		<string>REINCARNATION - Ov Sirun Sirun</string>
+		<string>David Greg Ft.  Raff - Qartez</string>
+		<string>Lada Niva - Qef Chi Lini</string>
+	</array>
 	<key>RussianGoldenEdition</key>
-	<array/>
+	<array>
+		<string>Ваграм Вазян - Любовь и боль</string>
+		<string>Игорь Скляр - Комарово</string>
+		<string>Алла Пугачева - Миллион алых роз</string>
+		<string>Юрий Шатунов - Седая ночь</string>
+		<string>Алла Пугачева - Позови меня с собой</string>
+		<string>Юрий Шатунов - Белые розы</string>
+		<string>Земляне - Трава у дома</string>
+		<string>Григорий Лепс - Я тебе не верю</string>
+		<string>Руки Вверх! - 18 мне уже</string>
+		<string>Натали - О Боже, какой мужчина</string>
+		<string>Михаил Шуфутинский - 3-е сентября</string>
+		<string>Елена Ваенга - Курю</string>
+	</array>
 	<key>RussianPop</key>
-	<array/>
+	<array>
+		<string>ПИЦЦА - Оружие</string>
+		<string>БумБокс - Вахтерам</string>
+		<string>Грибы - Тает лёд </string>
+	</array>
 	<key>RussianRap</key>
-	<array/>
+	<array>
+		<string>Natan Ft. Тимати - Дерзкая</string>
+		<string>Тимати - Борода</string>
+		<string>N1NT3NDO - Криминал</string>
+		<string>Jah Khalib - 9 грамм свинца</string>
+		<string>Jah Khalib - Ты словно целая вселенная</string>
+		<string>Макс Корж - Малиновыӣ закат</string>
+		<string>Eldzhey Ft. FEDUK - Розовое вино</string>
+		<string>Мот - Капкан</string>
+		<string>Matrang - Медуза</string>
+		<string>The Limba Ft. Andro - X.O</string>
+		<string>Miyagi Ft. Andy Panda - Тамада</string>
+		<string>9 Грамм Ft. Miyagi, Andy Panda - Рапапам</string>
+		<string>Skryptonite - Цепи </string>
+		<string>Ярмак - Сердце пацана</string>
+		<string>Тимати Ft. Егор Крид - Где ты где я</string>
+		<string>Skryptonite Ft. Andy Panda - Привычка</string>
+		<string>Серёга - Чёрныӣ бумер</string>
+		<string>Тимати - Баклажан</string>
+		<string>Miyagi Ft. Andy Panda, Симптом - Люби меня</string>
+		<string>Макс Корж - Афган</string>
+		<string>Xcho - Gangster</string>
+		<string>Skryptonite - Чистыӣ</string>
+		<string>Xcho - I can fly</string>
+		<string>Xcho - Эскизы</string>
+		<string>Xcho - Вороны</string>
+		<string>Skryptonite - Положение</string>
+		<string>Skryptonite - Москва любит</string>
+		<string>Miyagi - Kossandra</string>
+		<string>Miyagi Ft. Andy Panda - Там ревели горы</string>
+		<string>Miyagi - Родная поӣ</string>
+		<string>Miyagi - По уши в тебя влюблён</string>
+		<string>Miyagi - Колибри</string>
+		<string>Баста - Пуэрчик по крепче</string>
+		<string>Баста - Урбан</string>
+		<string>Баста Ft. Zivert - Неболеӣ</string>
+		<string>Каспийский груз - Детство</string>
+		<string>Каспийский груз - Не было и не надо </string>
+		<string>Каспийский груз - Давай уедем </string>
+		<string>Каспийский груз - Сам всё знаю </string>
+		<string>Каспийский груз - Туда и Обратно </string>
+		<string>Джарахов Ft. Markul - Я в моменте</string>
+		<string>MiyaGi Ft. Andy Panda – Не Жалея</string>
+		<string>Miyagi Ft. Andy Panda, Mav-D - Marmalade</string>
+		<string>Каспийский груз - Доедешь-Пиши</string>
+		<string>Каспийский груз - Адик Original</string>
+		<string>Каспийский груз - Чёрная Волга</string>
+		<string>Каспийский груз - 18+</string>
+		<string>Каспийский груз - Табор Уходит В Небо</string>
+		<string>Miyagi - Marlboro</string>
+		<string>Miyagi - Captain </string>
+		<string>Miyagi Ft. Andy Panda - FIre Man</string>
+		<string>Santiz - Rastafari</string>
+		<string>Miyagi Ft. Andy Panda – Minor</string>
+		<string>Гуф - ЧП</string>
+		<string>Гуф - Письмо Домой</string>
+		<string>Гуф - 420</string>
+		<string>Гуф - Ice Baby</string>
+		<string>Гуф - Про лето</string>
+		<string>Гуф - Гуф умер</string>
+		<string>Гуф - Пусто</string>
+		<string>Баста - Папа What&apos;s Up</string>
+		<string>Баста - Сансара</string>
+		<string>Баста - Медлячок </string>
+		<string>Баста - Там, где нас нет</string>
+		<string>Баста Ft. Тати - Моя вселенная</string>
+		<string>Баста - Темная ночь</string>
+		<string>Баста Ft. Бумбокс - Солнца не видно</string>
+		<string>Баста - Моя игра</string>
+		<string>Баста - Мама</string>
+	</array>
 	<key>InternationalRockHits</key>
 	<array>
 		<string></string>
@@ -78,49 +177,50 @@
 	</array>
 	<key>InternationalRapHits</key>
 	<array>
-		<string></string>
-		<string></string>
-		<string></string>
-		<string></string>
-		<string></string>
-		<string></string>
-		<string></string>
-		<string></string>
-		<string></string>
-		<string></string>
-		<string></string>
-		<string></string>
-		<string></string>
-		<string></string>
-		<string></string>
-		<string></string>
-		<string></string>
-		<string></string>
-		<string></string>
-		<string></string>
-		<string></string>
-		<string></string>
-		<string></string>
-		<string></string>
-		<string></string>
-		<string></string>
-		<string></string>
-		<string></string>
-		<string></string>
-		<string></string>
-		<string></string>
-		<string></string>
-		<string></string>
-		<string></string>
-		<string></string>
-		<string></string>
-		<string></string>
-		<string></string>
-		<string></string>
-		<string></string>
-		<string></string>
-		<string></string>
-		<string></string>
+		<string>Eminem - Lose Yourself</string>
+		<string>Eminem - Mocking Bird</string>
+		<string>Eminem - The Real Slim Shady</string>
+		<string>50 Cent - P.I.M.P.</string>
+		<string>50 Cent - Candy Shop</string>
+		<string>Dr. Dre Ft. Eminem - Forgot About Dre</string>
+		<string>2Pac Ft. Snoop Dog - 2 Of Americaz Most Wanted</string>
+		<string>Dr. Dre Ft. Snoop Dog - Still D.R.E</string>
+		<string>2Pac - All Eyes On Me</string>
+		<string>The Nutorious B.I.G - Big Poppa</string>
+		<string>Ice Cube - It Was A Good Day</string>
+		<string>Kendrick Lamar - m.A.A.d city</string>
+		<string>N.W.A - Fuck The Police</string>
+		<string>Coolio - Gangsta&apos;s Paradise</string>
+		<string>Jay-Z Ft. Kanye West - Ni**as In Paris</string>
+		<string>Kendrick Lamar - DNA.</string>
+		<string>Eminem - Without Me </string>
+		<string>50 Cent - In The Club</string>
+		<string>Eminem - Rap God</string>
+		<string>2Pac Ft. Outlaws - Hit &apos;Em Up</string>
+		<string>2Pac - Dear Mama</string>
+		<string>2Pac Ft. Dr. Dre - California Love</string>
+		<string>Will Smith - Gettin&apos; Jiggy With It</string>
+		<string>Kanye West - Flashing Lights </string>
+		<string>Travis Scott - Highest In the Room</string>
+		<string>Travis Scott Ft. Kendrick Lamar - Goosebumps</string>
+		<string>A$AP Rocky Ft. Skepta - Praise The Lord</string>
+		<string>Travis Scott Ft. Drake - Sicko Mode</string>
+		<string>Masked Wolf - Astronaut In The Ocean </string>
+		<string>Travis Scott - Butterfly Effect</string>
+		<string>Drake - God&apos;s Plan</string>
+		<string>Dj Khaled Ft. Drake - Popstar</string>
+		<string>Future - Mask Off</string>
+		<string>XXXTENTACION - Moonlight</string>
+		<string>XXXTENTACION - Look At Me!</string>
+		<string>Migos Ft. Drake - Walk It Talk It</string>
+		<string>Kendrick Lamar - Swimming Pools</string>
+		<string>Kendrick Lamar - Humble</string>
+		<string>Lil Wayne Ft. Bruno Mars - Mirrors</string>
+		<string>J Cole - Middle Child</string>
+		<string>J Cloe - She Knows</string>
+		<string>Kanye West - Heartless</string>
+		<string>Pop Smoke - Dior</string>
+		<string>N.W.A - Straight Outta Compton</string>
 		<string></string>
 		<string></string>
 		<string></string>
@@ -146,37 +246,80 @@
 	</array>
 	<key>InternationalPopHits</key>
 	<array>
-		<string>Grisha Aghaxanyan - 50 tari</string>
-		<string>Spitakci Hayko - Inch Imani</string>
-		<string>Lada Niva - Qef Chi Lini</string>
+		<string>Beyonce - Single Ladies</string>
+		<string>Rihanna - Don&apos;t Stop The Music</string>
+		<string>Bruno Mars - Talking To The Moon</string>
+		<string>Flora Cash - You&apos;re Somebody Else</string>
+		<string>The Weekend - Call Out My Name</string>
+		<string>Beyonce - Run The World</string>
+		<string>Sia - Cheap Thrills</string>
+		<string>Lana Del Rey - Young And Beautiful</string>
+		<string>Beyonce - Halo</string>
+		<string>MAGIC! - Rude</string>
+		<string>Michael Jackson - Smooth Criminal</string>
+		<string>Michael Jackson -  Beat It</string>
+		<string>Selena Gomez Ft. The Scene - Love You Like A Love Song</string>
+		<string>Lana Del Rey - Diet Mountain Dew </string>
+		<string>Lady Gaga - Poker Face</string>
+		<string>ABBA - Gimme Gimme</string>
+		<string>Billie Eilish Ft. Khalid - Lovely</string>
+		<string>Meghan Trainor - All About That Bass</string>
+		<string>Rihanna Ft. Jay-Z - Ubrella</string>
+		<string>Anne-Marie - 2002</string>
+		<string>Ed Sheeran - Castle On The Hills </string>
+		<string>The Chainsomkers - Paris</string>
+		<string>Passenger - Let Her Go</string>
+		<string>Arash Ft. Helena - Broken Angel</string>
+		<string>James Arthur - Say You Won&apos;t Let Go</string>
+		<string>Dua Lipa - IDGAF</string>
+		<string>Taylor Swift - Blank Space</string>
+		<string>Taylor Swift - Shake It Off</string>
+		<string>Katy Perry - Roar</string>
+		<string>Rixton - Me And My Broken Heart</string>
+		<string>Camila Cabello Ft. Shawn Mendes - Senorita</string>
+		<string>Bastille - Pompeii</string>
+		<string>Doja Cat - Woman</string>
+		<string>Harry Styles - Watermalone Sugar</string>
+		<string>Harry Styles - As It Was</string>
+		<string>Beyonce Ft. Jay-Z - Crazy In Love</string>
+		<string>Lukas Graham - 7 Years</string>
+		<string>Post Malone - White Iverson</string>
+		<string>The Weekend Ft. Daft Punk - Starboy</string>
+		<string>Idina Menzel - Let It Go</string>
+		<string>Milky Chance - Stolen Dance</string>
+		<string>Ed Sheeran - Photograph</string>
+		<string>Celine Dion - My Heart Will Go On</string>
+		<string>Lykke Li Ft. The Magician - Follow Rivers</string>
+		<string>Bruno Mars - Marry You</string>
+		<string>Harry Styles - Sign Of The Times</string>
+		<string>Post Malone Ft. Migos - Congratulations</string>
+		<string>Axwell /\ Ingrosso - More Than You Know</string>
+		<string>Sam Smith - Too Good At Goodbyes</string>
+		<string>Rudimental Ft. Macklemore, Jess Glynne - These Days </string>
+		<string>G-Easy Ft. Halsey - Him &amp; I</string>
+		<string>Anne-Marie Ft. Clean Bandit, Sean Paul - Rockabye</string>
+		<string>Jennifer Lopez Ft. Pitbull - On The Floor</string>
+		<string>Lewis Capaldi - Someone You Loved</string>
+		<string>Justin Bieber - Baby</string>
+		<string>Toploader - Dancing In The Moonlight</string>
+		<string>Britney Spears - Toxic</string>
+		<string>Katy Perry - I Kissed A Girl</string>
+		<string>Sia - Chandelier</string>
+		<string>Dua Lipa - One Kiss</string>
+		<string>Lorde - Royals</string>
+		<string>5 Seconds Of Summer - Youngblood</string>
+		<string>Lady Gaga - Bad Romance</string>
+		<string>Bruno Mars - Locked Out Of Heaven</string>
+		<string>Dua Lipa - New Rules</string>
+		<string>Zayn Ft. Sia - Dusk Till Dawn</string>
+		<string>Zara Larsson Ft. Clean Bandit - Symphony</string>
+		<string>Maroon 5 - Maps</string>
+		<string>One Direction - Story Of My Life</string>
+		<string>Lady Gaga Ft. Bradley Cooper - Shallow</string>
 		<string>Sting - Shape Of My Heart</string>
-		<string>Елена Ваенга - Курю</string>
-		<string>Михаил Шуфутинский - 3-е сентября</string>
 		<string>Bon Jovi - It&apos;s My Life </string>
-		<string>Arame - Aravot</string>
-		<string>Harout Pamboukjian - Es Aranc Qez</string>
-		<string>Harout Pamboukjian - Tariner</string>
-		<string>Aram Asatryan - Sev Sev Acher</string>
-		<string>Aram Asatryan - Hay Es Du </string>
-		<string>Aram Asatryan - Surb Sargis</string>
-		<string>Misho - Tsar </string>
-		<string>David Greg Ft.  Raff - Qartez</string>
-		<string>REINCARNATION - Ov Sirun Sirun</string>
 		<string>Sting - Englishman In New York</string>
-		<string>ПИЦЦА - Оружие</string>
-		<string>Натали - О Боже, какой мужчина</string>
-		<string>Грибы - Тает лёд </string>
-		<string>Руки Вверх! - 18 мне уже</string>
-		<string>REINCARNATION - Tarm Caxikner</string>
-		<string>Գրիգոր Կյոկչյան - Երանի թե</string>
-		<string>Ara &amp; Alik Avetisyanner - Voch avel Voch pakas</string>
-		<string>Ваграм Вазян - Любовь и боль</string>
-		<string>Григорий Лепс - Я тебе не верю</string>
-		<string>БумБокс - Вахтерам</string>
-		<string>Алла Пугачева - Позови меня с собой</string>
 		<string>George Michael - Careless Whisper</string>
-		<string>Юрий Шатунов - Белые розы</string>
-		<string>Земляне - Трава у дома</string>
 		<string>Mike Posner - I Took A Pill In Ibiza</string>
 		<string>G-Eazy Ft. Bebe Rexha - Me, Myself &amp; I</string>
 		<string>Ariana Grande Ft. Nicki Minaj - Side To Side</string>
@@ -187,30 +330,24 @@
 		<string>Michael Jackson, Justin Timberlake - Love Never Felt So Good</string>
 		<string>The Neighbourhood - Sweater Weather</string>
 		<string>Pitbull Ft. Ke$ha - Timber</string>
-		<string>Armo - Ush e hima</string>
 		<string>Taylor Swift - Shake It Off</string>
 		<string>The Weekend - Blinding Lights</string>
 		<string>The Weekend - Save Your Tears</string>
-		<string>Razmik Amyan - Chuni ashkharhe qez nman</string>
-		<string>Юрий Шатунов -Седая ночь</string>
 		<string>Lil Nas X - Montero</string>
 		<string>The Kid Laroi Ft. Justin Bieber - Stay</string>
 		<string>Masked Wolf - Astronaut In The Ocean</string>
 		<string>Lil Nas X Ft. Jack Harlow - Industry Baby</string>
-		<string>Алла Пугачева - Миллион алых роз</string>
 		<string>Doja Cat Ft. SZA - Kiss Me More</string>
 		<string>Maneskin - Beggin</string>
 		<string>Ed Sheeran - Shape Of You</string>
 		<string>The Beatles - Hey Jude</string>
-		<string>Игорь Скляр - Комарово</string>
 		<string>The Chainsmokers Ft Halsey - Closer</string>
 		<string>Toni Braxton - Un-Break My Heart</string>
 		<string>Luis Fonsi &amp; Daddy Yankee - Despacito</string>
 		<string>Adele - Rolling In The Deep</string>
 		<string>Adele - Hello</string>
-		<string>Razmik Amyan - Sirem qez lianam</string>
 		<string>Adele - Someone Like You</string>
-		<string>Blondie -Call Me</string>
+		<string>Blondie - Call Me</string>
 		<string>Bee Gees - Stayin Alive</string>
 		<string>Timbaland Ft. OneRepublic - Apologize</string>
 		<string>Maroon 5 Ft. Christina Aguilera - Moves Like Jagger</string>
@@ -220,7 +357,6 @@
 		<string>Bruno Mars - Lazy Song </string>
 		<string>Bruno Mars - Uptown Funk</string>
 		<string>Bruno Mars - When I Was Your Man</string>
-		<string>Silva Hakobyan - Ushacel Em</string>
 		<string>Michael Jackson - Billie Jean</string>
 		<string>Michael Jackson - Bad</string>
 		<string>Post Malone Ft. 21 Savage - Rockstar</string>
@@ -244,7 +380,6 @@
 		<string>Avicii - Wake Me Up</string>
 		<string>Capital Cities - Safe And Sound</string>
 		<string>Lana Del Rey - Summertime Sadness</string>
-		<string>Silva Hakobyan - Gisher E</string>
 		<string>Miley Cyrus - Wrecking Ball</string>
 		<string>One Republic - Counting Stars</string>
 		<string>John Legend - All Of Me</string>
@@ -256,7 +391,7 @@
 		<string>21 Pilots - Stressed Out</string>
 		<string>Charlie Puth Ft. Selena Gomez - We Don&apos;t Talk Anymore</string>
 		<string>Charlie Puth - Attention</string>
-		<string> Billie Eilish - Bad Guy</string>
+		<string>Billie Eilish - Bad Guy</string>
 		<string>Ariana Grande - 7 Rings</string>
 		<string>Maroon 5 - Memories</string>
 		<string>Macklemore Ft. Ryan Lewis - Thrift Shop</string>
@@ -320,19 +455,19 @@
 		<string></string>
 		<string></string>
 		<string></string>
-		<string></string>
-		<string></string>
-		<string></string>
-		<string></string>
-		<string></string>
-		<string></string>
+		<string>Aram Asatryan - Surb Sargis</string>
+		<string>Harout Pamboukjian - Tariner</string>
+		<string>Harout Pamboukjian - Es Aranc Qez</string>
+		<string>Aram Asatryan - Hay Es Du </string>
+		<string>Aram Asatryan - Sev Sev Acher</string>
+		<string>Spitakci Hayko - Inch Imani</string>
 		<string>Aram Khachatryan - Suserov Par</string>
 		<string>Grisha Aghaxanyan - 50 tari</string>
 		<string>Elvira Makaryan - Aranc ser chka garun</string>
 	</array>
 	<key>ArmenianRabiz</key>
 	<array>
-		<string></string>
+		<string>Ara &amp; Alik Avetisyanner - Voch avel Voch pakas</string>
 		<string></string>
 		<string></string>
 		<string></string>
@@ -400,68 +535,68 @@
 	</array>
 	<key>ArmenianRap</key>
 	<array>
-		<string></string>
-		<string></string>
-		<string></string>
-		<string></string>
-		<string></string>
-		<string></string>
-		<string></string>
-		<string></string>
-		<string></string>
-		<string></string>
-		<string></string>
-		<string></string>
-		<string></string>
-		<string></string>
-		<string></string>
-		<string></string>
-		<string></string>
-		<string></string>
-		<string></string>
-		<string></string>
-		<string></string>
-		<string></string>
-		<string></string>
-		<string></string>
-		<string></string>
-		<string></string>
-		<string></string>
-		<string></string>
-		<string></string>
-		<string></string>
-		<string></string>
-		<string></string>
-		<string></string>
-		<string></string>
-		<string></string>
-		<string></string>
-		<string></string>
-		<string></string>
-		<string></string>
-		<string></string>
-		<string></string>
-		<string></string>
-		<string></string>
-		<string></string>
-		<string></string>
-		<string></string>
-		<string></string>
-		<string></string>
-		<string></string>
-		<string></string>
-		<string></string>
-		<string></string>
-		<string></string>
-		<string></string>
-		<string></string>
-		<string></string>
-		<string></string>
-		<string></string>
-		<string></string>
-		<string></string>
-		<string></string>
-		<string></string>
+		<string>Vnasakar Ft. Ponch - Chem Karum Qnem</string>
+		<string>Vnasakar Ft. Ponch - Izabel</string>
+		<string>Vnas - Huys</string>
+		<string>Vnas - Ushacac</string>
+		<string>Vnas - Tagy</string>
+		<string>Vnas - Uzenam Kasem</string>
+		<string>Kar - Qshi Stuc Arag</string>
+		<string>Kar - Freestyle Chi</string>
+		<string>Kar - Antarber</string>
+		<string>Kar - Fiona</string>
+		<string>Kar - La Vida Loca</string>
+		<string>Vnas - Mama I&apos;m A Hanc</string>
+		<string>Vnasakar - Chem Uzum Asem</string>
+		<string>Vnasakar Ft. 47 - Qez Ktanen</string>
+		<string>Misho - Ov Enq</string>
+		<string>Vnaskar - Honey Bitch</string>
+		<string>Misho Ft. Vnasakar, Xudo - Ov Es Du </string>
+		<string>Misho - Hachelia</string>
+		<string>Misho - Katafalka</string>
+		<string>Mi Qani Hogi - Tar Indz</string>
+		<string>Misho - Mer SIrac Ergy</string>
+		<string>Misho - Dmats Or</string>
+		<string>Misho - Ete Irar Lsenq</string>
+		<string>Narek Mets Hayq Ft. 3.33 - Kes Mard</string>
+		<string>3.33 Ft. Tata Simonyan -Dzyuny Halel Er</string>
+		<string>3.33 - Nkari Mej</string>
+		<string>3.33 - Kakach</string>
+		<string>A Chilla Ft. D&apos;litte - Kyanq U Togh</string>
+		<string>Misho - Lkti Misho</string>
+		<string>Misho - Hastat Apeh</string>
+		<string>Mi Qani Hogi - Es Pahin</string>
+		<string>Sirius - Bro</string>
+		<string>Sirius Ft. 3dgar - Demo</string>
+		<string>Sirius - X Molorak</string>
+		<string>HT Hayko - Taxi</string>
+		<string>Sirius - Taxi</string>
+		<string>Misho Ft. Sencho, Felo - Uxxaki Mtqer 2</string>
+		<string>Sencho Ft. Mos - Aprel</string>
+		<string>Sencho - Barev Erjankutyun Du Indz Atum Es</string>
+		<string>Sencho - Jmanaky</string>
+		<string>Sencho Ft. Xudo - Qaxaqum Anjatel En Luysery</string>
+		<string>Lyov Ft. Vnas, Xudo - Maylamut </string>
+		<string>Lyov - Erb Vor Es</string>
+		<string>Lyov - Gangin</string>
+		<string>Hay Txeq - Mi Katil Mexr</string>
+		<string>HT Hayko - Quansh</string>
+		<string>Narek Mets Hayq - Karmir Aytert</string>
+		<string>3.33 - Tiknikner</string>
+		<string>3.33 - Krkesic</string>
+		<string>Mi Qani Hogi - Chanaparh</string>
+		<string>Mi Qani Hogi - SMS</string>
+		<string>Mi Qani Hogi - Dzmer</string>
+		<string>Vnas - Zang</string>
+		<string>Edo - Bebe</string>
+		<string>Misho - Mi Te</string>
+		<string>Kar - Naxadu</string>
+		<string>Kar - Qez </string>
+		<string>Senco Ft. Feka - Street Shit</string>
+		<string>Misho - Heqiatner Bajanox</string>
+		<string>Misho - Zarancanq</string>
+		<string>Vnas - Chka Garoon</string>
+		<string>Misho - Tsar </string>
 		<string>Mi Qani Hogi - Axchik-Chxchik</string>
 		<string>Ht Hayko - Ancac Etap</string>
 		<string>Misho(ft Goga) - Chimanair</string>

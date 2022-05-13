@@ -6,6 +6,7 @@
 //
 
 import UIKit
+import SwiftySound
 
 final class ConfigurationsViewController: UIViewController {
     // MARK: - Model
@@ -53,12 +54,12 @@ final class ConfigurationsViewController: UIViewController {
         super.viewWillAppear(animated)
 
         if timerValueAtExit > 0 {
+            Sound.stopAll()
             categoryImageView.isHidden = false
             resultsScrollView.isHidden = true
             resultView.isHidden = true
             scoreView.isHidden = true
         }
-
         navigationItem.largeTitleDisplayMode = .never
         resultView.layer.zPosition = CGFloat(Float.greatestFiniteMagnitude)
         scoreView.layer.zPosition = CGFloat(Float.greatestFiniteMagnitude)
@@ -195,11 +196,11 @@ final class ConfigurationsViewController: UIViewController {
 }
 
 extension ConfigurationsViewController: GamePlayViewControllerDelegate {
-    func getResultsFrom(correct: [String], skipped: [String], usedSongs: [String]) {
-        correctResultsLabels = createLabels(from: correct)
-        skippedResultsLabels = createLabels(from: skipped, alpha: 0.4)
+    func getResultsFrom(correctSongs: [String], skippedSongs: [String], usedSongs: [String]) {
+        correctResultsLabels = createLabels(from: correctSongs)
+        skippedResultsLabels = createLabels(from: skippedSongs, alpha: 0.4)
 
-        if correct.count == 1 {
+        if correctSongs.count == 1 {
             guessedSongsRightSideLabel.text = "SONG!"
         } else {
             guessedSongsRightSideLabel.text = "SONGS!"
@@ -209,7 +210,7 @@ extension ConfigurationsViewController: GamePlayViewControllerDelegate {
         resultsScrollView.isHidden = false
         scoreView.isHidden = false
         categoryImageView.isHidden = true
-        guessedSongsCountLabel.text = "\(correct.count)"
+        guessedSongsCountLabel.text = "\(correctSongs.count)"
         self.usedSongs = usedSongs
     }
 

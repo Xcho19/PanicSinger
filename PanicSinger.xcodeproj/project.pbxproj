@@ -11,9 +11,12 @@
 		EE084200281A075000294585 /* GamePlayViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE0841FF281A075000294585 /* GamePlayViewController.swift */; };
 		EE084204281A8C1A00294585 /* AppUtility.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE084203281A8C1A00294585 /* AppUtility.swift */; };
 		EE0D0748280CBF3E00225886 /* Configurations.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EE0D0747280CBF3E00225886 /* Configurations.storyboard */; };
+		EE26A88728269CF500B9AC68 /* SwiftySound in Frameworks */ = {isa = PBXBuildFile; productRef = EE26A88628269CF500B9AC68 /* SwiftySound */; };
+		EE26A88C2826F7D200B9AC68 /* countdown.wav in Resources */ = {isa = PBXBuildFile; fileRef = EE26A88B2826F7D200B9AC68 /* countdown.wav */; };
 		EE301A2428196DE10022E03E /* CellModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE301A2328196DE10022E03E /* CellModel.swift */; };
 		EE30EDFA2819A2A900639B98 /* Songs.plist in Resources */ = {isa = PBXBuildFile; fileRef = EE30EDF92819A2A900639B98 /* Songs.plist */; };
 		EE346DEA28101A3D009AE78A /* ConfigurationsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE346DE928101A3D009AE78A /* ConfigurationsViewController.swift */; };
+		EE395659282D864000590C73 /* RulesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE395658282D864000590C73 /* RulesViewController.swift */; };
 		EE88986328234543003386CD /* Media.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = EE88986228234543003386CD /* Media.xcassets */; };
 		EE893B7A2807453B004F1B5E /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE893B792807453B004F1B5E /* AppDelegate.swift */; };
 		EE893B7C2807453B004F1B5E /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE893B7B2807453B004F1B5E /* SceneDelegate.swift */; };
@@ -47,9 +50,11 @@
 		EE0841FF281A075000294585 /* GamePlayViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GamePlayViewController.swift; sourceTree = "<group>"; };
 		EE084203281A8C1A00294585 /* AppUtility.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppUtility.swift; sourceTree = "<group>"; };
 		EE0D0747280CBF3E00225886 /* Configurations.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Configurations.storyboard; sourceTree = "<group>"; };
+		EE26A88B2826F7D200B9AC68 /* countdown.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; name = countdown.wav; path = ../../../../Downloads/countdown.wav; sourceTree = "<group>"; };
 		EE301A2328196DE10022E03E /* CellModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CellModel.swift; sourceTree = "<group>"; };
 		EE30EDF92819A2A900639B98 /* Songs.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Songs.plist; sourceTree = "<group>"; };
 		EE346DE928101A3D009AE78A /* ConfigurationsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConfigurationsViewController.swift; sourceTree = "<group>"; };
+		EE395658282D864000590C73 /* RulesViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RulesViewController.swift; sourceTree = "<group>"; };
 		EE88986228234543003386CD /* Media.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Media.xcassets; sourceTree = "<group>"; };
 		EE893B762807453B004F1B5E /* PanicSinger.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PanicSinger.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		EE893B792807453B004F1B5E /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -70,6 +75,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				EE26A88728269CF500B9AC68 /* SwiftySound in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -90,6 +96,14 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		EE26A8882826F4CD00B9AC68 /* Sounds */ = {
+			isa = PBXGroup;
+			children = (
+				EE26A88B2826F7D200B9AC68 /* countdown.wav */,
+			);
+			path = Sounds;
+			sourceTree = "<group>";
+		};
 		EE893B6D2807453B004F1B5E = {
 			isa = PBXGroup;
 			children = (
@@ -116,6 +130,7 @@
 				EE893BAD280746C5004F1B5E /* Models */,
 				EE893BAC280746A7004F1B5E /* StoryBoards */,
 				EE893BA928074683004F1B5E /* Controllers */,
+				EE26A8882826F4CD00B9AC68 /* Sounds */,
 				EE084203281A8C1A00294585 /* AppUtility.swift */,
 				EE893B792807453B004F1B5E /* AppDelegate.swift */,
 				EE893B7B2807453B004F1B5E /* SceneDelegate.swift */,
@@ -149,6 +164,7 @@
 				EEF4E0762808AAFF002696CC /* MainCollectionViewController.swift */,
 				EE346DE928101A3D009AE78A /* ConfigurationsViewController.swift */,
 				EE0841FF281A075000294585 /* GamePlayViewController.swift */,
+				EE395658282D864000590C73 /* RulesViewController.swift */,
 			);
 			path = Controllers;
 			sourceTree = "<group>";
@@ -190,6 +206,7 @@
 			);
 			name = PanicSinger;
 			packageProductDependencies = (
+				EE26A88628269CF500B9AC68 /* SwiftySound */,
 			);
 			productName = PanicSinger;
 			productReference = EE893B762807453B004F1B5E /* PanicSinger.app */;
@@ -264,6 +281,7 @@
 			);
 			mainGroup = EE893B6D2807453B004F1B5E;
 			packageReferences = (
+				EE26A88528269CF500B9AC68 /* XCRemoteSwiftPackageReference "SwiftySound" */,
 			);
 			productRefGroup = EE893B772807453B004F1B5E /* Products */;
 			projectDirPath = "";
@@ -283,6 +301,7 @@
 			files = (
 				EE30EDFA2819A2A900639B98 /* Songs.plist in Resources */,
 				EE893B862807453C004F1B5E /* LaunchScreen.storyboard in Resources */,
+				EE26A88C2826F7D200B9AC68 /* countdown.wav in Resources */,
 				EE893B812807453B004F1B5E /* Main.storyboard in Resources */,
 				EE0841FC281A06CC00294585 /* GamePlay.storyboard in Resources */,
 				EE88986328234543003386CD /* Media.xcassets in Resources */,
@@ -337,6 +356,7 @@
 				EEF4E0772808AAFF002696CC /* MainCollectionViewController.swift in Sources */,
 				EE084200281A075000294585 /* GamePlayViewController.swift in Sources */,
 				EE893B7C2807453B004F1B5E /* SceneDelegate.swift in Sources */,
+				EE395659282D864000590C73 /* RulesViewController.swift in Sources */,
 				EE301A2428196DE10022E03E /* CellModel.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -522,7 +542,7 @@
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -532,7 +552,7 @@
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
@@ -551,7 +571,7 @@
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -561,7 +581,7 @@
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};
@@ -677,6 +697,25 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		EE26A88528269CF500B9AC68 /* XCRemoteSwiftPackageReference "SwiftySound" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/adamcichy/SwiftySound";
+			requirement = {
+				kind = upToNextMinorVersion;
+				minimumVersion = 1.2.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		EE26A88628269CF500B9AC68 /* SwiftySound */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = EE26A88528269CF500B9AC68 /* XCRemoteSwiftPackageReference "SwiftySound" */;
+			productName = SwiftySound;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = EE893B6E2807453B004F1B5E /* Project object */;
 }

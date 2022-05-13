@@ -3,6 +3,7 @@
     <device id="retina6_1" orientation="portrait" appearance="light"/>
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="20020"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="collection view cell content view" minToolsVersion="11.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
@@ -40,12 +41,119 @@
                     <navigationItem key="navigationItem" title="Categories" id="ueT-qN-QwW">
                         <barButtonItem key="rightBarButtonItem" title="Rules" id="Bmx-JF-Z7y">
                             <color key="tintColor" red="0.97647058819999999" green="0.98823529409999999" blue="0.79215686269999996" alpha="1" colorSpace="calibratedRGB"/>
+                            <connections>
+                                <segue destination="A2X-LI-ETs" kind="show" id="RAD-Ak-waF"/>
+                            </connections>
                         </barButtonItem>
                     </navigationItem>
                 </collectionViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="FF3-8l-cMV" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="614.49275362318849" y="127.90178571428571"/>
+        </scene>
+        <!--Rules-->
+        <scene sceneID="Yl0-z0-mvy">
+            <objects>
+                <viewController id="A2X-LI-ETs" customClass="RulesViewController" customModule="PanicSinger" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="GGE-lL-yXP">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <segmentedControl opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="plain" selectedSegmentIndex="0" translatesAutoresizingMaskIntoConstraints="NO" id="S2k-11-4O0">
+                                <rect key="frame" x="40" y="88" width="334" height="32"/>
+                                <segments>
+                                    <segment title="🇺🇸"/>
+                                    <segment title="🇦🇲"/>
+                                    <segment title="🇷🇺"/>
+                                </segments>
+                                <color key="selectedSegmentTintColor" red="0.98039215800000001" green="0.98431372640000003" blue="0.84705877299999999" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                <connections>
+                                    <action selector="didChangeSegment:" destination="A2X-LI-ETs" eventType="valueChanged" id="gHB-ki-Pis"/>
+                                </connections>
+                            </segmentedControl>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" editable="NO" selectable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="eyD-wb-xnl">
+                                <rect key="frame" x="10" y="139" width="394" height="703"/>
+                                <color key="backgroundColor" red="0.0078431377190000002" green="0.01176470611" blue="0.109803915" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                <mutableString key="text">“Panic SInger” is a fun and entertaining game which can be played during gatherings with friends and family.
+
+To start the game, choose the category that you would like to play, then choose the duration of the game and press “Start”. The screen will automaticly rotate to landscape mode and a random song alongside a timer will be displayed on the screen. To skip the song, swipe up on any part of the screen. If you got it correctly, swipe down on any part of the screen. When the timer ends you will see the results on the screen.
+
+There are two ways that you can play “Panic Singer”.
+
+The First way is one player will try explaining the song to the other players. Here, the player explaining has the phone facing towards themselves so only they can see the name of the song. 
+
+The Second way is one player trying to guess the song while others try to explain it. Here, the player trying to guess has the phone facing towards the other players so that everyone can see the name of the song, except the person trying to guess.
+
+The player/players explaining should try to sing the song or try explaining it without singing, without using the name of the song.
+
+These rules are only guidelines.
+Play the way you like it and most importantly, HAVE FUN!</mutableString>
+                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                            <textView hidden="YES" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" editable="NO" selectable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="60w-uE-Htn">
+                                <rect key="frame" x="10" y="139" width="394" height="703"/>
+                                <color key="backgroundColor" red="0.0078431377190000002" green="0.01176470611" blue="0.109803915" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                <mutableString key="text">"Panic SInger" - это веселая и увлекательная игра, в которую можно играть во время посиделок с друзьями и семьей.
+
+Чтобы начать игру, выберите категорию, в которую вы хотите играть, затем выберите продолжительность игры и нажмите "Start". Экран автоматически повернется в альбомный режим, и на нем появится случайная песня, а также таймер. Чтобы пропустить песню, проведите пальцем вверх по любой части экрана. Если вы все правильно ответили , проведите пальцем вниз по любой части экрана. Когда таймер закончится, вы увидите результаты на экране.
+
+В игру "Panic Singer" можно играть двумя способами.
+
+Первый способ заключается в том, что один игрок пытается объяснить песню другим игрокам. При этом игрок, объясняющий, держит телефон лицом к себе, чтобы только он мог видеть название песни. 
+
+Второй способ - один игрок пытается угадать песню, в то время как другие пытаются ее объяснить. Здесь игрок, пытающийся угадать, держит телефон лицом к другим игрокам, так что все видят название песни, кроме того, кто пытается угадать.
+
+Игрок/игроки, объясняющие, должны попытаться спеть песню или попытаться объяснить ее без пения, не используя название песни.
+
+Эти правила являются лишь рекомендациями.
+Играйте так, как вам нравится, и, самое главное, получайте удовольствие!</mutableString>
+                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                            <textView hidden="YES" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" editable="NO" text="Armenian" selectable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="eIf-Jz-bcG">
+                                <rect key="frame" x="10" y="139" width="394" height="703"/>
+                                <color key="backgroundColor" red="0.0078431377190000002" green="0.01176470611" blue="0.109803915" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="zVu-fq-2rf"/>
+                        <color key="backgroundColor" red="0.0078431377190000002" green="0.01176470611" blue="0.109803915" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                        <constraints>
+                            <constraint firstItem="eyD-wb-xnl" firstAttribute="top" secondItem="S2k-11-4O0" secondAttribute="bottom" constant="20" id="1w2-Bc-zlA"/>
+                            <constraint firstItem="zVu-fq-2rf" firstAttribute="bottom" secondItem="60w-uE-Htn" secondAttribute="bottom" constant="20" id="5m0-Hs-PxZ"/>
+                            <constraint firstItem="60w-uE-Htn" firstAttribute="leading" secondItem="zVu-fq-2rf" secondAttribute="leading" constant="10" id="B6i-jT-ic2"/>
+                            <constraint firstItem="zVu-fq-2rf" firstAttribute="trailing" secondItem="S2k-11-4O0" secondAttribute="trailing" constant="40" id="FgU-Jj-rKS"/>
+                            <constraint firstItem="zVu-fq-2rf" firstAttribute="bottom" secondItem="eyD-wb-xnl" secondAttribute="bottom" constant="20" id="Gzs-7w-RPq"/>
+                            <constraint firstItem="eIf-Jz-bcG" firstAttribute="top" secondItem="S2k-11-4O0" secondAttribute="bottom" constant="20" id="R3r-5o-mH1"/>
+                            <constraint firstItem="zVu-fq-2rf" firstAttribute="trailing" secondItem="eIf-Jz-bcG" secondAttribute="trailing" constant="10" id="SEu-q8-8Ls"/>
+                            <constraint firstItem="eyD-wb-xnl" firstAttribute="leading" secondItem="zVu-fq-2rf" secondAttribute="leading" constant="10" id="SZU-dN-pga"/>
+                            <constraint firstItem="eIf-Jz-bcG" firstAttribute="leading" secondItem="zVu-fq-2rf" secondAttribute="leading" constant="10" id="V89-P8-63t"/>
+                            <constraint firstItem="zVu-fq-2rf" firstAttribute="trailing" secondItem="60w-uE-Htn" secondAttribute="trailing" constant="10" id="Xt4-WB-pys"/>
+                            <constraint firstItem="60w-uE-Htn" firstAttribute="top" secondItem="S2k-11-4O0" secondAttribute="bottom" constant="20" id="aT9-Ki-Ixo"/>
+                            <constraint firstItem="S2k-11-4O0" firstAttribute="top" secondItem="zVu-fq-2rf" secondAttribute="top" id="dAU-0i-KXS"/>
+                            <constraint firstItem="zVu-fq-2rf" firstAttribute="trailing" secondItem="eyD-wb-xnl" secondAttribute="trailing" constant="10" id="dHb-MB-vxm"/>
+                            <constraint firstItem="zVu-fq-2rf" firstAttribute="bottom" secondItem="eIf-Jz-bcG" secondAttribute="bottom" constant="20" id="eZo-1t-hzf"/>
+                            <constraint firstItem="S2k-11-4O0" firstAttribute="leading" secondItem="zVu-fq-2rf" secondAttribute="leading" constant="40" id="gjc-1i-bWT"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" title="Rules" largeTitleDisplayMode="never" id="a3j-QL-l85">
+                        <barButtonItem key="backBarButtonItem" title=" " id="MAf-pC-T5a"/>
+                    </navigationItem>
+                    <connections>
+                        <outlet property="armenianRules" destination="eIf-Jz-bcG" id="oRE-t9-peP"/>
+                        <outlet property="englishRules" destination="eyD-wb-xnl" id="SEB-VW-rac"/>
+                        <outlet property="languageSegmentedControl" destination="S2k-11-4O0" id="dma-Q6-dOl"/>
+                        <outlet property="russianRules" destination="60w-uE-Htn" id="xmW-dt-dhD"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Hc2-PK-ly4" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1593" y="128"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="wKD-ht-TgU">
