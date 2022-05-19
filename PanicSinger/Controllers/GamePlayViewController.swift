@@ -42,7 +42,7 @@ final class GamePlayViewController: UIViewController {
         super.viewDidLoad()
 
         configureSubviews()
-        getSongsFor(category: CellModel.categoryName)
+        getSongsFor(category: Categories.purchasedCategoryName)
     }
 
     override func viewWillAppear(_ animated: Bool) {

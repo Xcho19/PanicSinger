@@ -84,7 +84,7 @@ final class ConfigurationsViewController: UIViewController {
             alpha: 0.4
         )
 
-        categoryImageView.image = UIImage(named: CellModel.categoryName)
+        categoryImageView.image = UIImage(named: Categories.purchasedCategoryName)
         categoryImageView.layer.cornerRadius = 10
 
         startButton.backgroundColor = UIColor(

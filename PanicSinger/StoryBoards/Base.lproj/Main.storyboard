@@ -11,7 +11,7 @@
         <!--Categories-->
         <scene sceneID="lyV-h9-wA5">
             <objects>
-                <collectionViewController id="Rqh-mu-f1S" customClass="MainCollectionViewController" customModule="PanicSinger" customModuleProvider="target" sceneMemberID="viewController">
+                <collectionViewController id="Rqh-mu-f1S" customClass="CategoryCollectionViewController" customModule="PanicSinger" customModuleProvider="target" sceneMemberID="viewController">
                     <collectionView key="view" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="prototypes" id="xug-OM-rhF">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -23,14 +23,31 @@
                             <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
                         </collectionViewFlowLayout>
                         <cells>
-                            <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="Cell" id="Fhj-nr-YLc">
+                            <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="Cell" id="Fhj-nr-YLc" customClass="CategoryCollectionViewCell" customModule="PanicSinger" customModuleProvider="target">
                                 <rect key="frame" x="0.0" y="0.0" width="167" height="204"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <collectionViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" alpha="0.80000000000000004" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" id="W8D-bX-bfa">
                                     <rect key="frame" x="0.0" y="0.0" width="167" height="204"/>
                                     <autoresizingMask key="autoresizingMask"/>
+                                    <subviews>
+                                        <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="5e7-dA-TSU">
+                                            <rect key="frame" x="0.0" y="0.0" width="167" height="204"/>
+                                            <constraints>
+                                                <constraint firstAttribute="width" secondItem="5e7-dA-TSU" secondAttribute="height" id="jbr-n5-mM7"/>
+                                            </constraints>
+                                        </imageView>
+                                    </subviews>
+                                    <constraints>
+                                        <constraint firstItem="5e7-dA-TSU" firstAttribute="leading" secondItem="W8D-bX-bfa" secondAttribute="leading" id="0rw-98-XhK"/>
+                                        <constraint firstAttribute="bottom" secondItem="5e7-dA-TSU" secondAttribute="bottom" id="DDV-9e-iuz"/>
+                                        <constraint firstAttribute="trailing" secondItem="5e7-dA-TSU" secondAttribute="trailing" id="RKc-qR-cm6"/>
+                                        <constraint firstItem="5e7-dA-TSU" firstAttribute="top" secondItem="W8D-bX-bfa" secondAttribute="top" id="ref-xr-Y0q"/>
+                                    </constraints>
                                 </collectionViewCellContentView>
                                 <size key="customSize" width="167" height="204"/>
+                                <connections>
+                                    <outlet property="categoryImageView" destination="5e7-dA-TSU" id="sp3-ho-hP4"/>
+                                </connections>
                             </collectionViewCell>
                         </cells>
                         <connections>
@@ -74,7 +91,7 @@
                             <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" editable="NO" selectable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="eyD-wb-xnl">
                                 <rect key="frame" x="10" y="139" width="394" height="703"/>
                                 <color key="backgroundColor" red="0.0078431377190000002" green="0.01176470611" blue="0.109803915" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
-                                <mutableString key="text">“Panic SInger” is a fun and entertaining game which can be played during gatherings with friends and family.
+                                <string key="text">“Panic SInger” is a fun and entertaining game which can be played during gatherings with friends and family.
 
 To start the game, choose the category that you would like to play, then choose the duration of the game and press “Start”. The screen will automaticly rotate to landscape mode and a random song alongside a timer will be displayed on the screen. To skip the song, swipe up on any part of the screen. If you got it correctly, swipe down on any part of the screen. When the timer ends you will see the results on the screen.
 
@@ -87,7 +104,7 @@ The Second way is one player trying to guess the song while others try to explai
 The player/players explaining should try to sing the song or try explaining it without singing, without using the name of the song.
 
 These rules are only guidelines.
-Play the way you like it and most importantly, HAVE FUN!</mutableString>
+Play the way you like it and most importantly, HAVE FUN!</string>
                                 <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
@@ -95,7 +112,7 @@ Play the way you like it and most importantly, HAVE FUN!</mutableString>
                             <textView hidden="YES" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" editable="NO" selectable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="60w-uE-Htn">
                                 <rect key="frame" x="10" y="139" width="394" height="703"/>
                                 <color key="backgroundColor" red="0.0078431377190000002" green="0.01176470611" blue="0.109803915" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
-                                <mutableString key="text">"Panic SInger" - это веселая и увлекательная игра, в которую можно играть во время посиделок с друзьями и семьей.
+                                <string key="text">"Panic SInger" - это веселая и увлекательная игра, в которую можно играть во время посиделок с друзьями и семьей.
 
 Чтобы начать игру, выберите категорию, в которую вы хотите играть, затем выберите продолжительность игры и нажмите "Start". Экран автоматически повернется в альбомный режим, и на нем появится случайная песня, а также таймер. Чтобы пропустить песню, проведите пальцем вверх по любой части экрана. Если вы все правильно ответили , проведите пальцем вниз по любой части экрана. Когда таймер закончится, вы увидите результаты на экране.
 
@@ -108,7 +125,7 @@ Play the way you like it and most importantly, HAVE FUN!</mutableString>
 Игрок/игроки, объясняющие, должны попытаться спеть песню или попытаться объяснить ее без пения, не используя название песни.
 
 Эти правила являются лишь рекомендациями.
-Играйте так, как вам нравится, и, самое главное, получайте удовольствие!</mutableString>
+Играйте так, как вам нравится, и, самое главное, получайте удовольствие!</string>
                                 <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
