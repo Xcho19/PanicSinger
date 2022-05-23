@@ -125,12 +125,6 @@ final class CategoryCollectionViewController: UICollectionViewController {
                 named: storeCategoryName[indexPath.row]
             )
         }
-        cell.directionalLayoutMargins = NSDirectionalEdgeInsets(
-            top: 0,
-            leading: 0,
-            bottom: 0,
-            trailing: 0
-        )
         cell.categoryImageView.layer.cornerRadius = 10
         cell.categoryImageView.layer.masksToBounds = true
 
@@ -139,7 +133,7 @@ final class CategoryCollectionViewController: UICollectionViewController {
 
     override func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
         if indexPath.section == 0 {
-            Categories.purchasedCategoryName = categories.ownedCategoryNames[indexPath.row]
+            Categories.ownedCategoryName = categories.ownedCategoryNames[indexPath.row]
 
             if let configurationsViewController = UIStoryboard(
                 name: "Configurations",
@@ -147,6 +141,7 @@ final class CategoryCollectionViewController: UICollectionViewController {
             ).instantiateViewController(
                 withIdentifier: "configurationsViewController"
             ) as? ConfigurationsViewController {
+                configurationsViewController.state = State.normalView
                 navigationController?.pushViewController(configurationsViewController, animated: true)
             }
         } else {
@@ -179,16 +174,16 @@ final class CategoryCollectionViewController: UICollectionViewController {
             else { fatalError() }
 
             headerView.titleLabel.textColor = UIColor(
-                red: 252/255,
-                green: 247/255,
-                blue: 202/255,
-                alpha: 0.75
+                red: 250/255,
+                green: 249/255,
+                blue: 246/255,
+                alpha: 0.85
             )
 
             if indexPath.section == 0 {
                 headerView.titleLabel.text = "My Categories"
             } else {
-                headerView.titleLabel.text = "Store"
+                headerView.titleLabel.text = "More Categories"
             }
 
             return headerView

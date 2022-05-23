@@ -1,12 +1,12 @@
 {
   "images" : [
     {
-      "filename" : "minus48.png",
+      "filename" : "icons8-subtract-60.png",
       "idiom" : "universal",
       "scale" : "1x"
     },
     {
-      "filename" : "minus96.png",
+      "filename" : "icons8-subtract-100.png",
       "idiom" : "universal",
       "scale" : "2x"
     },

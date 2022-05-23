@@ -15,7 +15,7 @@
                     <collectionView key="view" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="prototypes" id="xug-OM-rhF">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" red="0.0078431372549019607" green="0.0078431372549019607" blue="0.090196078431372548" alpha="1" colorSpace="calibratedRGB"/>
+                        <color key="backgroundColor" red="0.0078431372549019607" green="0.011764705882352941" blue="0.10980392156862745" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                         <collectionViewFlowLayout key="collectionViewLayout" automaticEstimatedItemSize="YES" minimumLineSpacing="10" minimumInteritemSpacing="10" id="N4Y-en-o8H">
                             <size key="itemSize" width="167" height="204"/>
                             <size key="headerReferenceSize" width="0.0" height="0.0"/>
@@ -57,7 +57,7 @@
                     </collectionView>
                     <navigationItem key="navigationItem" title="Categories" id="ueT-qN-QwW">
                         <barButtonItem key="rightBarButtonItem" title="Rules" id="Bmx-JF-Z7y">
-                            <color key="tintColor" red="0.97647058819999999" green="0.98823529409999999" blue="0.79215686269999996" alpha="1" colorSpace="calibratedRGB"/>
+                            <color key="tintColor" red="0.98039215800000001" green="0.97647058959999999" blue="0.96470588450000005" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                             <connections>
                                 <segue destination="A2X-LI-ETs" kind="show" id="RAD-Ak-waF"/>
                             </connections>
@@ -83,14 +83,14 @@
                                     <segment title="🇦🇲"/>
                                     <segment title="🇷🇺"/>
                                 </segments>
-                                <color key="selectedSegmentTintColor" red="0.98039215800000001" green="0.98431372640000003" blue="0.84705877299999999" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                <color key="selectedSegmentTintColor" red="0.95686274770000002" green="0.95686274770000002" blue="0.97647058959999999" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                 <connections>
                                     <action selector="didChangeSegment:" destination="A2X-LI-ETs" eventType="valueChanged" id="gHB-ki-Pis"/>
                                 </connections>
                             </segmentedControl>
-                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" editable="NO" selectable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="eyD-wb-xnl">
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" editable="NO" selectable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="eyD-wb-xnl">
                                 <rect key="frame" x="10" y="139" width="394" height="703"/>
-                                <color key="backgroundColor" red="0.0078431377190000002" green="0.01176470611" blue="0.109803915" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                <color key="backgroundColor" red="0.0078431372550000003" green="0.01176470588" blue="0.10980392160000001" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                 <string key="text">“Panic SInger” is a fun and entertaining game which can be played during gatherings with friends and family.
 
 To start the game, choose the category that you would like to play, then choose the duration of the game and press “Start”. The screen will automaticly rotate to landscape mode and a random song alongside a timer will be displayed on the screen. To skip the song, swipe up on any part of the screen. If you got it correctly, swipe down on any part of the screen. When the timer ends you will see the results on the screen.
@@ -105,13 +105,13 @@ The player/players explaining should try to sing the song or try explaining it w
 
 These rules are only guidelines.
 Play the way you like it and most importantly, HAVE FUN!</string>
-                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <color key="textColor" red="0.98039215800000001" green="0.97647058959999999" blue="0.96470588450000005" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                             </textView>
-                            <textView hidden="YES" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" editable="NO" selectable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="60w-uE-Htn">
+                            <textView hidden="YES" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" editable="NO" selectable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="60w-uE-Htn">
                                 <rect key="frame" x="10" y="139" width="394" height="703"/>
-                                <color key="backgroundColor" red="0.0078431377190000002" green="0.01176470611" blue="0.109803915" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                <color key="backgroundColor" red="0.0078431372550000003" green="0.01176470588" blue="0.10980392160000001" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                 <string key="text">"Panic SInger" - это веселая и увлекательная игра, в которую можно играть во время посиделок с друзьями и семьей.
 
 Чтобы начать игру, выберите категорию, в которую вы хотите играть, затем выберите продолжительность игры и нажмите "Start". Экран автоматически повернется в альбомный режим, и на нем появится случайная песня, а также таймер. Чтобы пропустить песню, проведите пальцем вверх по любой части экрана. Если вы все правильно ответили , проведите пальцем вниз по любой части экрана. Когда таймер закончится, вы увидите результаты на экране.
@@ -126,20 +126,20 @@ Play the way you like it and most importantly, HAVE FUN!</string>
 
 Эти правила являются лишь рекомендациями.
 Играйте так, как вам нравится, и, самое главное, получайте удовольствие!</string>
-                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <color key="textColor" red="0.98039215800000001" green="0.97647058959999999" blue="0.96470588450000005" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                             </textView>
-                            <textView hidden="YES" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" editable="NO" text="Armenian" selectable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="eIf-Jz-bcG">
+                            <textView hidden="YES" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" editable="NO" text="Armenian" selectable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="eIf-Jz-bcG">
                                 <rect key="frame" x="10" y="139" width="394" height="703"/>
-                                <color key="backgroundColor" red="0.0078431377190000002" green="0.01176470611" blue="0.109803915" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
-                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <color key="backgroundColor" red="0.0078431372550000003" green="0.01176470588" blue="0.10980392160000001" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                <color key="textColor" red="0.98039215800000001" green="0.97647058959999999" blue="0.96470588450000005" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                             </textView>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="zVu-fq-2rf"/>
-                        <color key="backgroundColor" red="0.0078431377190000002" green="0.01176470611" blue="0.109803915" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                        <color key="backgroundColor" red="0.0078431372550000003" green="0.01176470588" blue="0.10980392160000001" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                         <constraints>
                             <constraint firstItem="eyD-wb-xnl" firstAttribute="top" secondItem="S2k-11-4O0" secondAttribute="bottom" constant="20" id="1w2-Bc-zlA"/>
                             <constraint firstItem="zVu-fq-2rf" firstAttribute="bottom" secondItem="60w-uE-Htn" secondAttribute="bottom" constant="20" id="5m0-Hs-PxZ"/>
@@ -170,7 +170,7 @@ Play the way you like it and most importantly, HAVE FUN!</string>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Hc2-PK-ly4" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1593" y="128"/>
+            <point key="canvasLocation" x="614" y="851"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="wKD-ht-TgU">
@@ -180,13 +180,14 @@ Play the way you like it and most importantly, HAVE FUN!</string>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" barStyle="black" largeTitles="YES" id="NUc-nl-7SZ">
                         <rect key="frame" x="0.0" y="44" width="414" height="103"/>
                         <autoresizingMask key="autoresizingMask"/>
-                        <color key="barTintColor" red="0.050674957482993201" green="0.071140331132551027" blue="0.2062675070014286" alpha="1" colorSpace="calibratedRGB"/>
+                        <color key="barTintColor" red="0.0078431377190000002" green="0.01176470611" blue="0.16738788608843538" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                         <textAttributes key="titleTextAttributes">
-                            <color key="textColor" red="0.97647058823529409" green="0.9882352941176471" blue="0.792156862745098" alpha="1" colorSpace="calibratedRGB"/>
+                            <fontDescription key="fontDescription" name="HelveticaNeue-Medium" family="Helvetica Neue" pointSize="22"/>
+                            <color key="textColor" red="0.98039215800000001" green="0.97647058959999999" blue="0.96470588450000005" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                         </textAttributes>
                         <textAttributes key="largeTitleTextAttributes">
                             <fontDescription key="fontDescription" name="HelveticaNeue-Bold" family="Helvetica Neue" pointSize="44"/>
-                            <color key="textColor" red="0.97647058819999999" green="0.98823529409999999" blue="0.79215686269999996" alpha="1" colorSpace="calibratedRGB"/>
+                            <color key="textColor" red="0.98039215800000001" green="0.97647058959999999" blue="0.96470588450000005" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                         </textAttributes>
                     </navigationBar>
                     <nil name="viewControllers"/>

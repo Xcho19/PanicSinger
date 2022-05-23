@@ -15,7 +15,6 @@ class PurchaseViewController: UIViewController {
 
     // MARK: - Subviews
 
-    @IBOutlet var storeCategoryNameLabel: UILabel!
     @IBOutlet var storeCategoryDescriptionLabel: UILabel!
     @IBOutlet var storeCategoryImageView: UIImageView!
     @IBOutlet var priceLabel: UILabel!
@@ -33,16 +32,19 @@ class PurchaseViewController: UIViewController {
         super.viewWillAppear(animated)
 
         configureLabelTexts()
+        navigationItem.title = category.name
         navigationItem.largeTitleDisplayMode = .never
     }
 
     // MARK: - Helpers
 
     private func configureSubviews() {
-        let fontSize = round(view.frame.height/18)
+        let fontSize = round(view.frame.height/19)
 
-        storeCategoryNameLabel.text = "\(category.name) Bundle"
-        storeCategoryNameLabel.font = UIFont(name: "Apple SD Gothic Neo", size: fontSize)
+        storeCategoryDescriptionLabel.font = UIFont(
+            name: "Apple SD Gothic Neo",
+            size: round(view.frame.height/40)
+        )
 
         storeCategoryImageView.image = UIImage(named: category.name)
         storeCategoryImageView.layer.cornerRadius = 10
@@ -51,26 +53,17 @@ class PurchaseViewController: UIViewController {
 
         buyButton.layer.cornerRadius = 10
         buyButton.backgroundColor = UIColor(
-            red: 88/255,
-            green: 86/255,
-            blue: 207/255,
-            alpha: 0.85
+            red: 75/255,
+            green: 74/255,
+            blue: 174/255,
+            alpha: 0.95
         )
     }
 
     private func configureLabelTexts() {
-        switch category.name {
-        case "Armenian":
-            storeCategoryDescriptionLabel.text = category.description
-            priceLabel.text = "$\(category.price)"
-        case "Russian":
-            storeCategoryDescriptionLabel.text = category.description
-            priceLabel.text = "$\(category.price)"
-        case "International":
-            storeCategoryDescriptionLabel.text = category.description
-            priceLabel.text = "$\(category.price)"
-        default:
-            break
+        for storeCategory in categories.storeCategories where storeCategory.name == category.name {
+            storeCategoryDescriptionLabel.text = storeCategory.description
+            priceLabel.text = "$\(storeCategory.price)"
         }
     }
 
@@ -90,8 +83,7 @@ class PurchaseViewController: UIViewController {
                 self.categories.storeCategories = self.categories.storeCategories.filter { $0 != self.category }
                 self.navigationController?.popViewController(animated: true)
             }
-        )
-        )
+        ))
         alert.addAction(UIAlertAction(title: "Cancel", style: .cancel))
         present(alert, animated: true)
     }

@@ -11,6 +11,10 @@ struct Category: Codable, Equatable {
     var name: String
     var description: String?
     var bundle: [String]
-    var isPurchased: Bool
     var price: Double
+}
+
+struct CategoryDescription: Codable, Equatable {
+    var name: String
+    var description: String
 }

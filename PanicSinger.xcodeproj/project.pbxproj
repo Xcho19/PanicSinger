@@ -17,6 +17,7 @@
 		EE30EDFA2819A2A900639B98 /* Songs.plist in Resources */ = {isa = PBXBuildFile; fileRef = EE30EDF92819A2A900639B98 /* Songs.plist */; };
 		EE346DEA28101A3D009AE78A /* ConfigurationsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE346DE928101A3D009AE78A /* ConfigurationsViewController.swift */; };
 		EE395659282D864000590C73 /* RulesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE395658282D864000590C73 /* RulesViewController.swift */; };
+		EE6D1A2D283BC1B0004491C4 /* ConfigurationsState.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE6D1A2C283BC1B0004491C4 /* ConfigurationsState.swift */; };
 		EE88986328234543003386CD /* Media.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = EE88986228234543003386CD /* Media.xcassets */; };
 		EE893B7A2807453B004F1B5E /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE893B792807453B004F1B5E /* AppDelegate.swift */; };
 		EE893B7C2807453B004F1B5E /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE893B7B2807453B004F1B5E /* SceneDelegate.swift */; };
@@ -60,6 +61,7 @@
 		EE30EDF92819A2A900639B98 /* Songs.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Songs.plist; sourceTree = "<group>"; };
 		EE346DE928101A3D009AE78A /* ConfigurationsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConfigurationsViewController.swift; sourceTree = "<group>"; };
 		EE395658282D864000590C73 /* RulesViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RulesViewController.swift; sourceTree = "<group>"; };
+		EE6D1A2C283BC1B0004491C4 /* ConfigurationsState.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConfigurationsState.swift; sourceTree = "<group>"; };
 		EE88986228234543003386CD /* Media.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Media.xcassets; sourceTree = "<group>"; };
 		EE893B762807453B004F1B5E /* PanicSinger.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PanicSinger.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		EE893B792807453B004F1B5E /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -174,8 +176,8 @@
 				EEF4E0762808AAFF002696CC /* CategoryCollectionViewController.swift */,
 				EED5AACB2832435B00ABBCCE /* CategoryCollectionViewCell.swift */,
 				EE346DE928101A3D009AE78A /* ConfigurationsViewController.swift */,
-				EEE5229328311C2700D665E5 /* PurchaseViewController.swift */,
 				EE0841FF281A075000294585 /* GamePlayViewController.swift */,
+				EEE5229328311C2700D665E5 /* PurchaseViewController.swift */,
 				EEE5228F28310F2600D665E5 /* HeaderCollectionReusableView.swift */,
 				EE395658282D864000590C73 /* RulesViewController.swift */,
 			);
@@ -199,6 +201,7 @@
 			children = (
 				EE301A2328196DE10022E03E /* Categories.swift */,
 				EED5AACD2832511E00ABBCCE /* Category.swift */,
+				EE6D1A2C283BC1B0004491C4 /* ConfigurationsState.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -377,6 +380,7 @@
 				EE893B7C2807453B004F1B5E /* SceneDelegate.swift in Sources */,
 				EED5AACC2832435B00ABBCCE /* CategoryCollectionViewCell.swift in Sources */,
 				EE395659282D864000590C73 /* RulesViewController.swift in Sources */,
+				EE6D1A2D283BC1B0004491C4 /* ConfigurationsState.swift in Sources */,
 				EE301A2428196DE10022E03E /* Categories.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

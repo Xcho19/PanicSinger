@@ -5,15 +5,16 @@
 //  Created by Xcho on 20.04.22.
 //
 
-import UIKit
 import SwiftySound
+import UIKit
 
 final class ConfigurationsViewController: UIViewController {
     // MARK: - Model
 
-    var usedSongs: [String] = []
     var totalTime = 5
-    var timerValueAtExit = 0
+    var usedSongs: [String] = []
+    var categories = Categories()
+    var state = State.normalView
 
     lazy var correctResultsLabels: [UILabel] = .init()
     lazy var skippedResultsLabels: [UILabel] = .init()
@@ -23,12 +24,12 @@ final class ConfigurationsViewController: UIViewController {
     @IBOutlet var resultsStackView: UIStackView!
     @IBOutlet var categoryImageView: UIImageView!
     @IBOutlet var resultsScrollView: UIScrollView!
+    @IBOutlet var categoryDescriptionLabel: UILabel!
     @IBOutlet var decreaseTimeButton: UIButton!
     @IBOutlet var increaseTimeButton: UIButton!
     @IBOutlet var timerLabel: UILabel!
     @IBOutlet var startButton: UIButton!
     @IBOutlet var resultView: UIView!
-    @IBOutlet var scoreView: UIView!
     @IBOutlet var guessedSongsCountLabel: UILabel!
     @IBOutlet var guessedSongsRightSideLabel: UILabel!
     @IBOutlet var guessedSongsLeftSideLabel: UILabel!
@@ -53,16 +54,10 @@ final class ConfigurationsViewController: UIViewController {
     override func viewWillAppear(_ animated: Bool) {
         super.viewWillAppear(animated)
 
-        if timerValueAtExit > 0 {
-            Sound.stopAll()
-            categoryImageView.isHidden = false
-            resultsScrollView.isHidden = true
-            resultView.isHidden = true
-            scoreView.isHidden = true
-        }
+        stateConfiguration()
         navigationItem.largeTitleDisplayMode = .never
+        navigationItem.title = Categories.ownedCategoryName
         resultView.layer.zPosition = CGFloat(Float.greatestFiniteMagnitude)
-        scoreView.layer.zPosition = CGFloat(Float.greatestFiniteMagnitude)
     }
 
     override func viewWillLayoutSubviews() {
@@ -74,38 +69,37 @@ final class ConfigurationsViewController: UIViewController {
     // MARK: - Helpers
 
     private func subviewConfigurations() {
-        resultsScrollView.isHidden = true
         resultsScrollView.layer.cornerRadius = 10
         resultsScrollView.showsVerticalScrollIndicator = false
         resultsScrollView.backgroundColor = UIColor(
-            red: 88/255,
-            green: 86/255,
-            blue: 207/255,
+            red: 75/255,
+            green: 74/255,
+            blue: 174/255,
             alpha: 0.4
         )
 
-        categoryImageView.image = UIImage(named: Categories.purchasedCategoryName)
+        for category in categories.allCategories where category.name == Categories.ownedCategoryName {
+            categoryDescriptionLabel.text = category.description
+        }
+
+        categoryImageView.image = UIImage(named: Categories.ownedCategoryName)
         categoryImageView.layer.cornerRadius = 10
 
         startButton.backgroundColor = UIColor(
-            red: 88/255,
-            green: 86/255,
-            blue: 207/255,
-            alpha: 0.85
+            red: 75/255,
+            green: 74/255,
+            blue: 174/255,
+            alpha: 0.95
         )
         startButton.layer.cornerRadius = 10
 
         timerLabel.text = timeFormatted(totalTime)
 
-        resultView.isHidden = true
         resultView.layer.cornerRadius = 10
-
-        scoreView.layer.cornerRadius = scoreView.layer.frame.width/2
-        scoreView.isHidden = true
     }
 
     private func fontConfigurations(frameWidth: Double) {
-        let fontSize = round(frameWidth/16)
+        let fontSize = round(frameWidth/14)
 
         guessedSongsRightSideLabel.font = UIFont(
             name: "Arial Rounded MT Bold",
@@ -119,8 +113,27 @@ final class ConfigurationsViewController: UIViewController {
 
         guessedSongsCountLabel.font = UIFont(
             name: "Arial Rounded MT Bold",
-            size: fontSize + 12
+            size: fontSize + 14
         )
+
+        categoryDescriptionLabel.font = UIFont(
+            name: "Apple SD Gothic Neo",
+            size: round(view.frame.height/35)
+        )
+    }
+
+    private func stateConfiguration() {
+        if state == State.normalView {
+            resultView.isHidden = true
+            resultsScrollView.isHidden = true
+            categoryImageView.isHidden = false
+            categoryDescriptionLabel.isHidden = false
+        } else {
+            resultView.isHidden = false
+            resultsScrollView.isHidden = false
+            categoryImageView.isHidden = true
+            categoryDescriptionLabel.isHidden = true
+        }
     }
 
     private func timeFormatted(_ totalSeconds: Int) -> String {
@@ -140,7 +153,7 @@ final class ConfigurationsViewController: UIViewController {
             songLabel.numberOfLines = 0
             songLabel.font = UIFont(
                 name: "Apple SD Gothic Neo",
-                size: round(view.frame.width/32)
+                size: round(view.frame.height/32)
             )
 
             return songLabel
@@ -206,16 +219,18 @@ extension ConfigurationsViewController: GamePlayViewControllerDelegate {
             guessedSongsRightSideLabel.text = "SONGS!"
         }
 
-        resultView.isHidden = false
-        resultsScrollView.isHidden = false
-        scoreView.isHidden = false
-        categoryImageView.isHidden = true
+        stateConfiguration()
         guessedSongsCountLabel.text = "\(correctSongs.count)"
         self.usedSongs = usedSongs
     }
 
     func getTotalTime(time: Int) {
-        timerValueAtExit = time
+        if time > 0 {
+            state = State.normalView
+            Sound.stopAll()
+        } else {
+            state = State.resultView
+        }
     }
 }
 

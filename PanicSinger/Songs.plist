@@ -2,7 +2,7 @@
 <!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
 <plist version="1.0">
 <dict>
-	<key>ArmenianPop</key>
+	<key>Armenian Pop</key>
 	<array>
 		<string>Silva Hakobyan - Ushacel Em</string>
 		<string>Silva Hakobyan - Gisher E</string>
@@ -14,7 +14,7 @@
 		<string>David Greg Ft.  Raff - Qartez</string>
 		<string>Lada Niva - Qef Chi Lini</string>
 	</array>
-	<key>RussianGoldenEdition</key>
+	<key>Russian Golden Edition</key>
 	<array>
 		<string>Ваграм Вазян - Любовь и боль</string>
 		<string>Игорь Скляр - Комарово</string>
@@ -29,13 +29,13 @@
 		<string>Михаил Шуфутинский - 3-е сентября</string>
 		<string>Елена Ваенга - Курю</string>
 	</array>
-	<key>RussianPop</key>
+	<key>Russian Pop</key>
 	<array>
 		<string>ПИЦЦА - Оружие</string>
 		<string>БумБокс - Вахтерам</string>
 		<string>Грибы - Тает лёд </string>
 	</array>
-	<key>RussianRap</key>
+	<key>Russian Hip-Hop</key>
 	<array>
 		<string>Natan Ft. Тимати - Дерзкая</string>
 		<string>Тимати - Борода</string>
@@ -107,48 +107,84 @@
 		<string>Баста - Моя игра</string>
 		<string>Баста - Мама</string>
 	</array>
-	<key>InternationalRockHits</key>
+	<key>Rock Hits</key>
 	<array>
-		<string></string>
-		<string></string>
-		<string></string>
-		<string></string>
-		<string></string>
-		<string></string>
-		<string></string>
-		<string></string>
-		<string></string>
-		<string></string>
-		<string></string>
-		<string></string>
-		<string></string>
-		<string></string>
-		<string></string>
-		<string></string>
-		<string></string>
-		<string></string>
-		<string></string>
-		<string></string>
-		<string></string>
-		<string></string>
-		<string></string>
-		<string></string>
-		<string></string>
-		<string></string>
-		<string></string>
-		<string></string>
-		<string></string>
-		<string></string>
-		<string></string>
-		<string></string>
-		<string></string>
-		<string></string>
-		<string></string>
-		<string></string>
-		<string></string>
-		<string></string>
-		<string></string>
-		<string></string>
+		<string>System Of A Down - Chop Suey</string>
+		<string>System Of A Down - Aerials</string>
+		<string>System Of A Down - Toxicity</string>
+		<string>System Of A Down - B.Y.O.B.</string>
+		<string>System Of A Down - Lonely Day</string>
+		<string>System Of A Down - Radio/Video</string>
+		<string>System Of A Down - Solider Side</string>
+		<string>Red Hot Chili Peppers - Californication</string>
+		<string>Red Hot Chili Peppers - Snow</string>
+		<string>Eagles - Hotel California</string>
+		<string>The Cranberries - Zombie</string>
+		<string>Linkin Park - Numb</string>
+		<string>Linkin Park - In The End</string>
+		<string>Nirvana - Smells Like Teen Spirit</string>
+		<string>Nirvana - Heart Shaped Box</string>
+		<string>Evanescence - Bring Me Back To Life</string>
+		<string>Scorpions - Wind Of Change</string>
+		<string>Scorpions - Still Loving You</string>
+		<string>Scorpions - Send Me An Angel</string>
+		<string>Evanescence - My Immortal</string>
+		<string>The Animals - House Of Rising Sun</string>
+		<string>Queen - Mama</string>
+		<string>Queen - Show Must Go On</string>
+		<string>Queen - Bohemian Rhapsody</string>
+		<string>Queen - Rock You</string>
+		<string>Queen - We Are The Champions</string>
+		<string>Queen - I Want To Break Free</string>
+		<string>Guns N&apos; Roses - November Rain</string>
+		<string>Guns N&apos; Roses - Sweet Child O&apos; Mine</string>
+		<string>Guns N&apos; Roses - Knocking On Heavens Door</string>
+		<string>Pink Floyd - Another Brick In The Wall</string>
+		<string>Radio Head - Creep</string>
+		<string>AC/DC - Highway To Hell</string>
+		<string>AC/DC - T.N.T.</string>
+		<string>AC/DC - Thunderstruck</string>
+		<string>AC/DC - Back In Black</string>
+		<string>Metallica - Nothing Else Matters</string>
+		<string>Rammstein - Du Hast</string>
+		<string>Nirvana - The Man Who Stole The World</string>
+		<string>Pink Floyd - Comfortably Numb</string>
+		<string>The Beatles - Hey Jude</string>
+		<string>The Beatles - Yesterday</string>
+		<string>The Beatles - Let It Be</string>
+		<string>The Beatles - Help!</string>
+		<string>The Beatles - Come Together</string>
+		<string>The Beatles - Blackbird</string>
+		<string>The Beatles - Ob-La-Di Ob-La-Da</string>
+		<string>Cigarettes After Sex - Apocalypse</string>
+		<string>Cigarettes After Sex - K.</string>
+		<string>Bon Jovi - Livin&apos; On A Prayer</string>
+		<string>Led Zeppelin - Stairway To Heaven</string>
+		<string>Led Zeppelin - Kashmir</string>
+		<string>Bon Jovi - It&apos;s My Life</string>
+		<string>Queen -  Another One Bites The Dust</string>
+		<string>The Police - Every Breath You Take</string>
+		<string>a-ha - Take On Me </string>
+		<string>Arctic Monkeys - Do I Wanna Know?</string>
+		<string>Bee Gees - Stayin&apos; Alive</string>
+		<string>Green Day - Boulevard Of Broken Hearts</string>
+		<string>Red Hot Chili Peppers - Dani California</string>
+		<string>Queen - Somebody To Love</string>
+		<string>Aerosmith - Dream On</string>
+		<string>Led Zeppelin - Black Dog</string>
+		<string>Lynyrd Skynyrd - Sweet Home Alabama</string>
+		<string>Survivor - Eye Of The Tiger</string>
+		<string>R.E.M. - Losing My Religion</string>
+		<string>Imagine Dragons - Demons</string>
+		<string>KALEO - Way Down We Go</string>
+		<string>Plain White T&apos;s - Hey There Delilah</string>
+		<string>Ram Jam - Black Betty</string>
+		<string>Nirvana - Lithium</string>
+		<string>Marilyn Manson - Sweet Dreams</string>
+		<string>Black Sabbath - Iron Man</string>
+		<string>Black Sabbath - God Is Dead?</string>
+		<string>Black Sabbath - Paranoid</string>
+		<string>Ozzy Osbourne - Crazy Train</string>
 		<string></string>
 		<string></string>
 		<string></string>
@@ -175,7 +211,7 @@
 		<string></string>
 		<string></string>
 	</array>
-	<key>InternationalRapHits</key>
+	<key>Hip-Hop Hits</key>
 	<array>
 		<string>Eminem - Lose Yourself</string>
 		<string>Eminem - Mocking Bird</string>
@@ -244,7 +280,7 @@
 		<string></string>
 		<string></string>
 	</array>
-	<key>InternationalPopHits</key>
+	<key>Pop Hits</key>
 	<array>
 		<string>Beyonce - Single Ladies</string>
 		<string>Rihanna - Don&apos;t Stop The Music</string>
@@ -264,7 +300,7 @@
 		<string>ABBA - Gimme Gimme</string>
 		<string>Billie Eilish Ft. Khalid - Lovely</string>
 		<string>Meghan Trainor - All About That Bass</string>
-		<string>Rihanna Ft. Jay-Z - Ubrella</string>
+		<string>Rihanna Ft. Jay-Z - Umbrella</string>
 		<string>Anne-Marie - 2002</string>
 		<string>Ed Sheeran - Castle On The Hills </string>
 		<string>The Chainsomkers - Paris</string>
@@ -317,8 +353,6 @@
 		<string>One Direction - Story Of My Life</string>
 		<string>Lady Gaga Ft. Bradley Cooper - Shallow</string>
 		<string>Sting - Shape Of My Heart</string>
-		<string>Bon Jovi - It&apos;s My Life </string>
-		<string>Sting - Englishman In New York</string>
 		<string>George Michael - Careless Whisper</string>
 		<string>Mike Posner - I Took A Pill In Ibiza</string>
 		<string>G-Eazy Ft. Bebe Rexha - Me, Myself &amp; I</string>
@@ -340,7 +374,6 @@
 		<string>Doja Cat Ft. SZA - Kiss Me More</string>
 		<string>Maneskin - Beggin</string>
 		<string>Ed Sheeran - Shape Of You</string>
-		<string>The Beatles - Hey Jude</string>
 		<string>The Chainsmokers Ft Halsey - Closer</string>
 		<string>Toni Braxton - Un-Break My Heart</string>
 		<string>Luis Fonsi &amp; Daddy Yankee - Despacito</string>
@@ -361,7 +394,7 @@
 		<string>Michael Jackson - Bad</string>
 		<string>Post Malone Ft. 21 Savage - Rockstar</string>
 		<string>Ed Sheeran - Perfect</string>
-		<string>Los des RIo - Macarena </string>
+		<string>Los des Rio - Macarena </string>
 		<string>The Black Eyed Peas - I Gotta Feeling</string>
 		<string>Gotye Ft. Kimbra - Somebody That I Used To Know</string>
 		<string>Lady Gaga - Alejandro</string>
@@ -391,84 +424,136 @@
 		<string>21 Pilots - Stressed Out</string>
 		<string>Charlie Puth Ft. Selena Gomez - We Don&apos;t Talk Anymore</string>
 		<string>Charlie Puth - Attention</string>
+		<string>Sting - Englishman In New York</string>
 		<string>Billie Eilish - Bad Guy</string>
 		<string>Ariana Grande - 7 Rings</string>
 		<string>Maroon 5 - Memories</string>
 		<string>Macklemore Ft. Ryan Lewis - Thrift Shop</string>
 		<string>will.i.am Ft. Britney Spears - Scream and Shout</string>
 	</array>
-	<key>ArmenianGoldenEdition</key>
+	<key>Armenian Golden Edition</key>
 	<array>
-		<string></string>
-		<string></string>
-		<string></string>
-		<string></string>
-		<string></string>
-		<string></string>
-		<string></string>
-		<string></string>
-		<string></string>
-		<string></string>
-		<string></string>
-		<string></string>
-		<string></string>
-		<string></string>
-		<string></string>
-		<string></string>
-		<string></string>
-		<string></string>
-		<string></string>
-		<string></string>
-		<string></string>
-		<string></string>
-		<string></string>
-		<string></string>
-		<string></string>
-		<string></string>
-		<string></string>
-		<string></string>
-		<string></string>
-		<string></string>
-		<string></string>
-		<string></string>
-		<string></string>
-		<string></string>
-		<string></string>
-		<string></string>
-		<string></string>
-		<string></string>
-		<string></string>
-		<string></string>
-		<string></string>
-		<string></string>
-		<string></string>
-		<string></string>
-		<string></string>
-		<string></string>
-		<string></string>
-		<string></string>
-		<string></string>
-		<string></string>
-		<string></string>
-		<string></string>
-		<string></string>
-		<string></string>
-		<string></string>
-		<string></string>
-		<string>Aram Asatryan - Surb Sargis</string>
-		<string>Harout Pamboukjian - Tariner</string>
-		<string>Harout Pamboukjian - Es Aranc Qez</string>
-		<string>Aram Asatryan - Hay Es Du </string>
-		<string>Aram Asatryan - Sev Sev Acher</string>
-		<string>Spitakci Hayko - Inch Imani</string>
-		<string>Aram Khachatryan - Suserov Par</string>
-		<string>Grisha Aghaxanyan - 50 tari</string>
-		<string>Elvira Makaryan - Aranc ser chka garun</string>
+		<string>Սիլվա Հակոբյան - Սիլոյի պարը</string>
+		<string>Հարութ Փամբուկչյան - Օ, քամի քամի</string>
+		<string>Հարութ Փամբուկչյան - Ես առանց քեզ</string>
+		<string>Հարութ Փամբուկչյան - Թե աչերս քեզ որոնեն</string>
+		<string>Հարութ Փամբուկչյան ft. Սիրուշո - Տարիներ</string>
+		<string>Հարութ Փամբուկչյան - Էլ չենք լինի 20 տարեկան</string>
+		<string>Ռուբեն Հախվերդյան - Հին ընկեր</string>
+		<string>Ռուբեն Հախվերդյան - Իմ փոքրիկ նավակ</string>
+		<string>Ռուբեն Հախվերդյան - Բարի լույս, տիկին Արուս</string>
+		<string>Ռուբեն Հախվերդյան ft. Լիլիթ Պիպոյան - Մեր սիրո աշունը</string>
+		<string>Ռուբեն Հախվերդյան - Աստղազարդ նկար</string>
+		<string>Ռուբեն Հախվերդյան - Լավագույն տղերքը</string>
+		<string>Ռուբեն Հախվերդյան - Սա Երևանն է</string>
+		<string>Ռուբեն Հախվերդյան - Ձյունը</string>
+		<string>Թաթա Սիմոնյան - Երանի</string>
+		<string>Թաթա Սիմոնյան  - Տեսել եմ</string>
+		<string>Թաթա Սիմոնյան  - Երևանս</string>
+		<string>Թաթա Սիմոնյան - Անապատի արև</string>
+		<string>Թաթա Սիմոնյան - Նոր Տարի</string>
+		<string>Թաթա Սիմոնյան  - 16 </string>
+		<string>Թաթա Սիմոնյան - Վերջին զանգ</string>
+		<string>Թաթա Սիմոնյան - Կգնամ հեռու-հեռու</string>
+		<string>Թաթա Սիմոնյան - Անծանոթ աղջիկ</string>
+		<string>Թաթա Սիմոնյան - Քայլ առ առաջ</string>
+		<string>Ռուբեն Մաթևոսյան -  Չքնաղ երազ</string>
+		<string>Ֆորշ - Երևանը մենք ենք</string>
+		<string>Ֆորշ - Այսպես էլ ապրում ենք</string>
+		<string>ALL STARS - Էրեբունի</string>
+		<string>Kohar ft. ALL STARS - Կիլիկիա</string>
+		<string>Արման Հովհաննիսյան ft. Արմինկա - Այս գիշեր</string>
+		<string>Արման Հովհաննիսյան ft. Լուսինա - Կուզեմ գեթ մի պահ</string>
+		<string>Արման Հովհաննիսյան - Երևանս</string>
+		<string>Արման Հովհաննիսյան - Օրեր</string>
+		<string>Արման Հովհաննիսյան - Կորել եմ</string>
+		<string>Dorians - Ես կուլամ</string>
+		<string>Կաթիլ - Կուզիմ</string>
+		<string>Empyrey - Որոգայթ</string>
+		<string>Արամ Ասատրյան - Հայ ես դու</string>
+		<string>Արամե - Մի Նամակ</string>
+		<string>Արամե - Իմ արև</string>
+		<string>Սիլվա Հակոբյան - Խաչիկ,Վաչիկ</string>
+		<string>Սիլվա Հակոբյան - Ուշացել եմ</string>
+		<string>Սիլվա Հակոբյան - Գիշեր է </string>
+		<string>Սևակ Խանաղյան - Արցախ</string>
+		<string>Նարե Գևորգյան - Մոր երգը զինվորին</string>
+		<string>Ինգա Անուշ Արշակյաններ - Ապրելու ապրիլ</string>
+		<string>Ինգա Անուշ Արշակյաններ - Մենք ենք սարերը մեր</string>
+		<string>Գրիշա Աղախանյան - Սուրբ Սարգիս</string>
+		<string>Գրիշա Աղախանյան - Համեստա</string>
+		<string>Ալլա Լևոնյան - Լորկե</string>
+		<string>Ալլա Լևոնյան - Գնա ու կռվիր</string>
+		<string>Քրիստինե Պեպելյան - Չէ,չէ,չէ</string>
+		<string>Անդրե - Իմ սերը քեզ</string>
+		<string>Սիրուշո - Պռեգոմեշ</string>
+		<string>Սիրուշո - Մութն ընկել է ( Բարի Գիշեր)</string>
+		<string>Hay Cola - Hay Cola</string>
+		<string>Էլոն Սարաֆյան - Հայ աղջիկ</string>
+		<string>Լիլիթ Հովհաննիսյան - Իմ սրտին ասա</string>
+		<string>Լիլիթ Հովհաննիսյան ft. Վաչե Ամարյան - Ինձ չսպանես</string>
+		<string>Թաթա Սիմոնյան - Ամենալավը դու ես</string>
+		<string>Քրիստինե Պեպելյան ft. Արմենչիկ - Ինչու</string>
+		<string>Արմո - Ուշ է հիմա</string>
+		<string>Արա Մարտիրոսյան - Բալա, բալա</string>
+		<string>Արա Մարտիրոսյան - Բաժանում չի լինում</string>
+		<string>Ռազմիկ Ամյան - Պստիկ Պապան</string>
+		<string>HAYQ - Քամի փչի</string>
+		<string>Aram MP3 - Կուզես</string>
+		<string>Մեր Բակ - VIP դրախտ</string>
+		<string>Մարի - Դառը սև սուրճ</string>
+		<string>Լիլիթ Հովհաննիսյան - Ես եմ հորինել</string>
+		<string>Մարտին Մկրտչյան -  Այս երգը քոնն է </string>
+		<string>Սարո Թովմասյան ft. Արթուր Գրիգորյան - Կյանք ու կռիվ</string>
+		<string>Ռուբեն Հախվերդյան - Կարմիր Կակաչներ</string>
+		<string>Մանուել Մենենգիչյան - Երջանկության Արցունքները</string>
+		<string>Արմեն Դարբինյան - Ով սիրուն սիրուն</string>
+		<string>Հարութ Փամբուկչյան - Ղափամա</string>
+		<string>ALL STARS - Ես սիրում եմ իմ երկիրը ( Կարմիր,կապույտ,ծիրանագույն)</string>
+		<string>Սևակ Ամրոյան - Գինի լից</string>
+		<string>Թռչեի Մտքով Տուն</string>
+		<string>Reincarnation - Աշխարհումս իմն դուն իս</string>
+		<string>Reincarnation - Էլի լավ ա</string>
+		<string>Artem Valter - Armenia</string>
+		<string>Էլվինա Մակարյան - Իմ սրտի գարուն</string>
+		<string>Թիվ 5 - 4 տղա</string>
+		<string>Մեր Բակ - Մանթո եմ</string>
+		<string>Մեր Բակ - Ворона</string>
+		<string>Լիլիթ Կարապետյան -  2 քույր</string>
+		<string>Լիլիթ Կարապետյան  -  Տանգո</string>
+		<string>Լիլիթ Կարապետյան -  Սիրո քամի</string>
+		<string>Հայկո - Վերև</string>
+		<string>Արսեն Գրիգորյան - Այբուբեն(Ա,բ,գ,դ,ե)</string>
+		<string>Սիրուշո - Հավատում եմ</string>
+		<string>Արմինե Գրիգորյան - Երևանի սիրուն տղա</string>
+		<string>Արսեն Սաֆարյան - Քո տոնը շնորհավոր</string>
+		<string>Ռազմիկ Ամյան - Չունի Աշխարհը քեզ նման</string>
+		<string>Վարդան Սարգսյան - Խենթ,խենթ,խենթ</string>
+		<string>Աիդա Սարգսյան - Կռունկներ</string>
+		<string>Թիվ 5 - Երազ ու սեր</string>
+		<string>Արթուր Գրիգորյան - Ձյունն է</string>
+		<string>Էրիկ - Ոչ ավել ոչ պակաս</string>
+		<string>Հայկո - Մի վախեցիր</string>
+		<string>ԼԱՎ ԷԼԻ - Գտա քեզ երկնքում</string>
+		<string>ԼԱՎ ԷԼԻ - Քո աչքերը</string>
+		<string>Արաբո Իսպիրյան - Տուն իմ հայրենի</string>
+		<string>Քրիստինե Պեպելյան - Մայրիկ</string>
+		<string>Արամե - Մամա</string>
+		<string>Շուշան Պետրոսյան - Մայրիկ</string>
+		<string>Հայկո ft. Շուշան Պետրոսյան - Երազ իմ երկիր </string>
+		<string>Սոնա ft. Գարիկ - Լուսին</string>
+		<string>Հարութ Փամբուկչյան - Իմ կյանքը</string>
+		<string>Սևակ Ամորյան - Ախպերս ու ես</string>
+		<string>Հայ ժողովրդական - Զարթնիր Լաո</string>
+		<string>Հայ ժողովրդական - Գետաշեն</string>
+		<string>Արմեն Պողոսյան - Պատիվ ունեմ</string>
+		<string>Nemra - Նարե</string>
+		<string>Արսեն Սաֆարյան - Պարոնայք սպաներ</string>
 	</array>
-	<key>ArmenianRabiz</key>
+	<key>Armenian Rabiz</key>
 	<array>
 		<string>Ara &amp; Alik Avetisyanner - Voch avel Voch pakas</string>
-		<string></string>
+		<string>Գրիշա Աղախանյան - 50 տարի</string>
 		<string></string>
 		<string></string>
 		<string></string>
@@ -533,7 +618,7 @@
 		<string></string>
 		<string></string>
 	</array>
-	<key>ArmenianRap</key>
+	<key>Armenian Hip-Hop</key>
 	<array>
 		<string>Vnasakar Ft. Ponch - Chem Karum Qnem</string>
 		<string>Vnasakar Ft. Ponch - Izabel</string>
@@ -568,9 +653,7 @@
 		<string>Mi Qani Hogi - Es Pahin</string>
 		<string>Sirius - Bro</string>
 		<string>Sirius Ft. 3dgar - Demo</string>
-		<string>Sirius - X Molorak</string>
 		<string>HT Hayko - Taxi</string>
-		<string>Sirius - Taxi</string>
 		<string>Misho Ft. Sencho, Felo - Uxxaki Mtqer 2</string>
 		<string>Sencho Ft. Mos - Aprel</string>
 		<string>Sencho - Barev Erjankutyun Du Indz Atum Es</string>
