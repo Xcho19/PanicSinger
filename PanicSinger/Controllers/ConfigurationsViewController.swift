@@ -153,7 +153,7 @@ final class ConfigurationsViewController: UIViewController {
             songLabel.numberOfLines = 0
             songLabel.font = UIFont(
                 name: "Apple SD Gothic Neo",
-                size: round(view.frame.height/32)
+                size: round(view.frame.width/32)
             )
 
             return songLabel

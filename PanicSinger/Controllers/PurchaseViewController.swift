@@ -11,7 +11,6 @@ class PurchaseViewController: UIViewController {
     // MARK: - Model
 
     var category: Category!
-    var categories: Categories!
 
     // MARK: - Subviews
 
@@ -61,7 +60,7 @@ class PurchaseViewController: UIViewController {
     }
 
     private func configureLabelTexts() {
-        for storeCategory in categories.storeCategories where storeCategory.name == category.name {
+        for storeCategory in Categories.storeCategories where storeCategory.name == category.name {
             storeCategoryDescriptionLabel.text = storeCategory.description
             priceLabel.text = "$\(storeCategory.price)"
         }
@@ -72,15 +71,16 @@ class PurchaseViewController: UIViewController {
     @IBAction func didTapBuyButton(_ sender: Any) {
         let alert = UIAlertController(
             title: "Purchase Confirmation",
-            message: "You are abuot to purchase \(category.name) for $\(category.price)",
+            message: "You are about to purchase \(category.name) for $\(category.price)",
             preferredStyle: .alert
         )
         alert.addAction(UIAlertAction(
             title: "Purchase",
             style: .default,
             handler: { _ in
-                self.categories.ownedCategoryNames.append(contentsOf: self.category.bundle)
-                self.categories.storeCategories = self.categories.storeCategories.filter { $0 != self.category }
+                Categories.ownedCategoryNames.append(contentsOf: self.category.bundle)
+                Categories.storeCategories = Categories.storeCategories.filter { $0 != self.category }
+                UserDefaults.standard.set(Categories.ownedCategoryNames, forKey: "OwnedCategories")
                 self.navigationController?.popViewController(animated: true)
             }
         ))

@@ -2,18 +2,6 @@
 <!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
 <plist version="1.0">
 <dict>
-	<key>Armenian Pop</key>
-	<array>
-		<string>Silva Hakobyan - Ushacel Em</string>
-		<string>Silva Hakobyan - Gisher E</string>
-		<string>Razmik Amyan - Sirem qez lianam</string>
-		<string>Razmik Amyan - Chuni ashkharhe qez nman</string>
-		<string>Armo - Ush e hima</string>
-		<string>REINCARNATION - Tarm Caxikner</string>
-		<string>REINCARNATION - Ov Sirun Sirun</string>
-		<string>David Greg Ft.  Raff - Qartez</string>
-		<string>Lada Niva - Qef Chi Lini</string>
-	</array>
 	<key>Russian Golden Edition</key>
 	<array>
 		<string>Ваграм Вазян - Любовь и боль</string>
@@ -28,11 +16,110 @@
 		<string>Натали - О Боже, какой мужчина</string>
 		<string>Михаил Шуфутинский - 3-е сентября</string>
 		<string>Елена Ваенга - Курю</string>
+		<string>Гостья из будущего - Прекрасное далека</string>
+		<string>Ёлка - Около тебя</string>
+		<string>Ёлка - Не брошу на пол пути</string>
+		<string>Иванушки - Тополиный пух</string>
+		<string>Alex Sparrow - Сумашедшая</string>
+		<string>Лолита Милявская - Пошлю его на</string>
+		<string>Лолита Милявская - На тнтанике</string>
+		<string>БумБокс - Вахтерам</string>
+		<string>ПИЦЦА - Оружие</string>
+		<string>Градусы - Режиссер</string>
+		<string>Кино - Группа крови</string>
+		<string>Кино - Пачка сигарет</string>
+		<string>Кино - Кукушка</string>
+		<string>Кино - Звезда По Имени Солнце</string>
+		<string>Баста - Сансара</string>
+		<string>Баста - Медлячок </string>
+		<string>t.A.T.u. - Нас не дагонят</string>
+		<string>t.A.T.u. - Я сошла с ума</string>
+		<string>Руки Вверх! - Крошка моя</string>
+		<string>Грирорий Лепс - Рюмка водки на столе</string>
+		<string>Приключения Электроника - Крылатые качели</string>
+		<string>Глюкоза - Снег идет</string>
+		<string>Земфира - Хочешь?</string>
+		<string>Земфира - Искала</string>
+		<string>Vitas - The 7th Element</string>
+		<string>Егор Крид - Самая-Самая</string>
+		<string>Егор Крид - Будилньик</string>
+		<string>Время Истекло - Имя 505</string>
+		<string>Банд&apos;Эрос - Коламбия пикчерз не представляет</string>
+		<string>5sta Family - Зачем</string>
+		<string>Звери - До скорой встречи</string>
+		<string>Бьянка - А чо чо</string>
+		<string>Бьянка - Были танцы</string>
+		<string>5&apos;nizza - Солдат</string>
+		<string>Максим Фадеев ft. Наргиз - Вдвоем</string>
+		<string>Филипп Киркоров - Снег</string>
+		<string>Филипп Киркоров - Цвет настроения синий</string>
+		<string>Филипп Киркоров - Жестокая любовь</string>
+		<string>Филипп Киркоров - Мне не жаль</string>
+		<string>Валерий Меладзе - Красиво</string>
+		<string>Валерий Меладзе - Салют, вера</string>
+		<string>MBAND - Она вернется</string>
+		<string>Сати Казанова ft. Arsenium - До рассвета</string>
+		<string>Валерий Леонтьев - Казанова</string>
+		<string>Андрей Губин - Ночь</string>
+		<string>Градусы - Голая</string>
+		<string>МакSим - Знаеш ли ты</string>
+		<string>Дима Билан - Незвазможная возможно</string>
+		<string>Алла Пугачева - Любовь похожая на сон</string>
+		<string>Наташа Королева - Маленькая страна</string>
+		<string>Блестящие и Arash - Восточные сказки</string>
+		<string>Стас Костюшкин - Женщина, я не танцую</string>
+		<string>Натали - Ветер с моря дул</string>
+		<string>Алла Пугачева и Максик Галкин - Будь или не будь</string>
+		<string>Юрий Шатунов - Детство</string>
+		<string>Сатс Михайлов - Все для тебя</string>
+		<string>Муслим Магомаев - Королева красоты</string>
+		<string>Муслим Магомаев - Лучший город земли </string>
+		<string>Варвара - Катюша </string>
+		<string>Русская народная - Калинка</string>
+		<string>Ансамбль имени А. В. Александрова - Смуглянка</string>
+		<string>Григорий Лепс - Натали</string>
+		<string>Михаил Круг - Владимирский Централ </string>
+		<string>Любэ - Давай за</string>
+		<string>Олег Газманов - Офицеры</string>
+		<string>Градусы - Научиться бы не париться</string>
+		<string>IOWA - Маршрутка</string>
+		<string>IOWA - Одно и тоже</string>
+		<string>Ленинград - Экспонат</string>
+		<string>LOBODA - Твои глаза</string>
+		<string>Михаил Шуфутинцкий - Еврейский партной</string>
+		<string>Михаил Шуфутинцкий - Марджанджа</string>
+		<string>Михаил Шуфутинцкий и Лев Лещенко - Обажая тебя</string>
+		<string>Михаил Шуфутинцкий - У вакзала</string>
+		<string>Ирина Аллегрова -  С днем рождения</string>
+		<string>Ирина Аллегрова - Императрица </string>
+		<string>Михаил Круг - Купала</string>
+		<string>Валерий Леонтьев - Светафор</string>
+		<string>Кракадил Гена - Пусть бегут</string>
+		<string>Кракадил Гена - Голубой вагон</string>
+		<string>Бременские Музыканты - Ничево на свете лучше нету </string>
+		<string>Веселая Карусель - Антошка</string>
+		<string>Буренка Даша - Два веселых гуся</string>
+		<string>Детская песня - Кузнечик</string>
+		<string>Аида Ведищева - Чунга-чанга</string>
+		<string>Крошка Енот - Улыбка</string>
+		<string>Песенка Львенка и Черепахи</string>
+		<string>Детская песня - Чебурашка </string>
+		<string>Приключения Буратино - Бу-ра-ти-но!</string>
+		<string>Винни Пух, Пятачок, Ослик Иа - Песня</string>
+		<string>Лайма Вайкыле - Еще не вечер</string>
+		<string>Михаил Боярский - Зеленоглазое такси</string>
+		<string>Алла Пугачева - Любовь похожая на сон</string>
+		<string>Александр Серов - Я люблю тебя до слез</string>
+		<string>Григорий Лепс - Я счастливый</string>
+		<string>Аркадий Укупник - Мальчик хочет в Тамбов</string>
+		<string>Отпетые Мошенники - Люби меня люби</string>
+		<string>Стас Михайлов - Берега мечты</string>
+		<string>Кипелов - Я свободен</string>
 	</array>
 	<key>Russian Pop</key>
 	<array>
-		<string>ПИЦЦА - Оружие</string>
-		<string>БумБокс - Вахтерам</string>
+		<string></string>
+		<string>Баста Ft. Zivert - Неболеӣ</string>
 		<string>Грибы - Тает лёд </string>
 	</array>
 	<key>Russian Hip-Hop</key>
@@ -71,7 +158,7 @@
 		<string>Miyagi - Колибри</string>
 		<string>Баста - Пуэрчик по крепче</string>
 		<string>Баста - Урбан</string>
-		<string>Баста Ft. Zivert - Неболеӣ</string>
+		<string></string>
 		<string>Каспийский груз - Детство</string>
 		<string>Каспийский груз - Не было и не надо </string>
 		<string>Каспийский груз - Давай уедем </string>
@@ -98,8 +185,6 @@
 		<string>Гуф - Гуф умер</string>
 		<string>Гуф - Пусто</string>
 		<string>Баста - Папа What&apos;s Up</string>
-		<string>Баста - Сансара</string>
-		<string>Баста - Медлячок </string>
 		<string>Баста - Там, где нас нет</string>
 		<string>Баста Ft. Тати - Моя вселенная</string>
 		<string>Баста - Темная ночь</string>
@@ -139,7 +224,7 @@
 		<string>Guns N&apos; Roses - November Rain</string>
 		<string>Guns N&apos; Roses - Sweet Child O&apos; Mine</string>
 		<string>Guns N&apos; Roses - Knocking On Heavens Door</string>
-		<string>Pink Floyd - Another Brick In The Wall</string>
+		<string>Pink Floyd - Another Brick In The Wall Part 2</string>
 		<string>Radio Head - Creep</string>
 		<string>AC/DC - Highway To Hell</string>
 		<string>AC/DC - T.N.T.</string>
@@ -185,24 +270,36 @@
 		<string>Black Sabbath - God Is Dead?</string>
 		<string>Black Sabbath - Paranoid</string>
 		<string>Ozzy Osbourne - Crazy Train</string>
-		<string></string>
-		<string></string>
-		<string></string>
-		<string></string>
-		<string></string>
-		<string></string>
-		<string></string>
-		<string></string>
-		<string></string>
-		<string></string>
-		<string></string>
-		<string></string>
-		<string></string>
-		<string></string>
-		<string></string>
-		<string></string>
-		<string></string>
-		<string></string>
+		<string>Westlife - Soledad</string>
+		<string>Led Zeppelin - Whole Lotta Love</string>
+		<string>Arctic Monkeys - Why&apos;d You Call Me When You&apos;re High</string>
+		<string>Arctic Monkeys - R U Mine?</string>
+		<string>Deep Purple - Smoke On The Water</string>
+		<string>Lynyrd Skynyrd - Free Bird</string>
+		<string>John Lenon - Imagine</string>
+		<string>Eric Clapton - Layla</string>
+		<string>The Jimi Hendrix Exoperience - Purple Haze</string>
+		<string>The Police - Every Breath You Take</string>
+		<string>Metallica - The Day That Never Comes</string>
+		<string>Sublime - Santeria</string>
+		<string>Pink Floyd - Wish You Were Here</string>
+		<string>Queen - Love Of My Life</string>
+		<string>Eric Clapton - Cocaine</string>
+		<string>Bryan Adams - Summer Of &apos;69</string>
+		<string>The White Stripes - Seven Nation Army</string>
+		<string>Green Day - When I Come Around</string>
+		<string>Pixies - Where Is My Mind?</string>
+		<string>twenty one pilots - Chlorine</string>
+		<string>Imagine Dragons - Whatever It Takes</string>
+		<string>Imagine Dragons - Radioactive</string>
+		<string>Imagine Dragons - Believer</string>
+		<string>Imagine Dragons - Thunder</string>
+		<string>Panic! At The Disco - High Hopes</string>
+		<string>Deep Purple - Solider Of Fortune</string>
+		<string>Led Zeppelin - Immigrant Song</string>
+		<string>Metallica - Enter Sandman</string>
+		<string>TOTO - Africa</string>
+		<string>Arctic Monkeys - No. 1 Anthem</string>
 		<string></string>
 		<string></string>
 		<string></string>
@@ -430,6 +527,12 @@
 		<string>Maroon 5 - Memories</string>
 		<string>Macklemore Ft. Ryan Lewis - Thrift Shop</string>
 		<string>will.i.am Ft. Britney Spears - Scream and Shout</string>
+		<string>Black Pumas - Colors</string>
+		<string>Bonny M. - Sunny</string>
+		<string>Maroon 5 - This Love</string>
+		<string>Glas Animals - Heat Waves</string>
+		<string>Gnash ft. Olivia O&apos;Brian - I Hate You, I Love You</string>
+		<string>Kygo ft. Miguel - Remind Me To Forget</string>
 	</array>
 	<key>Armenian Golden Edition</key>
 	<array>
@@ -549,6 +652,41 @@
 		<string>Արմեն Պողոսյան - Պատիվ ունեմ</string>
 		<string>Nemra - Նարե</string>
 		<string>Արսեն Սաֆարյան - Պարոնայք սպաներ</string>
+		<string>Գեորգի Մինասյան - Արևիկ</string>
+		<string>Ռուբեն Հախվերդյան - Շատախոս անձրևը</string>
+		<string></string>
+		<string></string>
+		<string></string>
+		<string></string>
+		<string></string>
+		<string></string>
+		<string></string>
+		<string></string>
+		<string></string>
+		<string></string>
+		<string></string>
+		<string></string>
+		<string></string>
+		<string></string>
+		<string></string>
+		<string></string>
+		<string></string>
+		<string></string>
+		<string></string>
+		<string></string>
+		<string></string>
+		<string></string>
+		<string></string>
+		<string></string>
+		<string></string>
+		<string></string>
+		<string></string>
+		<string></string>
+		<string></string>
+		<string></string>
+		<string></string>
+		<string></string>
+		<string></string>
 	</array>
 	<key>Armenian Rabiz</key>
 	<array>

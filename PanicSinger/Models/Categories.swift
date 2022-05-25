@@ -10,9 +10,11 @@ import Foundation
 final class Categories: Codable {
     static var ownedCategoryName: String = ""
 
-    var ownedCategoryNames = [
-        "Pop Hits", "Hip-Hop Hits", "Rock Hits"
-    ]
+    static var ownedCategoryNames = UserDefaults.standard.object(
+        forKey: "OwnedCategories"
+    ) as? [String] ?? ["Pop Hits", "Hip-Hop Hits", "Rock Hits"]
+
+//    static var storeCategories = UserDefaults.standard.object(forKey: "StoreCategories") as? [String]
 
     var allCategories: [CategoryDescription] = [
         CategoryDescription(
@@ -53,24 +55,30 @@ final class Categories: Codable {
         )
     ]
 
-    var storeCategories: [Category] = [
-        Category(
-            name: "Armenian Bundle",
-            description: "This bundle contains Armenian Rock, Hip-Hop, Rabiz genres.",
-            bundle: ["Armenian Golden Edition", "Armenian Rabiz", "Armenian Hip-Hop"],
-            price: 1.99
-        ),
-        Category(
-            name: "Russian Bundle",
-            description: "This bundle contains Russian Rock, Hip-Hop, Pop genres.",
-            bundle: ["Russian Golden Edition", "Russian Pop", "Russian Hip-Hop"],
-            price: 1.99
-        ),
-        Category(
-            name: "Top Hits Bundle",
-            description: "This bundle contains International Rock, Hip-Hop, Pop genres.",
-            bundle: ["Pop Hits", "Hip-Hop Hits", "Rock Hits"],
-            price: 1.99
-        )
-    ]
+    static var storeCategories: [Category] = [
+            Category(
+                name: "Armenian Bundle",
+                description: "This bundle contains Armenian Rock, Hip-Hop, Rabiz genres.",
+                bundle: ["Armenian Golden Edition", "Armenian Rabiz", "Armenian Hip-Hop"],
+                price: 1.99
+            ),
+            Category(
+                name: "Russian Bundle",
+                description: "This bundle contains Russian Rock, Hip-Hop, Pop genres.",
+                bundle: ["Russian Golden Edition", "Russian Pop", "Russian Hip-Hop"],
+                price: 1.99
+            ),
+            Category(
+                name: "Top Hits Bundle",
+                description: "This bundle contains International Rock, Hip-Hop, Pop genres.",
+                bundle: ["Pop Hits", "Hip-Hop Hits", "Rock Hits"],
+                price: 1.99
+            ),
+            Category(
+                name: "Armenian Golden Edition",
+                description: "This category contains most liked Armenian songs of all times.",
+                bundle: ["Armenian Golden Edition"],
+                price: 0.99
+            )
+        ]
 }

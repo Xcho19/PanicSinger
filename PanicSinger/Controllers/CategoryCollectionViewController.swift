@@ -11,17 +11,13 @@ private let reuseIdentifier = "Cell"
 private let headerIdentifier = "Header"
 
 final class CategoryCollectionViewController: UICollectionViewController {
-    // MARK: - Model
-
-    var categories = Categories()
-
     // MARK: - Lifecycle
 
     override func viewDidLoad() {
         super.viewDidLoad()
 
-        navigationItem.backButtonTitle = ""
         collectionViewConfigurations()
+        navigationItem.backButtonTitle = ""
     }
 
     override func viewWillAppear(_ animated: Bool) {
@@ -96,7 +92,7 @@ final class CategoryCollectionViewController: UICollectionViewController {
     // MARK: UICollectionViewDataSource
 
     override func numberOfSections(in collectionView: UICollectionView) -> Int {
-        if categories.storeCategories.isEmpty {
+        if Categories.storeCategories.isEmpty {
             return 1
         } else {
             return 2
@@ -104,7 +100,7 @@ final class CategoryCollectionViewController: UICollectionViewController {
     }
 
     override func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int)
-        -> Int { (section == 0) ? categories.ownedCategoryNames.count : categories.storeCategories.count }
+        -> Int { (section == 0) ? Categories.ownedCategoryNames.count : Categories.storeCategories.count }
 
     override func collectionView(
         _ collectionView: UICollectionView,
@@ -116,10 +112,10 @@ final class CategoryCollectionViewController: UICollectionViewController {
         ) as? CategoryCollectionViewCell
         else { return UICollectionViewCell() }
 
-        let storeCategoryName = categories.storeCategories.map { $0.name }
+        let storeCategoryName = Categories.storeCategories.map { $0.name }
 
         if indexPath.section == 0 {
-            cell.categoryImageView.image = UIImage(named: categories.ownedCategoryNames[indexPath.row])
+            cell.categoryImageView.image = UIImage(named: Categories.ownedCategoryNames[indexPath.row])
         } else {
             cell.categoryImageView.image = UIImage(
                 named: storeCategoryName[indexPath.row]
@@ -133,7 +129,7 @@ final class CategoryCollectionViewController: UICollectionViewController {
 
     override func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
         if indexPath.section == 0 {
-            Categories.ownedCategoryName = categories.ownedCategoryNames[indexPath.row]
+            Categories.ownedCategoryName = Categories.ownedCategoryNames[indexPath.row]
 
             if let configurationsViewController = UIStoryboard(
                 name: "Configurations",
@@ -145,7 +141,7 @@ final class CategoryCollectionViewController: UICollectionViewController {
                 navigationController?.pushViewController(configurationsViewController, animated: true)
             }
         } else {
-            let category = categories.storeCategories[indexPath.row]
+            let category = Categories.storeCategories[indexPath.row]
 
             if let purchaseViewController = UIStoryboard(
                 name: "PurchaseView",
@@ -154,7 +150,6 @@ final class CategoryCollectionViewController: UICollectionViewController {
                 withIdentifier: "PurchaseView"
             ) as? PurchaseViewController {
                 purchaseViewController.category = category
-                purchaseViewController.categories = categories
                 navigationController?.pushViewController(purchaseViewController, animated: true)
             }
         }

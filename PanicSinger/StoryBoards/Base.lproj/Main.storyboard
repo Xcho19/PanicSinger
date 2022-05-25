@@ -2,6 +2,7 @@
 <document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="20037" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="n43-K8-Kpn">
     <device id="retina6_1" orientation="portrait" appearance="light"/>
     <dependencies>
+        <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="20020"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="collection view cell content view" minToolsVersion="11.0"/>
@@ -180,7 +181,7 @@ Play the way you like it and most importantly, HAVE FUN!</string>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" barStyle="black" largeTitles="YES" id="NUc-nl-7SZ">
                         <rect key="frame" x="0.0" y="44" width="414" height="103"/>
                         <autoresizingMask key="autoresizingMask"/>
-                        <color key="barTintColor" red="0.0078431377190000002" green="0.01176470611" blue="0.16738788608843538" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                        <color key="barTintColor" red="0.0078431377190000002" green="0.01176470611" blue="0.109803915" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                         <textAttributes key="titleTextAttributes">
                             <fontDescription key="fontDescription" name="HelveticaNeue-Medium" family="Helvetica Neue" pointSize="22"/>
                             <color key="textColor" red="0.98039215800000001" green="0.97647058959999999" blue="0.96470588450000005" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>

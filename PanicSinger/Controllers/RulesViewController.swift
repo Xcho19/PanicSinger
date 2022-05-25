@@ -8,11 +8,14 @@
 import UIKit
 
 class RulesViewController: UIViewController {
+    // MARK: - Subviews
 
     @IBOutlet var languageSegmentedControl: UISegmentedControl!
     @IBOutlet var englishRules: UITextView!
     @IBOutlet var armenianRules: UITextView!
     @IBOutlet var russianRules: UITextView!
+
+    // MARK: - Helpers
 
     private func configureSegmentedControl() {
         switch languageSegmentedControl.selectedSegmentIndex {
@@ -37,6 +40,8 @@ class RulesViewController: UIViewController {
             russianRules.isHidden = true
         }
     }
+
+    // MARK: - Callbacks
 
     @IBAction func didChangeSegment(_ sender: UISegmentedControl) {
         configureSegmentedControl()

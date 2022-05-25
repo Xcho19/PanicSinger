@@ -2,6 +2,7 @@
 <document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="20037" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="Y6W-OH-hqX">
     <device id="retina6_1" orientation="landscape" appearance="light"/>
     <dependencies>
+        <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="20020"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
@@ -44,10 +45,11 @@
                                 <color key="textColor" red="0.98039215800000001" green="0.97647058959999999" blue="0.96470588450000005" alpha="0.79937396523178794" colorSpace="custom" customColorSpace="displayP3"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <button opaque="NO" alpha="0.80000000000000004" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="PDl-ZO-jVa">
-                                <rect key="frame" x="837" y="5" width="54" height="44"/>
-                                <state key="normal" title="Button"/>
-                                <buttonConfiguration key="configuration" style="plain" image="cross"/>
+                            <button opaque="NO" alpha="0.80000000000000004" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="PDl-ZO-jVa">
+                                <rect key="frame" x="851" y="15" width="30" height="30"/>
+                                <color key="tintColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                                <state key="normal" image="cross"/>
                                 <connections>
                                     <action selector="didTapCloseButton:" destination="Y6W-OH-hqX" eventType="touchUpInside" id="v0v-PM-eyB"/>
                                 </connections>
@@ -83,11 +85,11 @@
                             <constraint firstItem="vDu-zF-Fre" firstAttribute="trailing" secondItem="tsg-TB-w7q" secondAttribute="trailing" constant="20" id="dk4-Ts-Yov"/>
                             <constraint firstItem="tsg-TB-w7q" firstAttribute="centerX" secondItem="5EZ-qb-Rvc" secondAttribute="centerX" id="eeT-72-wiD"/>
                             <constraint firstItem="a7M-9E-YWI" firstAttribute="top" secondItem="5EZ-qb-Rvc" secondAttribute="top" id="gZR-XW-bSX"/>
-                            <constraint firstItem="PDl-ZO-jVa" firstAttribute="top" secondItem="5EZ-qb-Rvc" secondAttribute="top" constant="5" id="lyp-hX-kwh"/>
+                            <constraint firstItem="PDl-ZO-jVa" firstAttribute="top" secondItem="5EZ-qb-Rvc" secondAttribute="top" constant="15" id="lyp-hX-kwh"/>
                             <constraint firstAttribute="trailing" secondItem="a7M-9E-YWI" secondAttribute="trailing" id="pbW-D8-HCJ"/>
                             <constraint firstAttribute="bottom" secondItem="3v6-z2-b2S" secondAttribute="bottom" id="pn2-Xj-9gg"/>
                             <constraint firstItem="3v6-z2-b2S" firstAttribute="top" secondItem="5EZ-qb-Rvc" secondAttribute="top" id="uwt-te-qTL"/>
-                            <constraint firstAttribute="trailing" secondItem="PDl-ZO-jVa" secondAttribute="trailing" constant="5" id="vLA-Nu-pSW"/>
+                            <constraint firstAttribute="trailing" secondItem="PDl-ZO-jVa" secondAttribute="trailing" constant="15" id="vLA-Nu-pSW"/>
                         </constraints>
                     </view>
                     <connections>

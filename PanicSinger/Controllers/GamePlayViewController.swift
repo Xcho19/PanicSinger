@@ -49,13 +49,13 @@ final class GamePlayViewController: UIViewController {
         configureSubviews()
         startCountdownTimer()
         getSongsFor(category: Categories.ownedCategoryName)
+        AppUtility.lockOrientation(.landscape, andRotateTo: .landscapeRight)
     }
 
     override func viewWillAppear(_ animated: Bool) {
         super.viewWillAppear(animated)
 
         countdownView.layer.zPosition = CGFloat(Float.greatestFiniteMagnitude)
-        AppUtility.lockOrientation(.landscape, andRotateTo: .landscapeRight)
     }
 
     override func viewWillDisappear(_ animated: Bool) {
@@ -311,7 +311,7 @@ final class GamePlayViewController: UIViewController {
         }
     }
 
-    // MARK: - Subviews
+    // MARK: - Callbacks
 
     @IBAction func didTapCloseButton(_ sender: UIButton) {
         dismiss(animated: false)

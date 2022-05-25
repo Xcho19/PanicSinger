@@ -2,6 +2,7 @@
 <document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="20037" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="Y6W-OH-hqX">
     <device id="retina6_1" orientation="portrait" appearance="light"/>
     <dependencies>
+        <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="20020"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="Stack View standard spacing" minToolsVersion="9.0"/>
@@ -21,43 +22,41 @@
                                 <constraints>
                                     <constraint firstAttribute="height" constant="60" id="yu7-Qx-HzI"/>
                                 </constraints>
-                                <state key="normal" title="Button"/>
-                                <buttonConfiguration key="configuration" style="plain" title="START">
-                                    <backgroundConfiguration key="background" cornerRadius="0.0"/>
-                                    <fontDescription key="titleFontDescription" name="ArialRoundedMTBold" family="Arial Rounded MT Bold" pointSize="30"/>
-                                    <color key="baseForegroundColor" red="0.98039215800000001" green="0.97647058959999999" blue="0.96470588450000005" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
-                                </buttonConfiguration>
+                                <fontDescription key="fontDescription" name="ArialRoundedMTBold" family="Arial Rounded MT Bold" pointSize="30"/>
+                                <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                                <state key="normal" title="START">
+                                    <color key="titleColor" red="0.98039215800000001" green="0.97647058959999999" blue="0.96470588450000005" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                </state>
                                 <connections>
                                     <segue destination="68A-e7-UsF" kind="presentation" modalPresentationStyle="fullScreen" modalTransitionStyle="crossDissolve" id="l3y-J2-tq5"/>
                                 </connections>
                             </button>
                             <stackView opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" distribution="fillEqually" translatesAutoresizingMaskIntoConstraints="NO" id="2gE-2Y-wwN">
-                                <rect key="frame" x="0.0" y="708" width="414" height="64"/>
+                                <rect key="frame" x="0.0" y="722" width="414" height="50"/>
                                 <subviews>
                                     <button opaque="NO" alpha="0.80000000000000004" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="TEX-9Z-ADv">
-                                        <rect key="frame" x="0.0" y="0.0" width="138" height="64"/>
+                                        <rect key="frame" x="0.0" y="0.0" width="138" height="50"/>
                                         <color key="tintColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                        <state key="normal" title="Button"/>
-                                        <buttonConfiguration key="configuration" style="plain" image="minus" imagePadding="0.0" cornerStyle="large">
-                                            <preferredSymbolConfiguration key="preferredSymbolConfigurationForImage"/>
-                                        </buttonConfiguration>
+                                        <state key="normal" image="minus">
+                                            <preferredSymbolConfiguration key="preferredSymbolConfiguration"/>
+                                        </state>
                                         <connections>
                                             <action selector="didTapDecreaseTimeButton:" destination="Y6W-OH-hqX" eventType="touchUpInside" id="iEb-Sb-MXw"/>
                                         </connections>
                                     </button>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" text="[Timer]" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="U2W-rg-CEe">
-                                        <rect key="frame" x="138" y="0.0" width="138" height="64"/>
+                                        <rect key="frame" x="138" y="0.0" width="138" height="50"/>
                                         <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="30"/>
                                         <color key="textColor" red="0.95686274770000002" green="0.95686274770000002" blue="0.97647058959999999" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                         <nil key="highlightedColor"/>
                                     </label>
-                                    <button opaque="NO" alpha="0.80000000000000004" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="iIi-lm-GJ2">
-                                        <rect key="frame" x="276" y="0.0" width="138" height="64"/>
-                                        <state key="normal" title="Button"/>
-                                        <buttonConfiguration key="configuration" style="plain" image="plus">
-                                            <preferredSymbolConfiguration key="preferredSymbolConfigurationForImage"/>
-                                            <directionalEdgeInsets key="contentInsets" top="-1" leading="0.0" bottom="0.0" trailing="0.0"/>
-                                        </buttonConfiguration>
+                                    <button opaque="NO" alpha="0.80000000000000004" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="iIi-lm-GJ2">
+                                        <rect key="frame" x="276" y="0.0" width="138" height="50"/>
+                                        <color key="tintColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                                        <state key="normal" image="plus">
+                                            <preferredSymbolConfiguration key="preferredSymbolConfiguration"/>
+                                        </state>
                                         <connections>
                                             <action selector="didTapIncreaseTimeButton:" destination="Y6W-OH-hqX" eventType="touchUpInside" id="Re8-af-920"/>
                                         </connections>
@@ -71,7 +70,7 @@
                                 </constraints>
                             </imageView>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" text="[Category Description]" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="8jA-SO-ico">
-                                <rect key="frame" x="20" y="453" width="374" height="240"/>
+                                <rect key="frame" x="20" y="453" width="374" height="254"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <color key="textColor" red="0.84313726430000002" green="0.83137255909999996" blue="0.83529412749999998" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                 <nil key="highlightedColor"/>
