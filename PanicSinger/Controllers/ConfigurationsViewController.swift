@@ -13,33 +13,37 @@ final class ConfigurationsViewController: UIViewController {
 
     var totalTime = 5
     var usedSongs: [String] = []
-    var categories = Categories()
-    var state = State.normalView
+    var state = ConfigurationsState.normalView { didSet {
+        configureState()
+    }}
 
     lazy var correctResultsLabels: [UILabel] = .init()
     lazy var skippedResultsLabels: [UILabel] = .init()
 
     // MARK: - Subviews
 
-    @IBOutlet var resultsStackView: UIStackView!
-    @IBOutlet var categoryImageView: UIImageView!
-    @IBOutlet var resultsScrollView: UIScrollView!
-    @IBOutlet var categoryDescriptionLabel: UILabel!
-    @IBOutlet var decreaseTimeButton: UIButton!
-    @IBOutlet var increaseTimeButton: UIButton!
-    @IBOutlet var timerLabel: UILabel!
-    @IBOutlet var startButton: UIButton!
-    @IBOutlet var resultView: UIView!
-    @IBOutlet var guessedSongsCountLabel: UILabel!
-    @IBOutlet var guessedSongsRightSideLabel: UILabel!
-    @IBOutlet var guessedSongsLeftSideLabel: UILabel!
+    @IBOutlet private var resultsStackView: UIStackView!
+    @IBOutlet private var categoryImageView: UIImageView!
+    @IBOutlet private var resultsScrollView: UIScrollView!
+    @IBOutlet private var categoryDescriptionLabel: UILabel!
+    @IBOutlet private var decreaseTimeButton: UIButton!
+    @IBOutlet private var increaseTimeButton: UIButton!
+    @IBOutlet private var timerLabel: UILabel!
+    @IBOutlet private var startButton: UIButton!
+    @IBOutlet private var resultView: UIView!
+    @IBOutlet private var guessedSongsCountLabel: UILabel!
+    @IBOutlet private var guessedSongsRightSideLabel: UILabel!
+    @IBOutlet private var guessedSongsLeftSideLabel: UILabel!
+    @IBOutlet private var resultsContainerView: UIView!
+    @IBOutlet private var categoryImageContainerView: UIView!
 
     // MARK: - Lifecycle
 
     override func viewDidLoad() {
         super.viewDidLoad()
 
-        subviewConfigurations()
+        configureState()
+        configureSubviews()
     }
 
     override func viewDidAppear(_ animated: Bool) {
@@ -54,7 +58,6 @@ final class ConfigurationsViewController: UIViewController {
     override func viewWillAppear(_ animated: Bool) {
         super.viewWillAppear(animated)
 
-        stateConfiguration()
         navigationItem.largeTitleDisplayMode = .never
         navigationItem.title = Categories.ownedCategoryName
         resultView.layer.zPosition = CGFloat(Float.greatestFiniteMagnitude)
@@ -63,42 +66,29 @@ final class ConfigurationsViewController: UIViewController {
     override func viewWillLayoutSubviews() {
         super.viewWillLayoutSubviews()
 
-        fontConfigurations(frameWidth: view.frame.width)
+        configureFont(frameWidth: view.frame.width)
     }
 
     // MARK: - Helpers
 
-    private func subviewConfigurations() {
+    private func configureSubviews() {
         resultsScrollView.layer.cornerRadius = 10
-        resultsScrollView.showsVerticalScrollIndicator = false
-        resultsScrollView.backgroundColor = UIColor(
-            red: 75/255,
-            green: 74/255,
-            blue: 174/255,
-            alpha: 0.4
-        )
 
-        for category in categories.allCategories where category.name == Categories.ownedCategoryName {
+        for category in Categories.allCategories where category.name == Categories.ownedCategoryName {
             categoryDescriptionLabel.text = category.description
         }
 
         categoryImageView.image = UIImage(named: Categories.ownedCategoryName)
         categoryImageView.layer.cornerRadius = 10
 
-        startButton.backgroundColor = UIColor(
-            red: 75/255,
-            green: 74/255,
-            blue: 174/255,
-            alpha: 0.95
-        )
         startButton.layer.cornerRadius = 10
 
-        timerLabel.text = timeFormatted(totalTime)
+        timerLabel.text = formatTime(totalTime)
 
         resultView.layer.cornerRadius = 10
     }
 
-    private func fontConfigurations(frameWidth: Double) {
+    private func configureFont(frameWidth: Double) {
         let fontSize = round(frameWidth/14)
 
         guessedSongsRightSideLabel.font = UIFont(
@@ -122,29 +112,20 @@ final class ConfigurationsViewController: UIViewController {
         )
     }
 
-    private func stateConfiguration() {
-        if state == State.normalView {
-            resultView.isHidden = true
-            resultsScrollView.isHidden = true
-            categoryImageView.isHidden = false
-            categoryDescriptionLabel.isHidden = false
-        } else {
-            resultView.isHidden = false
-            resultsScrollView.isHidden = false
-            categoryImageView.isHidden = true
-            categoryDescriptionLabel.isHidden = true
-        }
+    private func configureState() {
+        resultsContainerView.isHidden = state == ConfigurationsState.normalView
+        categoryImageContainerView.isHidden = state == ConfigurationsState.resultView
     }
 
-    private func timeFormatted(_ totalSeconds: Int) -> String {
+    private func formatTime(_ totalSeconds: Int) -> String {
         let seconds: Int = totalSeconds % 60
         let minutes: Int = (totalSeconds/60) % 60
 
         return String(format: "%02d:%02d", minutes, seconds)
     }
 
-    private func createLabels(from array: [String], alpha: Double = 1) -> [UILabel] {
-        array.map { song -> UILabel in
+    private func createLabels(from songs: [String], alpha: Double = 1) -> [UILabel] {
+        songs.map { song in
             let songLabel = UILabel()
             songLabel.text = song
             songLabel.textAlignment = .center
@@ -165,7 +146,7 @@ final class ConfigurationsViewController: UIViewController {
     @IBAction func didTapDecreaseTimeButton(_ sender: Any) {
         if totalTime > 60 {
             totalTime -= 30
-            timerLabel.text = timeFormatted(totalTime)
+            timerLabel.text = formatTime(totalTime)
         }
 
         UIView.animate(
@@ -183,7 +164,7 @@ final class ConfigurationsViewController: UIViewController {
     @IBAction func didTapIncreaseTimeButton(_ sender: Any) {
         if totalTime < 180 {
             totalTime += 30
-            timerLabel.text = timeFormatted(totalTime)
+            timerLabel.text = formatTime(totalTime)
         }
 
         UIView.animate(
@@ -214,28 +195,21 @@ extension ConfigurationsViewController: GamePlayViewControllerDelegate {
         skippedResultsLabels = createLabels(from: skippedSongs, alpha: 0.4)
 
         if correctSongs.count == 1 {
-            guessedSongsRightSideLabel.text = "SONG!"
+            guessedSongsRightSideLabel.text = "SONG !"
         } else {
-            guessedSongsRightSideLabel.text = "SONGS!"
+            guessedSongsRightSideLabel.text = "SONGS !"
         }
 
-        stateConfiguration()
         guessedSongsCountLabel.text = "\(correctSongs.count)"
         self.usedSongs = usedSongs
     }
 
     func getTotalTime(time: Int) {
         if time > 0 {
-            state = State.normalView
+            state = ConfigurationsState.normalView
             Sound.stopAll()
         } else {
-            state = State.resultView
+            state = ConfigurationsState.resultView
         }
-    }
-}
-
-extension UIStackView {
-    func addArrangedSubviews(_ subviews: [UIView]) {
-        subviews.enumerated().forEach { insertArrangedSubview($0.1, at: $0.0) }
     }
 }

@@ -20,26 +20,25 @@ final class GamePlayViewController: UIViewController {
 
     // MARK: - Model
 
+    private var song: String = ""
     var usedSongs: [String] = []
     var songs: [String] = []
-    private var song: String = ""
     var guessedSongs: [String] = []
     var skippedSongs: [String] = []
     var totalTime = 0
     private var totalCountdownTime = 4
-    private var initialCenter = CGPoint()
     private var countdownTimer: Timer?
     private var timer: Timer?
 
     // MARK: - Subviews
 
-    @IBOutlet var countdownLabel: UILabel!
-    @IBOutlet var countdownView: UIView!
-    @IBOutlet var songNameLabel: UILabel!
-    @IBOutlet var timerLabel: UILabel!
-    @IBOutlet var answerView: UIView!
-    @IBOutlet var answerLabel: UILabel!
-    @IBOutlet var closeButton: UIButton!
+    @IBOutlet private var countdownLabel: UILabel!
+    @IBOutlet private var countdownView: UIView!
+    @IBOutlet private var songNameLabel: UILabel!
+    @IBOutlet private var timerLabel: UILabel!
+    @IBOutlet private var answerView: UIView!
+    @IBOutlet private var answerLabel: UILabel!
+    @IBOutlet private var closeButton: UIButton!
 
     // MARK: - Lifecycle
 
@@ -67,22 +66,14 @@ final class GamePlayViewController: UIViewController {
         AppUtility.lockOrientation(.portrait, andRotateTo: .portrait)
     }
 
+    override var preferredScreenEdgesDeferringSystemGestures: UIRectEdge { .all }
+
     // MARK: - Helpers
 
     // Subview Configurations
     private func configureSubviews() {
-        initialCenter = view.center
-        timerLabel.text = timeFormatted(totalTime)
+        timerLabel.text = formatTime(totalTime)
         countdownLabel.text = "\(totalCountdownTime - 1)"
-    }
-
-    private func configureViewColor(red: Double, green: Double, blue: Double) {
-        answerView.backgroundColor = UIColor(
-            red: red,
-            green: green,
-            blue: blue,
-            alpha: 0.9
-        )
     }
 
     private func animateView(
@@ -167,7 +158,7 @@ final class GamePlayViewController: UIViewController {
     }
 
     @objc private func updateTimer() {
-        timerLabel.text = timeFormatted(totalTime)
+        timerLabel.text = formatTime(totalTime)
         if totalTime != 0 {
             totalTime -= 1
         } else if let timer = timer {
@@ -195,9 +186,9 @@ final class GamePlayViewController: UIViewController {
         }
     }
 
-    private func timeFormatted(_ totalSeconds: Int) -> String {
+    private func formatTime(_ totalSeconds: Int) -> String {
         let seconds: Int = totalSeconds % 60
-        let minutes: Int = (totalSeconds/60) % 60
+        let minutes: Int = (totalSeconds / 60) % 60
 
         return String(format: "%02d:%02d", minutes, seconds)
     }
@@ -205,19 +196,17 @@ final class GamePlayViewController: UIViewController {
     private func resetTimer() {
         if let timer = timer {
             timer.invalidate()
-            timerLabel.text = timeFormatted(totalTime)
+            timerLabel.text = formatTime(totalTime)
         }
     }
 
     // Dictionary data configurations
     private func getSongsFor(category: String) {
-        guard let songURL = Bundle.main.url(forResource: "Songs", withExtension: "plist")
+        guard let songURL = Bundle.main.url(forResource: "Songs", withExtension: "plist"),
+              let categoriesDict = NSDictionary(contentsOf: songURL) as? [String: [String]]
         else { return }
-
-        if let categoriesDict = NSDictionary(contentsOf: songURL) as? [String: [String]] {
-            songs = categoriesDict[category]!
-            getNewSong(from: songs)
-        }
+        songs = categoriesDict[category]!
+        getNewSong(from: songs)
     }
 
     private func getNewSong(from songCategory: [String]) {
@@ -242,15 +231,13 @@ final class GamePlayViewController: UIViewController {
         view.addGestureRecognizer(pan)
     }
 
-    private func panConfigurations(
+    private func configurePanGesture(
         sender: UIPanGestureRecognizer,
         labelText: String,
         answerArray: inout [String]
     ) {
         switch sender.state {
-        case .began:
-            initialCenter = view.center
-        case .changed:
+        case .began, .changed:
             animateView(
                 view: answerView,
                 label: songNameLabel,
@@ -260,6 +247,7 @@ final class GamePlayViewController: UIViewController {
             )
             answerLabel.text = labelText
         case .ended:
+            UINotificationFeedbackGenerator().notificationOccurred(.success)
             answerArray.append(song)
             getNewSong(from: songs)
             animateView(
@@ -282,20 +270,20 @@ final class GamePlayViewController: UIViewController {
         }
     }
 
-    // MARK: - Gesturehandler
+    // MARK: - GestureHandler
 
     @objc
     private func handleSwipes(_ sender: UIPanGestureRecognizer) {
         if sender.translation(in: view.superview).y > 50 {
-            configureViewColor(red: 95/255, green: 173/255, blue: 65/255)
-            panConfigurations(
+            answerView.backgroundColor = UIColor(named: "CorrectView90")
+            configurePanGesture(
                 sender: sender,
                 labelText: "CORRECT",
                 answerArray: &guessedSongs
             )
         } else if sender.translation(in: view.superview).y < -50 {
-            configureViewColor(red: 243/255, green: 167/255, blue: 18/255)
-            panConfigurations(
+            answerView.backgroundColor = UIColor(named: "PassView90")
+            configurePanGesture(
                 sender: sender,
                 labelText: "PASS",
                 answerArray: &skippedSongs
@@ -303,7 +291,7 @@ final class GamePlayViewController: UIViewController {
         } else {
             animateView(
                 view: answerView,
-                label: answerLabel,
+                label: songNameLabel,
                 viewAlpha: 0,
                 labelAlpha: 1,
                 transitionOption: .transitionCrossDissolve

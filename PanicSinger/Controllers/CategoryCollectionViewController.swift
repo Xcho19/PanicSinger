@@ -11,6 +11,11 @@ private let reuseIdentifier = "Cell"
 private let headerIdentifier = "Header"
 
 final class CategoryCollectionViewController: UICollectionViewController {
+    // MARK: - Model
+
+    var store = Categories.allStoreCategories.filter { !Categories.ownedCategoryNames.contains($0.name)
+    }
+
     // MARK: - Lifecycle
 
     override func viewDidLoad() {
@@ -23,6 +28,8 @@ final class CategoryCollectionViewController: UICollectionViewController {
     override func viewWillAppear(_ animated: Bool) {
         super.viewWillAppear(animated)
 
+        store = Categories.allStoreCategories.filter { !Categories.ownedCategoryNames.contains($0.name)
+        }
         collectionView.reloadData()
     }
 
@@ -71,7 +78,7 @@ final class CategoryCollectionViewController: UICollectionViewController {
         section.contentInsets = NSDirectionalEdgeInsets(
             top: 0,
             leading: 0,
-            bottom: 25,
+            bottom: 40,
             trailing: 0
         )
 
@@ -82,7 +89,7 @@ final class CategoryCollectionViewController: UICollectionViewController {
         NSCollectionLayoutBoundarySupplementaryItem(
             layoutSize: NSCollectionLayoutSize(
                 widthDimension: .fractionalWidth(1),
-                heightDimension: .absolute(50)
+                heightDimension: .absolute(60)
             ),
             elementKind: UICollectionView.elementKindSectionHeader,
             alignment: .top
@@ -92,15 +99,11 @@ final class CategoryCollectionViewController: UICollectionViewController {
     // MARK: UICollectionViewDataSource
 
     override func numberOfSections(in collectionView: UICollectionView) -> Int {
-        if Categories.storeCategories.isEmpty {
-            return 1
-        } else {
-            return 2
-        }
+        store.isEmpty ? 1 : 2
     }
 
     override func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int)
-        -> Int { (section == 0) ? Categories.ownedCategoryNames.count : Categories.storeCategories.count }
+        -> Int { (section == 0) ? Categories.ownedCategoryNames.count : store.count }
 
     override func collectionView(
         _ collectionView: UICollectionView,
@@ -112,13 +115,13 @@ final class CategoryCollectionViewController: UICollectionViewController {
         ) as? CategoryCollectionViewCell
         else { return UICollectionViewCell() }
 
-        let storeCategoryName = Categories.storeCategories.map { $0.name }
-
         if indexPath.section == 0 {
-            cell.categoryImageView.image = UIImage(named: Categories.ownedCategoryNames[indexPath.row])
+            cell.categoryImageView.image = UIImage(
+                named: Categories.ownedCategoryNames[indexPath.row]
+            )
         } else {
             cell.categoryImageView.image = UIImage(
-                named: storeCategoryName[indexPath.row]
+                named: store.map { $0.name }[indexPath.row]
             )
         }
         cell.categoryImageView.layer.cornerRadius = 10
@@ -137,19 +140,16 @@ final class CategoryCollectionViewController: UICollectionViewController {
             ).instantiateViewController(
                 withIdentifier: "configurationsViewController"
             ) as? ConfigurationsViewController {
-                configurationsViewController.state = State.normalView
                 navigationController?.pushViewController(configurationsViewController, animated: true)
             }
         } else {
-            let category = Categories.storeCategories[indexPath.row]
-
             if let purchaseViewController = UIStoryboard(
                 name: "PurchaseView",
                 bundle: nil
             ).instantiateViewController(
                 withIdentifier: "PurchaseView"
             ) as? PurchaseViewController {
-                purchaseViewController.category = category
+                purchaseViewController.category = store[indexPath.row]
                 navigationController?.pushViewController(purchaseViewController, animated: true)
             }
         }

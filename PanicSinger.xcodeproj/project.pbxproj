@@ -11,13 +11,17 @@
 		EE084200281A075000294585 /* GamePlayViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE0841FF281A075000294585 /* GamePlayViewController.swift */; };
 		EE084204281A8C1A00294585 /* AppUtility.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE084203281A8C1A00294585 /* AppUtility.swift */; };
 		EE0D0748280CBF3E00225886 /* Configurations.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EE0D0747280CBF3E00225886 /* Configurations.storyboard */; };
+		EE24399D2849596B0041D084 /* Alamofire in Frameworks */ = {isa = PBXBuildFile; productRef = EE24399C2849596B0041D084 /* Alamofire */; };
+		EE24399F284959B70041D084 /* Connectivity.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE24399E284959B60041D084 /* Connectivity.swift */; };
 		EE26A88728269CF500B9AC68 /* SwiftySound in Frameworks */ = {isa = PBXBuildFile; productRef = EE26A88628269CF500B9AC68 /* SwiftySound */; };
 		EE26A88C2826F7D200B9AC68 /* countdown.wav in Resources */ = {isa = PBXBuildFile; fileRef = EE26A88B2826F7D200B9AC68 /* countdown.wav */; };
 		EE301A2428196DE10022E03E /* Categories.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE301A2328196DE10022E03E /* Categories.swift */; };
 		EE30EDFA2819A2A900639B98 /* Songs.plist in Resources */ = {isa = PBXBuildFile; fileRef = EE30EDF92819A2A900639B98 /* Songs.plist */; };
 		EE346DEA28101A3D009AE78A /* ConfigurationsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE346DE928101A3D009AE78A /* ConfigurationsViewController.swift */; };
 		EE395659282D864000590C73 /* RulesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE395658282D864000590C73 /* RulesViewController.swift */; };
-		EE6D1A2D283BC1B0004491C4 /* ConfigurationsState.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE6D1A2C283BC1B0004491C4 /* ConfigurationsState.swift */; };
+		EE699A052847C6E200C34C4E /* Colors.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = EE699A042847C6E200C34C4E /* Colors.xcassets */; };
+		EE699A072847F20700C34C4E /* ConfigurationsViewController+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE699A062847F20700C34C4E /* ConfigurationsViewController+Extensions.swift */; };
+		EE6D1A2D283BC1B0004491C4 /* States.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE6D1A2C283BC1B0004491C4 /* States.swift */; };
 		EE88986328234543003386CD /* Media.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = EE88986228234543003386CD /* Media.xcassets */; };
 		EE893B7A2807453B004F1B5E /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE893B792807453B004F1B5E /* AppDelegate.swift */; };
 		EE893B7C2807453B004F1B5E /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE893B7B2807453B004F1B5E /* SceneDelegate.swift */; };
@@ -56,22 +60,25 @@
 		EE0841FF281A075000294585 /* GamePlayViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GamePlayViewController.swift; sourceTree = "<group>"; };
 		EE084203281A8C1A00294585 /* AppUtility.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppUtility.swift; sourceTree = "<group>"; };
 		EE0D0747280CBF3E00225886 /* Configurations.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Configurations.storyboard; sourceTree = "<group>"; };
+		EE20FA712849FFAC00208DDC /* PanicSinger.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PanicSinger.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		EE20FA722849FFAC00208DDC /* PanicSingerTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; name = PanicSingerTests.xctest; path = "/Users/khachatur/Developer/PanicSinger/build/Debug-iphoneos/PanicSingerTests.xctest"; sourceTree = "<absolute>"; };
+		EE20FA732849FFAC00208DDC /* PanicSingerUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; name = PanicSingerUITests.xctest; path = "/Users/khachatur/Developer/PanicSinger/build/Debug-iphoneos/PanicSingerUITests.xctest"; sourceTree = "<absolute>"; };
+		EE24399E284959B60041D084 /* Connectivity.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Connectivity.swift; sourceTree = "<group>"; };
 		EE26A88B2826F7D200B9AC68 /* countdown.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; name = countdown.wav; path = ../../../../Downloads/countdown.wav; sourceTree = "<group>"; };
 		EE301A2328196DE10022E03E /* Categories.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Categories.swift; sourceTree = "<group>"; };
 		EE30EDF92819A2A900639B98 /* Songs.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Songs.plist; sourceTree = "<group>"; };
 		EE346DE928101A3D009AE78A /* ConfigurationsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConfigurationsViewController.swift; sourceTree = "<group>"; };
 		EE395658282D864000590C73 /* RulesViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RulesViewController.swift; sourceTree = "<group>"; };
-		EE6D1A2C283BC1B0004491C4 /* ConfigurationsState.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConfigurationsState.swift; sourceTree = "<group>"; };
+		EE699A042847C6E200C34C4E /* Colors.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Colors.xcassets; sourceTree = "<group>"; };
+		EE699A062847F20700C34C4E /* ConfigurationsViewController+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "ConfigurationsViewController+Extensions.swift"; sourceTree = "<group>"; };
+		EE6D1A2C283BC1B0004491C4 /* States.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = States.swift; sourceTree = "<group>"; };
 		EE88986228234543003386CD /* Media.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Media.xcassets; sourceTree = "<group>"; };
-		EE893B762807453B004F1B5E /* PanicSinger.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PanicSinger.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		EE893B792807453B004F1B5E /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		EE893B7B2807453B004F1B5E /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
 		EE893B802807453B004F1B5E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		EE893B852807453C004F1B5E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		EE893B872807453C004F1B5E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		EE893B8C2807453C004F1B5E /* PanicSingerTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = PanicSingerTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		EE893B902807453C004F1B5E /* PanicSingerTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PanicSingerTests.swift; sourceTree = "<group>"; };
-		EE893B962807453C004F1B5E /* PanicSingerUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = PanicSingerUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		EE893B9A2807453C004F1B5E /* PanicSingerUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PanicSingerUITests.swift; sourceTree = "<group>"; };
 		EE893B9C2807453C004F1B5E /* PanicSingerUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PanicSingerUITestsLaunchTests.swift; sourceTree = "<group>"; };
 		EED5AACB2832435B00ABBCCE /* CategoryCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CategoryCollectionViewCell.swift; sourceTree = "<group>"; };
@@ -87,6 +94,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				EE24399D2849596B0041D084 /* Alamofire in Frameworks */,
 				EE26A88728269CF500B9AC68 /* SwiftySound in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -122,18 +130,8 @@
 				EE893B782807453B004F1B5E /* PanicSinger */,
 				EE893B8F2807453C004F1B5E /* PanicSingerTests */,
 				EE893B992807453C004F1B5E /* PanicSingerUITests */,
-				EE893B772807453B004F1B5E /* Products */,
+				EE20FA712849FFAC00208DDC /* PanicSinger.app */,
 			);
-			sourceTree = "<group>";
-		};
-		EE893B772807453B004F1B5E /* Products */ = {
-			isa = PBXGroup;
-			children = (
-				EE893B762807453B004F1B5E /* PanicSinger.app */,
-				EE893B8C2807453C004F1B5E /* PanicSingerTests.xctest */,
-				EE893B962807453C004F1B5E /* PanicSingerUITests.xctest */,
-			);
-			name = Products;
 			sourceTree = "<group>";
 		};
 		EE893B782807453B004F1B5E /* PanicSinger */ = {
@@ -147,6 +145,7 @@
 				EE893B792807453B004F1B5E /* AppDelegate.swift */,
 				EE893B7B2807453B004F1B5E /* SceneDelegate.swift */,
 				EE88986228234543003386CD /* Media.xcassets */,
+				EE699A042847C6E200C34C4E /* Colors.xcassets */,
 				EE30EDF92819A2A900639B98 /* Songs.plist */,
 				EE893B872807453C004F1B5E /* Info.plist */,
 			);
@@ -176,8 +175,9 @@
 				EEF4E0762808AAFF002696CC /* CategoryCollectionViewController.swift */,
 				EED5AACB2832435B00ABBCCE /* CategoryCollectionViewCell.swift */,
 				EE346DE928101A3D009AE78A /* ConfigurationsViewController.swift */,
-				EE0841FF281A075000294585 /* GamePlayViewController.swift */,
+				EE699A062847F20700C34C4E /* ConfigurationsViewController+Extensions.swift */,
 				EEE5229328311C2700D665E5 /* PurchaseViewController.swift */,
+				EE0841FF281A075000294585 /* GamePlayViewController.swift */,
 				EEE5228F28310F2600D665E5 /* HeaderCollectionReusableView.swift */,
 				EE395658282D864000590C73 /* RulesViewController.swift */,
 			);
@@ -199,9 +199,10 @@
 		EE893BAD280746C5004F1B5E /* Models */ = {
 			isa = PBXGroup;
 			children = (
-				EE301A2328196DE10022E03E /* Categories.swift */,
+				EE24399E284959B60041D084 /* Connectivity.swift */,
+				EE6D1A2C283BC1B0004491C4 /* States.swift */,
 				EED5AACD2832511E00ABBCCE /* Category.swift */,
-				EE6D1A2C283BC1B0004491C4 /* ConfigurationsState.swift */,
+				EE301A2328196DE10022E03E /* Categories.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -225,9 +226,10 @@
 			name = PanicSinger;
 			packageProductDependencies = (
 				EE26A88628269CF500B9AC68 /* SwiftySound */,
+				EE24399C2849596B0041D084 /* Alamofire */,
 			);
 			productName = PanicSinger;
-			productReference = EE893B762807453B004F1B5E /* PanicSinger.app */;
+			productReference = EE20FA712849FFAC00208DDC /* PanicSinger.app */;
 			productType = "com.apple.product-type.application";
 		};
 		EE893B8B2807453C004F1B5E /* PanicSingerTests */ = {
@@ -245,7 +247,7 @@
 			);
 			name = PanicSingerTests;
 			productName = PanicSingerTests;
-			productReference = EE893B8C2807453C004F1B5E /* PanicSingerTests.xctest */;
+			productReference = EE20FA722849FFAC00208DDC /* PanicSingerTests.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
 		};
 		EE893B952807453C004F1B5E /* PanicSingerUITests */ = {
@@ -263,7 +265,7 @@
 			);
 			name = PanicSingerUITests;
 			productName = PanicSingerUITests;
-			productReference = EE893B962807453C004F1B5E /* PanicSingerUITests.xctest */;
+			productReference = EE20FA732849FFAC00208DDC /* PanicSingerUITests.xctest */;
 			productType = "com.apple.product-type.bundle.ui-testing";
 		};
 /* End PBXNativeTarget section */
@@ -300,8 +302,9 @@
 			mainGroup = EE893B6D2807453B004F1B5E;
 			packageReferences = (
 				EE26A88528269CF500B9AC68 /* XCRemoteSwiftPackageReference "SwiftySound" */,
+				EE24399B2849596B0041D084 /* XCRemoteSwiftPackageReference "Alamofire" */,
 			);
-			productRefGroup = EE893B772807453B004F1B5E /* Products */;
+			productRefGroup = EE893B6D2807453B004F1B5E;
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
@@ -317,6 +320,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				EE699A052847C6E200C34C4E /* Colors.xcassets in Resources */,
 				EE30EDFA2819A2A900639B98 /* Songs.plist in Resources */,
 				EE893B862807453C004F1B5E /* LaunchScreen.storyboard in Resources */,
 				EE26A88C2826F7D200B9AC68 /* countdown.wav in Resources */,
@@ -371,6 +375,7 @@
 			files = (
 				EE893B7A2807453B004F1B5E /* AppDelegate.swift in Sources */,
 				EEE5229028310F2600D665E5 /* HeaderCollectionReusableView.swift in Sources */,
+				EE24399F284959B70041D084 /* Connectivity.swift in Sources */,
 				EE084204281A8C1A00294585 /* AppUtility.swift in Sources */,
 				EED5AACE2832511E00ABBCCE /* Category.swift in Sources */,
 				EE346DEA28101A3D009AE78A /* ConfigurationsViewController.swift in Sources */,
@@ -380,8 +385,9 @@
 				EE893B7C2807453B004F1B5E /* SceneDelegate.swift in Sources */,
 				EED5AACC2832435B00ABBCCE /* CategoryCollectionViewCell.swift in Sources */,
 				EE395659282D864000590C73 /* RulesViewController.swift in Sources */,
-				EE6D1A2D283BC1B0004491C4 /* ConfigurationsState.swift in Sources */,
+				EE6D1A2D283BC1B0004491C4 /* States.swift in Sources */,
 				EE301A2428196DE10022E03E /* Categories.swift in Sources */,
+				EE699A072847F20700C34C4E /* ConfigurationsViewController+Extensions.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -487,7 +493,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 15.5;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.4;
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
 				MTL_FAST_MATH = YES;
 				ONLY_ACTIVE_ARCH = YES;
@@ -541,7 +547,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 15.5;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.4;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				MTL_FAST_MATH = YES;
 				SDKROOT = iphoneos;
@@ -556,24 +562,28 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_IDENTITY = "Apple Development";
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = 3X949GH6N8;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = PanicSinger/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = "Panic Singer";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UIUserInterfaceStyle = Light;
 				IPHONEOS_DEPLOYMENT_TARGET = 14.4;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = PanicLLC.PanicSinger;
+				PRODUCT_BUNDLE_IDENTIFIER = com.Khachatur.panicSinger;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = 1;
@@ -585,24 +595,28 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_IDENTITY = "Apple Development";
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = 3X949GH6N8;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = PanicSinger/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = "Panic Singer";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UIUserInterfaceStyle = Light;
 				IPHONEOS_DEPLOYMENT_TARGET = 14.4;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = PanicLLC.PanicSinger;
+				PRODUCT_BUNDLE_IDENTIFIER = com.Khachatur.panicSinger;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = 1;
@@ -614,8 +628,10 @@
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
+				"CODE_SIGN_IDENTITY[sdk=macosx*]" = "Apple Development";
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 3X949GH6N8;
 				GENERATE_INFOPLIST_FILE = YES;
 				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
 				MARKETING_VERSION = 1.0;
@@ -633,8 +649,10 @@
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
+				"CODE_SIGN_IDENTITY[sdk=macosx*]" = "Apple Development";
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 3X949GH6N8;
 				GENERATE_INFOPLIST_FILE = YES;
 				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
 				MARKETING_VERSION = 1.0;
@@ -723,6 +741,14 @@
 /* End XCConfigurationList section */
 
 /* Begin XCRemoteSwiftPackageReference section */
+		EE24399B2849596B0041D084 /* XCRemoteSwiftPackageReference "Alamofire" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/Alamofire/Alamofire#network-reachability";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 5.0.0;
+			};
+		};
 		EE26A88528269CF500B9AC68 /* XCRemoteSwiftPackageReference "SwiftySound" */ = {
 			isa = XCRemoteSwiftPackageReference;
 			repositoryURL = "https://github.com/adamcichy/SwiftySound";
@@ -734,6 +760,11 @@
 /* End XCRemoteSwiftPackageReference section */
 
 /* Begin XCSwiftPackageProductDependency section */
+		EE24399C2849596B0041D084 /* Alamofire */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = EE24399B2849596B0041D084 /* XCRemoteSwiftPackageReference "Alamofire" */;
+			productName = Alamofire;
+		};
 		EE26A88628269CF500B9AC68 /* SwiftySound */ = {
 			isa = XCSwiftPackageProductDependency;
 			package = EE26A88528269CF500B9AC68 /* XCRemoteSwiftPackageReference "SwiftySound" */;

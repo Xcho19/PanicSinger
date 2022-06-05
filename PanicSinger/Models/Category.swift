@@ -7,14 +7,8 @@
 
 import Foundation
 
-struct Category: Codable, Equatable {
-    var name: String
-    var description: String?
-    var bundle: [String]
-    var price: Double
-}
-
 struct CategoryDescription: Codable, Equatable {
     var name: String
     var description: String
+    var storeID: String
 }

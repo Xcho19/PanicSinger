@@ -7,7 +7,7 @@
 
 import Foundation
 
-enum State {
+enum ConfigurationsState {
     case normalView
     case resultView
 }
