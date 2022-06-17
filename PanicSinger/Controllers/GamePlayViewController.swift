@@ -13,6 +13,7 @@ protocol GamePlayViewControllerDelegate: AnyObject {
     func getTotalTime(time: Int)
 }
 
+// swiftlint:disable all
 final class GamePlayViewController: UIViewController {
     // MARK: - Dependencies
 
@@ -76,6 +77,19 @@ final class GamePlayViewController: UIViewController {
         countdownLabel.text = "\(totalCountdownTime - 1)"
     }
 
+    private func animateTransform(with label: UILabel) {
+        UIView.animate(
+            withDuration: 0.5,
+            delay: 0,
+            usingSpringWithDamping: 0.7,
+            initialSpringVelocity: 0.2,
+            options: []
+        ) {
+            label.transform = CGAffineTransform(scaleX: 3.5, y: 3.5)
+            label.transform = CGAffineTransform(scaleX: 1.0, y: 1.0)
+        }
+    }
+
     private func animateView(
         view: UIView,
         label: UILabel,
@@ -122,15 +136,17 @@ final class GamePlayViewController: UIViewController {
     }
 
     @objc private func updateCountdownTimer() {
+        animateTransform(with: countdownLabel)
         if totalCountdownTime > 1 {
             countdownLabel.text = "\(totalCountdownTime - 1)"
             addHaptics(style: .medium)
             totalCountdownTime -= 1
         } else if totalCountdownTime == 1 {
-            addHaptics(style: .heavy)
+            addHaptics(style: .medium)
             countdownLabel.text = "GO!"
             totalCountdownTime -= 1
         } else if let timer = countdownTimer {
+            addHaptics(style: .heavy)
             timer.invalidate()
             countdownTimer = nil
             animateView(
@@ -177,10 +193,13 @@ final class GamePlayViewController: UIViewController {
                 Sound.play(url: countdownUrl)
             }
             addHaptics(style: .medium)
+            animateTransform(with: timerLabel)
         case 1:
             addHaptics(style: .medium)
+            animateTransform(with: timerLabel)
         case 0:
             addHaptics(style: .heavy)
+            animateTransform(with: timerLabel)
         default:
             break
         }

@@ -10,20 +10,28 @@ import UIKit
 class RulesViewController: UIViewController {
     // MARK: - Subviews
 
+    @IBOutlet var indicatorView: UIView!
+    @IBOutlet var titleLabel: UILabel!
     @IBOutlet private var languageSegmentedControl: UISegmentedControl!
     @IBOutlet private var englishRules: UITextView!
     @IBOutlet private var armenianRules: UITextView!
+
+    override func viewDidLoad() {
+        super.viewDidLoad()
+
+        indicatorView.layer.cornerRadius = 3
+    }
 
     // MARK: - Helpers
 
     private func configureSegmentedControl() {
         switch languageSegmentedControl.selectedSegmentIndex {
         case 0:
-            navigationItem.title = "Rules"
+            titleLabel.text = "Rules"
             englishRules.isHidden = false
             armenianRules.isHidden = true
         case 1:
-            navigationItem.title = "Կանոններ"
+            titleLabel.text = "Կանոններ"
             englishRules.isHidden = true
             armenianRules.isHidden = false
         default:

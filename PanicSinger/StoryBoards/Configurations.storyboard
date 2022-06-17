@@ -22,7 +22,7 @@
                                 <rect key="frame" x="16" y="60" width="382" height="786"/>
                                 <subviews>
                                     <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="-15" translatesAutoresizingMaskIntoConstraints="NO" id="GxC-ij-fQS">
-                                        <rect key="frame" x="0.0" y="0.0" width="382" height="205.5"/>
+                                        <rect key="frame" x="0.0" y="0.0" width="382" height="212"/>
                                         <subviews>
                                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="MPu-U4-0S2">
                                                 <rect key="frame" x="0.0" y="0.0" width="382" height="70"/>
@@ -62,10 +62,10 @@
                                                 </constraints>
                                             </view>
                                             <stackView opaque="NO" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="NpJ-Tn-wAB">
-                                                <rect key="frame" x="0.0" y="55" width="382" height="150.5"/>
+                                                <rect key="frame" x="0.0" y="55" width="382" height="157"/>
                                                 <subviews>
                                                     <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" translatesAutoresizingMaskIntoConstraints="NO" id="wHP-qQ-U4w">
-                                                        <rect key="frame" x="8" y="0.0" width="366" height="150.5"/>
+                                                        <rect key="frame" x="8" y="0.0" width="366" height="157"/>
                                                         <subviews>
                                                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="24" translatesAutoresizingMaskIntoConstraints="NO" id="11S-0b-Nhl">
                                                                 <rect key="frame" x="0.0" y="0.0" width="366" height="200"/>
@@ -93,7 +93,7 @@
                                         </subviews>
                                     </stackView>
                                     <stackView opaque="NO" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" axis="vertical" spacing="16" translatesAutoresizingMaskIntoConstraints="NO" id="hc3-hy-GXy">
-                                        <rect key="frame" x="0.0" y="217.5" width="382" height="434.5"/>
+                                        <rect key="frame" x="0.0" y="224" width="382" height="428"/>
                                         <subviews>
                                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="O8v-bj-fkj">
                                                 <rect key="frame" x="0.0" y="0.0" width="382" height="382"/>
@@ -101,9 +101,9 @@
                                                     <constraint firstAttribute="width" secondItem="O8v-bj-fkj" secondAttribute="height" id="NdY-8p-ojw"/>
                                                 </constraints>
                                             </imageView>
-                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalCompressionResistancePriority="751" text="[Category Description]" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="8jA-SO-ico">
-                                                <rect key="frame" x="0.0" y="398" width="382" height="36.5"/>
-                                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalCompressionResistancePriority="751" text="[Category Description]" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" minimumFontSize="16" translatesAutoresizingMaskIntoConstraints="NO" id="8jA-SO-ico">
+                                                <rect key="frame" x="0.0" y="398" width="382" height="30"/>
+                                                <fontDescription key="fontDescription" name="AppleSDGothicNeo-Regular" family="Apple SD Gothic Neo" pointSize="23"/>
                                                 <color key="textColor" red="0.84313726430000002" green="0.83137255909999996" blue="0.83529412749999998" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                                 <nil key="highlightedColor"/>
                                             </label>

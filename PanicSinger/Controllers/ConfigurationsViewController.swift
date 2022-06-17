@@ -11,7 +11,7 @@ import UIKit
 final class ConfigurationsViewController: UIViewController {
     // MARK: - Model
 
-    var totalTime = 5
+    var totalTime = 60
     var usedSongs: [String] = []
     var state = ConfigurationsState.normalView { didSet {
         configureState()
@@ -104,11 +104,6 @@ final class ConfigurationsViewController: UIViewController {
         guessedSongsCountLabel.font = UIFont(
             name: "Arial Rounded MT Bold",
             size: fontSize + 14
-        )
-
-        categoryDescriptionLabel.font = UIFont(
-            name: "Apple SD Gothic Neo",
-            size: round(view.frame.height/35)
         )
     }
 

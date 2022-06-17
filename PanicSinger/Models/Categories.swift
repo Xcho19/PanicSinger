@@ -19,7 +19,7 @@ final class Categories: Codable {
     static var allCategories: [CategoryDescription] = [
         CategoryDescription(
             name: "World Mix",
-            description: "Just about anything . . .",
+            description: "All genres mixed together",
             storeID: ""
         ),
         CategoryDescription(
@@ -39,12 +39,12 @@ final class Categories: Codable {
         ),
         CategoryDescription(
             name: "World Nostalgia",
-            description: "Please don't stop the music . . .",
+            description: "Fly me to the Moon . . .",
             storeID: ""
         ),
         CategoryDescription(
             name: "Armenian Mix",
-            description: "Ամեն ինչից՝ մի քիչ, մի քիչ . . .",
+            description: "Ամեն ինչից՝ մի քիչ, մի քիչ",
             storeID: ""
         ),
         CategoryDescription(
@@ -69,12 +69,12 @@ final class Categories: Codable {
         ),
         CategoryDescription(
             name: "Russian Mix",
-            description: "Всего понемножку . . .",
+            description: "Все жанры по немножку",
             storeID: ""
         ),
         CategoryDescription(
             name: "Russian Hits",
-            description: "Наверно ты меня помнишь . . .",
+            description: "Наверно ты меня не помнишь . . .",
             storeID: ""
         ),
         CategoryDescription(
@@ -91,12 +91,17 @@ final class Categories: Codable {
             name: "Russian Hip-Hop",
             description: "Не звонишь, летишь в Париж \n Я не звоню, прыгаю с крыш . . .",
             storeID: ""
+        ),
+        CategoryDescription(
+            name: "Armenian Patriotic",
+            description: "Հերոս տղերքը մեր, ելան բարցունքն ի վեր . . .",
+            storeID: ""
         )
     ]
 
     static var allStoreCategories: [CategoryDescription] = [
         CategoryDescription(
-            name: "Nostalgia",
+            name: "World Nostalgia",
             description: "Contains Nostalgic songs of the world.",
             storeID: "com.Khachatur.PanicSinger.WorldNostalgia"
         ),
@@ -139,6 +144,11 @@ final class Categories: Codable {
             name: "Russian Hip-Hop",
             description: "Contains top songs from Russian Hip-Hop genre.",
             storeID: "com.Khachatur.PanicSinger.RussianHipHop"
+        ),
+        CategoryDescription(
+            name: "Armenian Patriotic",
+            description: "Contains Armenian patriotic songs.",
+            storeID: "com.Khachatur.PanicSinger.ArmenianPatriotic"
         )
     ]
 }

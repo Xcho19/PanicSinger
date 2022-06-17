@@ -13,7 +13,7 @@ private let headerIdentifier = "Header"
 final class CategoryCollectionViewController: UICollectionViewController {
     // MARK: - Model
 
-    var store = Categories.allStoreCategories.filter { !Categories.ownedCategoryNames.contains($0.name)
+    private var store = Categories.allStoreCategories.filter { !Categories.ownedCategoryNames.contains($0.name)
     }
 
     // MARK: - Lifecycle
@@ -21,6 +21,17 @@ final class CategoryCollectionViewController: UICollectionViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
 
+        if UserDefaults.standard.string(forKey: "isFirstTime") == nil {
+            UserDefaults.standard.setValue("No", forKey: "isFirstTime")
+            if let rulesViewController = UIStoryboard(
+                name: "Main",
+                bundle: nil
+            ).instantiateViewController(
+                withIdentifier: "Rules"
+            ) as? RulesViewController {
+                navigationController?.present(rulesViewController, animated: true)
+            }
+        }
         collectionViewConfigurations()
         navigationItem.backButtonTitle = ""
     }
