@@ -9,7 +9,7 @@ import SwiftySound
 import UIKit
 
 protocol GamePlayViewControllerDelegate: AnyObject {
-    func getResultsFrom(correctSongs: [String], skippedSongs: [String], usedSongs: [String])
+    func getResultsFrom(correctSongs: [String], skippedSongs: [String])
     func getTotalTime(time: Int)
 }
 
@@ -22,7 +22,6 @@ final class GamePlayViewController: UIViewController {
     // MARK: - Model
 
     private var song: String = ""
-    var usedSongs: [String] = []
     var songs: [String] = []
     var guessedSongs: [String] = []
     var skippedSongs: [String] = []
@@ -48,6 +47,8 @@ final class GamePlayViewController: UIViewController {
 
         configureSubviews()
         startCountdownTimer()
+        setViewBorder()
+        UIApplication.shared.isIdleTimerDisabled = true
         getSongsFor(category: Categories.ownedCategoryName)
         AppUtility.lockOrientation(.landscape, andRotateTo: .landscapeRight)
     }
@@ -75,6 +76,25 @@ final class GamePlayViewController: UIViewController {
     private func configureSubviews() {
         timerLabel.text = formatTime(totalTime)
         countdownLabel.text = "\(totalCountdownTime - 1)"
+
+        FontConfigurations.shared.configureFont(
+            label: songNameLabel,
+            fontName: "Helvetica Neue Bold",
+            smallestFontSize: 38,
+            frame: view.frame.height
+        )
+    }
+
+    private func setViewBorder() {
+        if UIDevice.current.hasNotch {
+            view.layer.cornerRadius = 50
+            answerView.layer.cornerRadius = 50
+        } else {
+            view.layer.cornerRadius = 40
+            answerView.layer.cornerRadius = 40
+        }
+        view.layer.borderWidth = 14
+        view.layer.borderColor = UIColor.white.cgColor
     }
 
     private func animateTransform(with label: UILabel) {
@@ -180,7 +200,7 @@ final class GamePlayViewController: UIViewController {
         } else if let timer = timer {
             timer.invalidate()
             self.timer = nil
-            delegate?.getResultsFrom(correctSongs: guessedSongs, skippedSongs: skippedSongs, usedSongs: usedSongs)
+            delegate?.getResultsFrom(correctSongs: guessedSongs, skippedSongs: skippedSongs)
             dismiss(animated: false)
         }
 
@@ -225,18 +245,21 @@ final class GamePlayViewController: UIViewController {
               let categoriesDict = NSDictionary(contentsOf: songURL) as? [String: [String]]
         else { return }
         songs = categoriesDict[category]!
+        print(songs.map {$0}.joined(separator: "\n"))
         getNewSong(from: songs)
     }
 
     private func getNewSong(from songCategory: [String]) {
         if let randomSong = songCategory.shuffled().first(where: {
-            !usedSongs.contains($0)
+            !ConfigurationsViewController.usedSongs.contains($0)
         }) {
-            usedSongs.append(randomSong)
+            ConfigurationsViewController.usedSongs.append(randomSong)
             song = randomSong
             songNameLabel.text = randomSong
         } else {
-            usedSongs.removeAll()
+            ConfigurationsViewController.usedSongs = ConfigurationsViewController.usedSongs.filter {
+                !songCategory.contains($0)
+            }
             songNameLabel.text = songCategory.shuffled().first
         }
     }
@@ -324,3 +347,4 @@ final class GamePlayViewController: UIViewController {
         dismiss(animated: false)
     }
 }
+

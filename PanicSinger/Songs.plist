@@ -2,18 +2,18 @@
 <!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
 <plist version="1.0">
 <dict>
-	<key>Armenian Patriotioc</key>
+	<key>Armenian Patriotic</key>
 	<array>
 		<string>Սևակ Խանաղյան - Արցախ</string>
 		<string>Ալլա Լևոնյան - Գնա ու կռվիր</string>
-		<string>Արամե - Մի Նամակ</string>
-		<string>Սևակ Ամորյան - Գինի լից</string>
+		<string>Արամե - Մի նամակ</string>
+		<string>Սևակ Ամրոյան - Գինի լից</string>
 		<string>Թռչեի Մտքով Տուն</string>
-		<string>Սարո Թովմասյան ft. Արթուր Գրիգորյան - Կյանք ու կռիվ</string>
+		<string>Սարո Թովմասյան և Արթուր Գրիգորյան - Կյանք ու կռիվ</string>
 		<string>Ռուբեն Հախվերդյան - Կարմիր Կակաչներ</string>
 		<string>Արսեն Սաֆարյան - Պարոնայք սպաներ</string>
 		<string>Արաբո Իսպիրյան - Տուն իմ հայրենի</string>
-		<string>Սևակ Ամորյան - Ախպերս ու ես</string>
+		<string>Սևակ Ամրոյան - Ախպերս ու ես</string>
 		<string>Հայ ժողովրդական - Զարթնիր Լաո</string>
 		<string>Հայ ժողովրդական - Գետաշեն</string>
 		<string>Արմեն Պողոսյան - Պատիվ ունեմ</string>
@@ -26,16 +26,15 @@
 		<string>Հայ աստղեր - Մեզ ոչինչ չի հաղթի</string>
 		<string>Ինգա և Անուշ Արշակյաններ - Ապրելու ապրիլ</string>
 		<string>Ներսիկ Իսպիրյան և Արաբո Իսպիրյան - Պիտ պաշտպանեմ</string>
-		<string>Նարե Գևորգյան - Մոր երգը զինվորին </string>
+		<string>Նարե Գևորգյան - Մոր երգը զինվորին</string>
 		<string>Արա և Ալիկ Ավետիսյաններ - Ներեք մեզ մայրեր</string>
 		<string>Արթուր Երիցյան - Հայ քաջ զինվոր</string>
 		<string>Հայ աստղեր - Հերոս տղերք</string>
 		<string>Սիլվա Հակոբյան - Դեպի երկինք</string>
 		<string>Արաբո Իսպիրյան - Կամավոր</string>
 		<string>Արմեն Մովսիսյան - Զինվորի երգ</string>
-		<string>Արմեն Մովսիսյան - Վեր կաց եղբայր</string>
+		<string>Արմեն Մովսիսյան - Վեր կաց եղբայր իմ</string>
 		<string>Ներսիկ Իսպիրյան - Արցախ</string>
-		<string>Աղաս - թուրքի պոստից պեկան խփեց</string>
 		<string>Արման Հովհաննիսյան - Հայոց քաջեր</string>
 		<string>Հարութ Փամբուկչյան - Հայ քաջեր</string>
 		<string>Գոռ Հարությունյան - Շարքային Հարությունյան</string>
@@ -45,7 +44,7 @@
 		<string>Մկրտիչ Մկրտչյան - Պատերզմ եք գնում, բարով գնացեք</string>
 		<string>Ներսիկ Իսպիրյան - Արծիվ սլացիր</string>
 		<string>Մեր անունն է Հայկական բանակ</string>
-		<string>Սարո Թովմասյան - Վախը` Հայից վախենում է</string>
+		<string>Սարո Թովմասյան - Վախը հայից վախենում է</string>
 		<string>Թաթա Սիմոնյան - Երանի</string>
 	</array>
 	<key>World Mix</key>
@@ -64,7 +63,7 @@
 		<string>KALEO - Way Down We Go</string>
 		<string>Imagine Dragons - Demons</string>
 		<string>Panic! At The Disco - High Hopes</string>
-		<string>The Rolling Stones - Paint It, Black</string>
+		<string>The Rolling Stones - Paint It Black</string>
 		<string>Sublime - Santeria</string>
 		<string>Coldplay - Viva La Vida</string>
 		<string>The Beatles - Blackbird</string>
@@ -73,7 +72,6 @@
 		<string>Eminem - Mocking Bird</string>
 		<string>2Pac ft. Snoop Dog - 2 Of Americaz Most Wanted</string>
 		<string>J. Cole - Middle Child</string>
-		<string>XXXTENTACION - Moonlight</string>
 		<string>YG ft. Jeezy - My Ni**a</string>
 		<string>50 Cent - In The Club</string>
 		<string>Blocboy JB ft. Drake - Look Alive</string>
@@ -83,7 +81,6 @@
 		<string>Silento - Watch Me</string>
 		<string>Tyga ft. Offset - Taste</string>
 		<string>ArrDee - Oliver Twist</string>
-		<string>Pop Smoke - Dior</string>
 		<string>N.W.A. - Boys In The Hood</string>
 		<string>Travis Scott - Butterfly Effect</string>
 		<string>50 Cent - Many Man</string>
@@ -128,7 +125,7 @@
 		<string>Alec Benjamin - Let Me Down Slowly</string>
 		<string>Charlie Puth ft. Wiz Khalifa - See You Again</string>
 		<string>Pitbull ft. Ne-Yo - Give Me Everything</string>
-		<string>The Weekend - Blinding Lights</string>
+		<string>The Weeknd - Blinding Lights</string>
 		<string>Doja Cat ft. SZA - Kiss Me More</string>
 		<string>Dua Lipa - IDGAF</string>
 		<string>Harry Styles - Sign Of The Times</string>
@@ -150,21 +147,133 @@
 		<string>James Blunt - You&apos;re Beautiful</string>
 		<string>P!nk - So What</string>
 		<string>Flo Rida ft. T-Pain - Low</string>
-	</array>
-	<key>Russian Hits</key>
-	<array>
-		<string></string>
-		<string></string>
-		<string></string>
+		<string>XXXTENTACION - Moonlight</string>
+		<string>24kGoldn ft. iann dior - Mood</string>
+		<string>Shouse - Love Tonight</string>
+		<string>Olivia Rodrigo - Drivers License</string>
+		<string>Swedish House Mafia ft. The Weeknd - Moth To A Flame</string>
+		<string>One Direction - Story Of My Life</string>
+		<string>Luis Fonsi &amp; Daddy Yankee - Despacito</string>
+		<string>Zayn ft. Sia - Dusk Till Dawn</string>
+		<string>Shakira - Whenever, Wherever</string>
+		<string>Marshmello ft. Anne-Marie - FRIENDS</string>
+		<string>The Weeknd ft. Duft Punk - I Feel It Coming</string>
+		<string>Alan Walker - Faded</string>
+		<string>NF - Let You Down</string>
+		<string>Drake - In My Feelings</string>
+		<string>Soulja Boy - Crank That</string>
+		<string>O.T. Genasis - CoCo</string>
+		<string>Ayo &amp; Teo - Rolex</string>
+		<string>50 Cent - Just A Lil Bit</string>
+		<string>N.W.A. - Straight Outta Compton</string>
 	</array>
 	<key>Russian Mix</key>
 	<array>
-		<string></string>
-		<string></string>
-		<string></string>
+		<string>Егор Крид - Миллион алых роз</string>
+		<string>Adler Kotsba ft. Timaran - Запах моей женщины</string>
+		<string>RSAC ft. ELLA - Не мешай</string>
+		<string>Елена Темникова - Ревность</string>
+		<string>JONY - Ты беспощадна</string>
+		<string>ANNA ASTI - По барам</string>
+		<string>Kamazz - Как ты там</string>
+		<string>Люся Чеботина - Солнце Монако</string>
+		<string>Ramil&apos; - Ау</string>
+		<string>Ramil&apos; - Сон</string>
+		<string>Джаро ft. Ханза - Королева танцпола</string>
+		<string>RASA - Пчеловод</string>
+		<string>NILETTO - Любимка</string>
+		<string>2Маши - Мама я танцую</string>
+		<string>2Маши - Босая</string>
+		<string>Султан Лагучев - Горький вкус</string>
+		<string>T-Fest - Улети</string>
+		<string>Super Jorik - Ciao! Ciao!</string>
+		<string>GAYAZOV$ BROTHER$ — Малиновая лада</string>
+		<string>HENSY - Поболело и прошло</string>
+		<string>Ислам Итляшев - Кобра</string>
+		<string>Mr. Credo - Чудная далина</string>
+		<string>А-Студио - Улетаю</string>
+		<string>Потап и Настя - Пара</string>
+		<string>Дима Билан - Believe Me</string>
+		<string>Банд&apos;Эрос - Манхэттен</string>
+		<string>Инфинити - Где ты</string>
+		<string>Дискотека Авария - Арам-зам-зам</string>
+		<string>23:45 ft. 5sta Family - Я буду</string>
+		<string>Вера Брежнева - Любовь спасет мир</string>
+		<string>Нюша - Выберать чудо</string>
+		<string>Ёлка - Прованс</string>
+		<string>Виа Гра - Перемирие</string>
+		<string>Нюша - Цунами</string>
+		<string>Пика - Патимейкер</string>
+		<string>Super Жorik - Хочу тебя любиться</string>
+		<string>Super Жorik - Золото</string>
+		<string>КУЧЕР &amp; JANAGA - По щекам слёзы</string>
+		<string>HammAli &amp; Navai - Любить-это так бесполезно</string>
+		<string>Юрий Шатунов - Седая ночь</string>
+		<string>Григорий Лепс - Я тебе не верю</string>
+		<string>Лолита Милявская - На титанике</string>
+		<string>Vitas - The 7th Element</string>
+		<string>Руки Вверх! - Крошка моя</string>
+		<string>Елена Ваенга - Курю</string>
+		<string>Ирина Аллегрова - Императрица </string>
+		<string>Аида Ведищева - Чунга-чанга</string>
+		<string>Верка Сердючка - Новогодняя</string>
+		<string>Муслим Магомаев - Верни мне музыку</string>
+		<string>Юрий Никулин - Постой поровоз</string>
+		<string>Григорий Лепс - Водопадом</string>
+		<string>Детская песня - Чебурашка </string>
+		<string>Михаил Шуфутинцкий - Марджанджа</string>
+		<string>Любэ - Комбат</string>
+		<string>Филипп Киркоров - Цвет настроения синий</string>
+		<string>Олег Газманов - Офицеры</string>
+		<string>Любовь Успенская - Гитара</string>
+		<string>Михаил Шуфутинский - Утки</string>
+		<string>Аида Ведищева - Песенка о медведях</string>
+		<string>Владимир Высоцский - Эх раз</string>
+		<string>Элджей ft. Feduk - Розовое вино</string>
+		<string>Zivert ft. Баста - Неболей</string>
+		<string>Navai - Чёрный мерен</string>
+		<string>Тима Белорусских - Мокрые кроссы</string>
+		<string>Artik &amp; Asti - Истеричка</string>
+		<string>Артур Пирожков - Чика</string>
+		<string>Andro - Иса</string>
+		<string>JONY - Love your voice</string>
+		<string>HammAli &amp; Navai - Ноты</string>
+		<string>Макс Корж - Малый повзрослел</string>
+		<string>HammAli &amp; Navai ft. Jah Khalib - Боже, как завидую</string>
+		<string>Макс Корж - Эндорфин</string>
+		<string>JONY - Лали</string>
+		<string>HammAli &amp; Navai - Сколько не видились мы</string>
+		<string>IVAN VALEEV - Novella</string>
+		<string>Rauf &amp; Faik - Было бы лето</string>
+		<string>Ramil&apos; - Вся такая в белом</string>
+		<string>Jah Khalib - Искал нашел</string>
+		<string>HammAli &amp; Navai - Запах снов</string>
+		<string>Мот - На дне</string>
+		<string>Jah Khalib - 9 грамм свинца</string>
+		<string>Скриптонит - Чистыӣ</string>
+		<string>Xcho - I can fly</string>
+		<string>Miyagi - Captain </string>
+		<string>Miyagi - Колибри</string>
+		<string>Каспийский Груз - Туда и обратно </string>
+		<string>Каспийский Груз - Доедешь-Пиши</string>
+		<string>Xcho - Вороны</string>
+		<string>Kristina Si - Хочу</string>
+		<string>Джарахов ft. Markul - Я в моменте</string>
+		<string>10AGE - Пушка</string>
+		<string>Navai ft. Bahh Tee - Не приму и даром</string>
+		<string>Matrang - Медуза</string>
+		<string>Miyagi - Marlboro</string>
+		<string>Гуф - Ice Baby</string>
+		<string>MORGENSHTERN - Домой</string>
+		<string>Гуф - ЧП</string>
+		<string>Баста - Пуэрчик покрепче</string>
+		<string>Баста - Папа What&apos;s Up</string>
+		<string>Баста ft. Тати - Моя вселенная</string>
 	</array>
-	<key>Armenian Pop Hits</key>
+	<key>Armenian Pop</key>
 	<array>
+		<string>Դավիթ Թուջարյան և Արևիկ - 1-ը հունիսի</string>
+		<string>Betty - People Of The Sun</string>
 		<string>David Greg ft. Raff - Քարտեզ</string>
 		<string>Aram MP3 - Ալա բալա նիցա</string>
 		<string>Aram MP3 - Կուզես</string>
@@ -173,14 +282,15 @@
 		<string>Aram MP3 - Հանինա</string>
 		<string>Aram MP3 ft. Իվետա Մուկուչյան - Դաշտերով</string>
 		<string>Իվետա Մուկուչյան - Հայաստանի աղջիկներ</string>
-		<string>OFI ft. Hak &amp; Super Sako - Սիրտս պատրաստա</string>
+		<string>OFI ft. Hak &amp; Super Sako - Սիրտս պատրաստ ա</string>
 		<string>Սիրուշո - Ես ու դու</string>
-		<string>Սիրուշո - Body on body</string>
+		<string>Սիրուշո - Body On Body</string>
 		<string>Սիրուշո ft. Sebu - Վույ աման</string>
 		<string>LADANIVA - Քեֆ չի լինի</string>
 		<string>Aram MP3 - Ասա</string>
 		<string>Էն աղջիկները - ՄԵՆՔ</string>
 		<string>Brunette - Գիշեր</string>
+		<string>Brunette - Smoke Break</string>
 		<string>LADANIVA - Վայ աման</string>
 		<string>Nemra - Նարե</string>
 		<string>Լավ էլի - Քո աչքերը</string>
@@ -192,23 +302,23 @@
 		<string>Aram MP3 ft. Իվետա Մուկուչյան - Նինո</string>
 		<string>Aram MP3 ft. Իվետա Մուկուչյան - Ղափամա</string>
 		<string>Aram MP3 ft. Իվետա Մուկուչյան - Քամին զանա</string>
-		<string>Գարիկ &amp; Սոնա ft. 3.33 - Դատարկ</string>
-		<string>Գարիկ &amp; Սոնա - Էսօր ուրբաթ է</string>
-		<string>Գարիկ &amp; Սոնա - Համայակ</string>
-		<string>Գարիկ &amp; Սոնա - Գութան</string>
-		<string>Գարիկ &amp; Սոնա - Լավ տղու փայ</string>
-		<string>Գարիկ &amp; Սոնա - Սրտիդ բանալին</string>
+		<string>Գարիկ և Սոնա ft. 3.33 - Դատարկ</string>
+		<string>Գարիկ և Սոնա - Էսօր ուրբաթ է</string>
+		<string>Գարիկ և Սոնա - Համայակ</string>
+		<string>Գարիկ և Սոնա - Գութան</string>
+		<string>Գարիկ և Սոնա - Լավ տղու փայ</string>
+		<string>Գարիկ և Սոնա - Սրտիդ բանալին</string>
 		<string>H.A.Y.K. - Իմ լուսին</string>
 		<string>Սարո Թովմասյան ft. Super Sako - Ամենա</string>
 		<string>Սոնա Ռուբենյան - Ապրելու չափ համար</string>
-		<string>Սոնա Ռուբենյան - Լյուդվիկ անունով ոզնին</string>
+		<string>Սոնա Ռուբենյան - Լյուդվիգ անունով ոզնին</string>
 		<string>Մարտին Մկրտչյան - Այ սիրուն </string>
 		<string>Գևորգ Մարտիրոսյան - Իմ կյանքն ես</string>
 		<string>Նարեկ Մեծ Հայք ft. Գևորգ Մարտիրոսյան - Դույ դույ</string>
 		<string>Նարեկ Մեծ Հայք ft. DJ SMOKE - Շոգա</string>
 		<string>Միհրան Ծառուկյան - Սրտիս ուզածը</string>
 		<string>Միհրան Ծառուկյան - Սիրո կինո</string>
-		<string>Միհրան Ծառուկյան - Սիրահարվել եմ </string>
+		<string>Միհրան Ծառուկյան - Սիրահարվել եմ</string>
 		<string>Միհրան Ծառուկյան - Հիմա կիմանա</string>
 		<string>Միհրան Ծառուկյան - Գնա գնա</string>
 		<string>Միհրան Ծառուկյան - Ծնունդդ շնորհավոր</string>
@@ -218,12 +328,12 @@
 		<string>Արման Հովհաննիսյան - Օրեր-օրեր</string>
 		<string>Հայկո - Վերև</string>
 		<string>Արման Հովհաննիսյան - Դու ես դու</string>
-		<string>Նորո - Սիրտս պարումա</string>
+		<string>Նորո - Սիրտս պարում ա</string>
 		<string>Հայկ Դուրգարյան - Հարց չկա</string>
-		<string>Deputati Show - Յարս Վայքումա</string>
+		<string>Deputati Show - Յարս Վայքում ա</string>
 		<string>Սրբուկ - Եթե կարող ես</string>
 		<string>Լիլիթ Հովհանիսսյան - Թե աղջիկ լինեիր</string>
-		<string>Լիլիթ Հովհանիսսյան - Տի տի տի </string>
+		<string>Լիլիթ Հովհանիսսյան - Տի տի տի</string>
 		<string>Լիլիթ Հովհանիսսյան - Գնչու</string>
 		<string>Լիլիթ Հովհանիսսյան - Թշնամուս չեմ ցանկանա</string>
 		<string>Լիլիթ Հովհանիսսյան - Դե էլ մի</string>
@@ -233,12 +343,12 @@
 		<string>Արմենչիկ - Տաք է տաք է</string>
 		<string>Արմենչիկ - Kiss me</string>
 		<string>Լիլիթ Հովհաննիսյան ft. Վաչե Ամարյան - Ինձ չսպանես</string>
-		<string>Մարտին Մկրտչյան - Այս երգը քոնն է </string>
+		<string>Մարտին Մկրտչյան - Այս երգը քոնն է</string>
 		<string>Արմո - Ուշ է հիմա</string>
 		<string>Artem Valter - Armenia</string>
 		<string>Reincarnation - Աշխարհումս իմն դուն իս</string>
 		<string>Ռազմիկ Ամյան - Չունի Աշխարհը քեզ նման</string>
-		<string>Սոնա ft. Գարիկ - Լուսին</string>
+		<string>Գարիկ և Սոնա - Լուսին</string>
 		<string>Ռազմիկ Ամյան - Սիրեմ քեզ լիանամ</string>
 		<string>Artem Valter - Իմ սրտում</string>
 		<string>Artem Valter - Տաշի տուշի</string>
@@ -259,7 +369,7 @@
 		<string>Սիլվա Հակոբյան - Սասնա պար</string>
 		<string>Թաթա Սիմոնյան - Չի կարելի</string>
 		<string>Սիլվա Հակոբյան - Վերջ</string>
-		<string>Թաթա Սիմոնյան ft. Кристина Орбакаите - Մեր սիրո տոնը</string>
+		<string>Թաթա Սիմոնյան ft. Кристина Орбакайте - Մեր սիրո տոնը</string>
 		<string>Մհեր - Վերջին զանգ</string>
 		<string>Սիլվա Հակոբյան - Դե գնա</string>
 		<string>Հայկո - Ետ նայիր ու տես</string>
@@ -281,6 +391,8 @@
 		<string>Compass Band - Sweetie Baby</string>
 		<string>Էմմի - Կամուրջներ</string>
 		<string>Էմմի - Boom boom</string>
+		<string>Reincarnation և Հարութ Փամբուկչյան - Կանցնեն օրեր</string>
+		<string>Կարեն Ասլանյան ft. Միլենա Հովհաննիսյան, Արա Հովհաննիսյան - Էլի էլի</string>
 	</array>
 	<key>Armenian Mix</key>
 	<array>
@@ -300,7 +412,7 @@
 		<string>Արամ Ասատրյան - Պիցցա, պիցցա</string>
 		<string>Տիգրան Ժամկոչյան - Տեր Աստված</string>
 		<string>Տիգրան Ժամկոչյան - Իմ անմոռաց</string>
-		<string>Թաթուլ Ավոյան - Բոմ բոմ բոմ </string>
+		<string>Թաթուլ Ավոյան - Բոմ բոմ բոմ</string>
 		<string>Վլե - Տեր-տերի այգում</string>
 		<string>Մրե ft. Հերմինե - Ախ բանակ</string>
 		<string>Թաթուլ Ավոյան - Վառել եմ մոմերը</string>
@@ -316,7 +428,7 @@
 		<string>Արտաշ Ասատրյան - Ալիսա</string>
 		<string>Միշո - Ով ենք</string>
 		<string>Նարեկ Մեծ Հայք ft. 3.33 - Կես մարդ</string>
-		<string>Հայ Տղեք - Մի կաթիլ մեղր </string>
+		<string>Հայ Տղեք - Մի կաթիլ մեղր</string>
 		<string>Մի Քանի Հոգի - Էս պահին</string>
 		<string>Sencho ft. Edgar - Underground</string>
 		<string>Vnas - Chka Garoon</string>
@@ -346,11 +458,11 @@
 		<string>Նարեկ Մեծ Հայք ft. Գևորգ Մարտիրոսյան - Դույ դույ</string>
 		<string>Լիլիթ Հովհանիսսյան - Գնչու</string>
 		<string>Մարտին Մկրտչյան - Այ սիրուն </string>
-		<string>Գարիկ &amp; Սոնա - Համայակ</string>
+		<string>Գարիկ և Սոնա - Համայակ</string>
 		<string>Compass Band - Sweetie Baby</string>
 		<string>Արմենչիկ - Տաք է տաք է</string>
 		<string>Միհրան Ծառուկյան - Գնա գնա</string>
-		<string>Սոնա ft. Գարիկ - Լուսին</string>
+		<string>Գարիկ և Սոնա - Լուսին</string>
 		<string>Aram MP3 ft. Իվետա Մուկուչյան - Դաշտերով</string>
 		<string>Մհեր - Վերջին զանգ</string>
 		<string>Գրիգոր Կյոկչյան - Երանի թե</string>
@@ -412,8 +524,6 @@
 		<string>Кино - Пачка сигарет</string>
 		<string>Кино - Кукушка</string>
 		<string>Кино - Звезда По Имени Солнце</string>
-		<string>Баста - Сансара</string>
-		<string>Баста - Медлячок </string>
 		<string>t.A.T.u. - Нас не дагонят</string>
 		<string>t.A.T.u. - Я сошла с ума</string>
 		<string>Руки Вверх! - Крошка моя</string>
@@ -426,7 +536,6 @@
 		<string>Егор Крид - Самая-Самая</string>
 		<string>Егор Крид - Будилньик</string>
 		<string>Время Истекло - Имя 505</string>
-		<string>Банд&apos;Эрос - Коламбия пикчерз не представляет</string>
 		<string>5sta Family - Зачем</string>
 		<string>Звери - До скорой встречи</string>
 		<string>Бьянка - А чо чо</string>
@@ -455,12 +564,12 @@
 		<string>Юрий Шатунов - Детство</string>
 		<string>Сатс Михайлов - Все для тебя</string>
 		<string>Муслим Магомаев - Королева красоты</string>
-		<string>Муслим Магомаев - Лучший город земли </string>
-		<string>Варвара - Катюша </string>
+		<string>Муслим Магомаев - Лучший город земли</string>
+		<string>Варвара - Катюша</string>
 		<string>Русская народная - Калинка</string>
 		<string>Николай Устинов - Смуглянка</string>
 		<string>Григорий Лепс - Натали</string>
-		<string>Михаил Круг - Владимирский Централ </string>
+		<string>Михаил Круг - Владимирский Централ</string>
 		<string>Любэ - Давай за</string>
 		<string>Олег Газманов - Офицеры</string>
 		<string>Градусы - Научиться бы не париться</string>
@@ -472,19 +581,19 @@
 		<string>Михаил Шуфутинцкий и Лев Лещенко - Обажаю я тебя</string>
 		<string>Михаил Шуфутинцкий - У вакзала</string>
 		<string>Ирина Аллегрова - С днем рождения</string>
-		<string>Ирина Аллегрова - Императрица </string>
+		<string>Ирина Аллегрова - Императрица</string>
 		<string>Михаил Круг - Купала</string>
 		<string>Валерий Леонтьев - Светафор</string>
 		<string>Кракадил Гена - Пусть бегут</string>
 		<string>Кракадил Гена - Голубой вагон</string>
-		<string>Бременские Музыканты - Ничево на свете лучше нету </string>
+		<string>Бременские Музыканты - Ничево на свете лучше нету</string>
 		<string>Веселая Карусель - Антошка</string>
 		<string>Буренка Даша - Два веселых гуся</string>
 		<string>Детская песня - Кузнечик</string>
 		<string>Аида Ведищева - Чунга-чанга</string>
 		<string>Крошка Енот - Улыбка</string>
 		<string>Песенка Львенка и Черепахи - Лежу</string>
-		<string>Детская песня - Чебурашка </string>
+		<string>Детская песня - Чебурашка</string>
 		<string>Приключения Буратино - Бу-ра-ти-но!</string>
 		<string>Винни Пух, Пятачок, Ослик Иа - Песня</string>
 		<string>Лайма Вайкуле - Еще не вечер</string>
@@ -551,23 +660,22 @@
 	<key>Russian Pop</key>
 	<array>
 		<string>Элджей ft. Feduk - Розовое вино</string>
-		<string>Артур Пирожков - Зацепила </string>
+		<string>Артур Пирожков - Зацепила</string>
 		<string>Артур Пирожков - Алкоголичка</string>
 		<string>Артур Пирожков - Чика</string>
 		<string>Артур Пирожков ft. Клава Кока - Хочешь</string>
 		<string>Мот - Капкан</string>
 		<string>Мот - Август-это ты</string>
-		<string>Мот - Когда исчезнет Слово</string>
+		<string>Мот - Когда исчезнет слово</string>
 		<string>Мот - На дне</string>
 		<string>Мот ft. Ани Лорак - Сопрано</string>
 		<string>Мот ft. Бьянка - Абсолютно всё</string>
 		<string>Kristina Si - Космос</string>
-		<string>Kristina Si - Тебе не будет больнп </string>
+		<string>Kristina Si - Тебе не будет больнo</string>
 		<string>Zivert - Life</string>
 		<string>Zivert - Credo</string>
 		<string>Zivert - Beverly Hills</string>
 		<string>Zivert - Зеленые волны</string>
-		<string>Zivert ft. Баста - Неболей</string>
 		<string>Zivert - Еще хочу</string>
 		<string>Егор Крид - Цвет настроения синий</string>
 		<string>Егор Крид - Потрачу</string>
@@ -575,30 +683,34 @@
 		<string>Егор Крид ft. Nyusha - Mr. &amp; Mrs. Smith</string>
 		<string>Егор Крид - Берегу</string>
 		<string>Егор Крид - Сердцеедка</string>
-		<string>Егор Крид ft. Валерия - Часики </string>
-		<string>Егор Крид - Папина Дочка </string>
+		<string>Егор Крид ft. Валерия - Часики</string>
+		<string>Егор Крид - Папина Дочка</string>
 		<string>Макс Корж - Мотылёк</string>
 		<string>Макс Корж - Горы по колено</string>
 		<string>Макс Корж - Малиновый закат</string>
 		<string>Макс Корж - Эндорфин</string>
 		<string>Макс Корж - Малый повзрослел</string>
 		<string>Макс Корж - Жить в кайф</string>
-		<string>Artik &amp; Asti - Грустный денс</string>
+		<string>Artik &amp; Asti - Грустный дэнс</string>
 		<string>Artik &amp; Asti - Под гипнозом</string>
 		<string>Artik &amp; Asti - Истеричка</string>
 		<string>Artik &amp; Asti - Девочка танцуй</string>
 		<string>HammAli &amp; Navai - Птичка</string>
 		<string>HammAli &amp; Navai - Прятки</string>
 		<string>HammAli &amp; Navai - Цветок</string>
-		<string>HammAli &amp; Navai - Ты позвонишь ночью </string>
+		<string>HammAli &amp; Navai - Ты позвонишь ночью</string>
 		<string>HammAli &amp; Navai - А если это любовь</string>
-		<string>HammAli &amp; Navai - Боже, как завидую</string>
 		<string>HammAli &amp; Navai - Сколько не видились мы</string>
-		<string>HammAli &amp; Navai - Не зови,не приду</string>
+		<string>HammAli &amp; Navai - Не зови, не приду</string>
 		<string>HammAli &amp; Navai - Хочешь, я к тебе приеду</string>
 		<string>HammAli &amp; Navai - Ты моя химия</string>
 		<string>HammAli &amp; Navai - Где ты была?</string>
 		<string>HammAli &amp; Navai - Фары-туманы</string>
+		<string>HammAli &amp; Navai - Ноты</string>
+		<string>HammAli &amp; Navai - Пустите меня на танцпол</string>
+		<string>HammAli &amp; Navai - Не люби меня</string>
+		<string>HammAli &amp; Navai - Запах снов</string>
+		<string>Xcho - Only you</string>
 		<string>JONY - Love Your Voice</string>
 		<string>JONY - Комета</string>
 		<string>JONY ft. HammAli &amp; Navai - Без тебя я не я</string>
@@ -612,11 +724,11 @@
 		<string>Rauf &amp; Faik - Было бы лето</string>
 		<string>Ramil&apos; - Сияй</string>
 		<string>Ramil&apos; - Все такая в белом</string>
-		<string>Мальбэк ft. Сюзанна - Равнодушие </string>
+		<string>Мальбэк ft. Сюзанна - Равнодушие</string>
 		<string>Клава Кока ft. NILLETO - Краш</string>
 		<string>Клава Кока - Покинула чат</string>
 		<string>Клава Кока - Зая</string>
-		<string>Клава Кока - Влюблина в МДК</string>
+		<string>Клава Кока - Влюблена в МДК</string>
 		<string>The Limba - Обманула</string>
 		<string>Dabro - Юность</string>
 		<string>Тима Белорусских - Витаминка</string>
@@ -624,10 +736,11 @@
 		<string>Тима Белорусских - Незабудка</string>
 		<string>Тима Белорусских - Я болше не напишу</string>
 		<string>Тима Белорусских - Окей</string>
-		<string>LOBODA - K черту любовь</string>
+		<string>LOBODA - K чёрту любовь</string>
 		<string>LOBODA - Твои глаза</string>
 		<string>ЛСП - Тело</string>
 		<string>Rauf &amp; Faik - 5 Минут</string>
+		<string>Navai - Чёрный мерен</string>
 		<string>Rauf &amp; Faik - Это ли счастье?</string>
 		<string>Rauf &amp; Faik - Из-за тебя</string>
 		<string>Jah Khalib - Медина</string>
@@ -639,7 +752,7 @@
 		<string>Jah Khalib ft. HammAli &amp; Navai - Боже как завидую</string>
 		<string>Jah Khalib - Кукла</string>
 		<string>Jah Khalib - Каблук</string>
-		<string>Jah Khalib – Волны антарктиды</string>
+		<string>Jah Khalib - Волны антарктиды</string>
 		<string>Jah Khalib - 911</string>
 		<string>Jah Khalib - Джадуа</string>
 		<string>Andro - Ночной рейс</string>
@@ -649,14 +762,16 @@
 		<string>IVAN VALEEV - Novella</string>
 		<string>Фогель - Мальчик</string>
 		<string>Баста ft. Zivert - Неболеӣ</string>
-		<string>Грибы - Тает лёд </string>
+		<string>Грибы - Тает лёд</string>
 		<string>Strange - Зависай</string>
+		<string>JONY - Титры</string>
 	</array>
 	<key>Russian Hip-Hop</key>
 	<array>
 		<string>Natan ft. Тимати - Дерзкая</string>
+		<string>Miyagi ft. Andy Panda - God Bless</string>
 		<string>Тимати - Борода</string>
-		<string>N1NT3NDO - Криминал</string>
+		<string>N1NT3ND0 - Криминал</string>
 		<string>Jah Khalib - 9 грамм свинца</string>
 		<string>Jah Khalib - Ты словно целая вселенная</string>
 		<string>Макс Корж - Малиновыӣ закат</string>
@@ -666,7 +781,7 @@
 		<string>The Limba ft. Andro - X.O</string>
 		<string>Miyagi ft. Andy Panda - Тамада</string>
 		<string>9 Грамм ft. Miyagi, Andy Panda - Рапапам</string>
-		<string>Скриптонит - Цепи </string>
+		<string>Скриптонит - Цепи</string>
 		<string>Ярмак - Сердце пацана</string>
 		<string>Тимати ft. Егор Крид - Где ты где я</string>
 		<string>Скриптонит ft. Andy Panda - Привычка</string>
@@ -681,31 +796,31 @@
 		<string>Xcho - Вороны</string>
 		<string>Скриптонит - Положение</string>
 		<string>Скриптонит - Москва любит</string>
-		<string>Miyagi - Kossandra</string>
+		<string>Miyagi - Kosandra</string>
 		<string>Miyagi ft. Andy Panda - Там ревели горы</string>
 		<string>Miyagi - Родная поӣ</string>
 		<string>Miyagi - По уши в тебя влюблён</string>
 		<string>Miyagi - Колибри</string>
 		<string>Баста - Пуэрчик по крепче</string>
 		<string>Баста - Урбан</string>
-		<string>Каспийский груз - Детство</string>
-		<string>Каспийский груз - Не было и не надо </string>
-		<string>Каспийский груз - Давай уедем </string>
-		<string>Каспийский груз - Сам всё знаю </string>
-		<string>Каспийский груз - Туда и Обратно </string>
+		<string>Каспийский Груз - Детство</string>
+		<string>Каспийский Груз - Не было и не надо</string>
+		<string>Каспийский Груз - Давай уедем</string>
+		<string>Каспийский Груз - Сам всё знаю</string>
+		<string>Каспийский Груз - Туда и Обратно</string>
 		<string>Джарахов ft. Markul - Я в моменте</string>
-		<string>MiyaGi ft. Andy Panda – Не Жалея</string>
+		<string>Miyagi ft. Andy Panda - Не Жалея</string>
 		<string>Miyagi ft. Andy Panda, Mav-D - Marmalade</string>
-		<string>Каспийский груз - Доедешь-Пиши</string>
-		<string>Каспийский груз - Адик Original</string>
-		<string>Каспийский груз - Чёрная Волга</string>
-		<string>Каспийский груз - 18+</string>
-		<string>Каспийский груз - Табор Уходит В Небо</string>
+		<string>Каспийский Груз - Доедешь-Пиши</string>
+		<string>Каспийский Груз - Адик Original</string>
+		<string>Каспийский Груз - Чёрная Волга</string>
+		<string>Каспийский Груз - 18+</string>
+		<string>Каспийский Груз - Табор Уходит В Небо</string>
 		<string>Miyagi - Marlboro</string>
-		<string>Miyagi - Captain </string>
+		<string>Miyagi - Captain</string>
 		<string>Miyagi ft. Andy Panda - FIre Man</string>
 		<string>Santiz - Rastafari</string>
-		<string>Miyagi ft. Andy Panda – Minor</string>
+		<string>Miyagi ft. Andy Panda - Minor</string>
 		<string>Гуф - ЧП</string>
 		<string>Гуф - Письмо Домой</string>
 		<string>Гуф - 420</string>
@@ -726,40 +841,33 @@
 		<string>Скриптонит - 3х3</string>
 		<string>ЛСП - Монетка</string>
 		<string>ЛСП ft. FEDUK, Егор Крид - Холостяк</string>
-		<string>Джиган ft. Тимати , Егор Крид - Rolls Royce</string>
-		<string></string>
-		<string></string>
-		<string></string>
-		<string></string>
-		<string></string>
-		<string></string>
-		<string></string>
-		<string></string>
-		<string></string>
-		<string></string>
-		<string></string>
-		<string></string>
-		<string></string>
-		<string></string>
-		<string></string>
-		<string></string>
-		<string></string>
-		<string></string>
-		<string></string>
-		<string></string>
-		<string></string>
-		<string></string>
-		<string></string>
-		<string></string>
-		<string></string>
-		<string></string>
-		<string></string>
-		<string></string>
-		<string></string>
-		<string></string>
-		<string></string>
-		<string></string>
-		<string></string>
+		<string>Джиган ft. Тимати, Егор Крид - Rolls Royce</string>
+		<string>Тимати - Понты</string>
+		<string>Kristina Si - Хочу</string>
+		<string>Natan ft. Kristina Si - Ты готов услышать нет?</string>
+		<string>Andrey Toronto - Мама прости сына хулигана</string>
+		<string>Ноганно - Дети капитана Гранта</string>
+		<string>Miyagi ft. Эндшпиль, Amigo - Райзап</string>
+		<string>Miyagi ft. Andy Panda - Utopia</string>
+		<string>Miyagi ft. Andy Panda, TumaniYO - Brooklyn</string>
+		<string>Баста - Сансара</string>
+		<string>Баста - Медлячок</string>
+		<string>Банд&apos;Эрос - Коламбия пикчерз не представляет</string>
+		<string>Mot - По душам</string>
+		<string>MORGENSHTERN - Аристократ</string>
+		<string>10AGE - Пушка</string>
+		<string>MORGENSHTERN - Селяви</string>
+		<string>Jah Khalib - Лиловая</string>
+		<string>Баста - Мутная вода</string>
+		<string>MORGENSHTERN - Домой</string>
+		<string>MORGENSHTERN - SHOW</string>
+		<string>Макс Корж - Малолетка</string>
+		<string>Kamazz - Хочешь войны</string>
+		<string>Ramil&apos; - Не ищи меня</string>
+		<string>Bahh Tee ft. HammAli &amp; Navai - Жить, не думая о тебе</string>
+		<string>Navai ft. Bahh Tee - Не приму и даром</string>
+		<string>Bahh Tee - Ты меня не стоишь</string>
+		<string>Bahh Tee - 10 лет спустя</string>
 	</array>
 	<key>Rock Hits</key>
 	<array>
@@ -776,7 +884,9 @@
 		<string>The Cranberries - Zombie</string>
 		<string>Linkin Park - Numb</string>
 		<string>Linkin Park - In The End</string>
+		<string>Queen - Killer Queen</string>
 		<string>Nirvana - Smells Like Teen Spirit</string>
+		<string>Queen - Under Pressure</string>
 		<string>Nirvana - Heart Shaped Box</string>
 		<string>Evanescence - Bring Me Back To Life</string>
 		<string>Scorpions - Wind Of Change</string>
@@ -784,10 +894,10 @@
 		<string>Scorpions - Send Me An Angel</string>
 		<string>Evanescence - My Immortal</string>
 		<string>The Animals - House Of Rising Sun</string>
-		<string>Queen - Mama</string>
 		<string>Queen - Show Must Go On</string>
+		<string>Queen - Radio Ga Ga</string>
 		<string>Queen - Bohemian Rhapsody</string>
-		<string>Queen - Rock You</string>
+		<string>Queen - We Will Rock You</string>
 		<string>Queen - We Are The Champions</string>
 		<string>Queen - I Want To Break Free</string>
 		<string>Guns N&apos; Roses - November Rain</string>
@@ -801,7 +911,7 @@
 		<string>AC/DC - Back In Black</string>
 		<string>Metallica - Nothing Else Matters</string>
 		<string>Rammstein - Du Hast</string>
-		<string>Nirvana - The Man Who Stole The World</string>
+		<string>Nirvana - The Man Who Sold The World</string>
 		<string>Pink Floyd - Comfortably Numb</string>
 		<string>The Beatles - Hey Jude</string>
 		<string>The Beatles - Yesterday</string>
@@ -817,7 +927,7 @@
 		<string>Led Zeppelin - Kashmir</string>
 		<string>Bon Jovi - It&apos;s My Life</string>
 		<string>Queen - Another One Bites The Dust</string>
-		<string>a-ha - Take On Me </string>
+		<string>a-ha - Take On Me</string>
 		<string>Arctic Monkeys - Do I Wanna Know?</string>
 		<string>Green Day - Boulevard Of Broken Hearts</string>
 		<string>Red Hot Chili Peppers - Dani California</string>
@@ -839,12 +949,12 @@
 		<string>Ozzy Osbourne - Crazy Train</string>
 		<string>Westlife - Soledad</string>
 		<string>Led Zeppelin - Whole Lotta Love</string>
-		<string>Arctic Monkeys - Why&apos;d You Call Me When You&apos;re High</string>
+		<string>Arctic Monkeys - Why&apos;d You Call Me When You&apos;re High?</string>
 		<string>Arctic Monkeys - R U Mine?</string>
 		<string>Deep Purple - Smoke On The Water</string>
 		<string>Lynyrd Skynyrd - Free Bird</string>
 		<string>Derek And The Dominos - Layla</string>
-		<string>John Lenon - Imagine</string>
+		<string>John Lennon - Imagine</string>
 		<string>The Jimi Hendrix Exoperience - Purple Haze</string>
 		<string>The Police - Every Breath You Take</string>
 		<string>Metallica - The Day That Never Comes</string>
@@ -877,13 +987,12 @@
 		<string>Red Hot Chili Peppers - Under The Bridge</string>
 		<string>Nirvana - About A Girl</string>
 		<string>The Mamas &amp; The Papas - California Dreamin&apos;</string>
-		<string>The Rolling Stones - Paint It, Black</string>
+		<string>The Rolling Stones - Paint It Black</string>
 		<string>Fall Out Boys - Centuries</string>
 		<string>Imagine Dragons - Warriors</string>
 		<string>Green Day - Holiday</string>
 		<string>Black Sabbath - War Pigs</string>
 		<string>Nickelback - How You Remind Me</string>
-		<string>Lynyrd Skynyrd - Free Bird</string>
 		<string>twenty one pilots - Heathens</string>
 		<string>John Denver - Take Me Home, Country Roads</string>
 		<string>Johnny Cash - Hurt</string>
@@ -928,18 +1037,21 @@
 		<string>The Notorious B.I.G. - Big Poppa</string>
 		<string>Ice Cube - It Was A Good Day</string>
 		<string>Kendrick Lamar - m.A.A.d city</string>
+		<string>NF - Let You Down</string>
+		<string>NF - Lie</string>
 		<string>N.W.A. - Fuck The Police</string>
 		<string>Coolio - Gangsta&apos;s Paradise</string>
 		<string>Jay-Z ft. Kanye West - Ni**as In Paris</string>
 		<string>Kendrick Lamar - DNA.</string>
-		<string>Eminem - Without Me </string>
+		<string>Kendrick Lamar ft. SZA - All The Stars</string>
+		<string>Eminem - Without Me</string>
 		<string>50 Cent - In The Club</string>
 		<string>Eminem - Rap God</string>
 		<string>2Pac ft. Outlaws - Hit &apos;Em Up</string>
 		<string>2Pac - Dear Mama</string>
 		<string>2Pac ft. Dr. Dre - California Love</string>
 		<string>Will Smith - Gettin&apos; Jiggy With It</string>
-		<string>Kanye West - Flashing Lights </string>
+		<string>Kanye West - Flashing Lights</string>
 		<string>Travis Scott - Highest In the Room</string>
 		<string>Travis Scott ft. Kendrick Lamar - Goosebumps</string>
 		<string>A$AP Rocky ft. Skepta - Praise The Lord</string>
@@ -962,6 +1074,7 @@
 		<string>J. Cole - She Knows</string>
 		<string>Kanye West - Heartless</string>
 		<string>Childish Gambino - This Is America</string>
+		<string>Childish Gambino - Redbone</string>
 		<string>Akon ft. Eminem - Smack That</string>
 		<string>N.W.A. - Straight Outta Compton</string>
 		<string>Blocboy JB ft. Drake - Look Alive</string>
@@ -989,12 +1102,11 @@
 		<string>Pop Smoke - Dior</string>
 		<string>21 Savage - Bank Account</string>
 		<string>Kanye West - Stronger</string>
-		<string>6IX9INE - Billy</string>
-		<string>Offset ft. Cardi B - Clout</string>
+		<string>6ix9ine - Billy</string>
 		<string>21 Savage ft. J. Cole - A Lot</string>
 		<string>Jack Harlow - First Class</string>
 		<string>Jack Harlow - Whats Poppin</string>
-		<string>French Montana ft. Swae Lee - Unforgetable</string>
+		<string>French Montana ft. Swae Lee - Unforgettable</string>
 		<string>Juice WRLD - Lucid Dreams</string>
 		<string>Juice WRLD - All Girl Are The Same</string>
 		<string>Cardi B - WAP</string>
@@ -1033,11 +1145,12 @@
 		<string>Silento - Watch Me</string>
 		<string>Pop Smoke ft. Lil Baby, DaBaby - For The Night</string>
 		<string>Kanye West ft. Jamie Foxx - Gold Digger</string>
-		<string>Pop Smoke - What You Know Bout</string>
+		<string>Pop Smoke - What You Know Bout Love</string>
 		<string>Post Malone - White Iverson</string>
 		<string>Post Malone - Go Flex</string>
 		<string>Sheck Wes - Mo Bamba</string>
 		<string>Usher ft. Lil Jon, Ludacris - Yeah!</string>
+		<string>Post Malone - Circles</string>
 		<string>Lil Peep ft. XXXTENTACION - Falling Down</string>
 		<string>Post Malone - Candy Paint</string>
 		<string>Drake - Toosie Slide</string>
@@ -1062,10 +1175,17 @@
 		<string>Ice Cube - Check Yo Self</string>
 		<string>Ludacris - Move Bitch</string>
 		<string>2Pac - Hail Mary</string>
-		<string>D-12 - Purple Pills </string>
+		<string>D-12 - Purple Pills</string>
 		<string>N.W.A. - Boys In The Hood</string>
 		<string>KRS-One - Sound Of Da Police</string>
 		<string>Jay-Z - 99 Problems</string>
+		<string>Pop Smoke ft. Lil Tjay - Mood Swings</string>
+		<string>Pop Smoke ft. 50 Cent, Roddy Ricch - The Woo</string>
+		<string>Pop Smoke ft. A Boogie wit da Hoodie - Hello</string>
+		<string>XXXTENTACION - SAD!</string>
+		<string>JACKBOYS ft. Pop Smoke, Travis Scott - GATTI</string>
+		<string>Pop Smoke - Gangstas</string>
+		<string>24kGoldn ft. iann dior - Mood</string>
 	</array>
 	<key>World Nostalgia</key>
 	<array>
@@ -1224,21 +1344,30 @@
 	<key>World Pop Hits</key>
 	<array>
 		<string>Avril Lavigne - Girlfriend</string>
+		<string>Swedish House Mafia ft. The Weeknd - Moth To A Flame</string>
+		<string>Shouse - Love Tonight</string>
+		<string>Post Malone ft. Roddy Ricch - Cooped Up</string>
 		<string>Lost Frequencies - Are You With Me</string>
+		<string>Marshmello ft. Khalid - Silence</string>
+		<string>Ava Max - Sweet But Psycho</string>
 		<string>Lucas Graham - 7 Years Old</string>
 		<string>Passenger - Let Her Go</string>
-		<string>Sam Smith - Fire On FIre</string>
+		<string>Sam Smith - Fire On Fire</string>
+		<string>Marshmallow ft. Bastille - Happier</string>
 		<string>Dua Lipa ft. Elton John - Cold Heart</string>
 		<string>Justin Timberlake - Cry Me A River</string>
 		<string>Bruno Mars - Talking To The Moon</string>
 		<string>Flora Cash - You&apos;re Somebody Else</string>
-		<string>The Weekend - Call Out My Name</string>
+		<string>The Weeknd - Call Out My Name</string>
 		<string>Sia - Cheap Thrills</string>
 		<string>Lana Del Rey - Young And Beautiful</string>
 		<string>MAGIC! - Rude</string>
 		<string>Selena Gomez ft. The Scene - Love You Like A Love Song</string>
 		<string>Lana Del Rey - Diet Mountain Dew</string>
 		<string>Lady Gaga - Poker Face</string>
+		<string>Post Malone ft. Swae Lee - Sunflower</string>
+		<string>James Arthur - Say You Won’t Let Go</string>
+		<string>Dua Lipa - Don’t Start Now</string>
 		<string>Billie Eilish ft. Khalid - Lovely</string>
 		<string>Meghan Trainor - All About That Bass</string>
 		<string>Rihanna ft. Jay-Z - Umbrella</string>
@@ -1250,13 +1379,13 @@
 		<string>Dua Lipa - IDGAF</string>
 		<string>Taylor Swift - Blank Space</string>
 		<string>Katy Perry - Roar</string>
+		<string>Katy Perry ft. Juicy J - Dark Horse</string>
 		<string>Rixton - Me And My Broken Heart</string>
 		<string>Camila Cabello ft. Shawn Mendes - Senorita</string>
 		<string>Doja Cat - Woman</string>
 		<string>Harry Styles - Watermelon Sugar</string>
 		<string>Harry Styles - As It Was</string>
-		<string>Lukas Graham - 7 Years</string>
-		<string>The Weekend ft. Daft Punk - Starboy</string>
+		<string>The Weeknd ft. Daft Punk - Starboy</string>
 		<string>Idina Menzel - Let It Go</string>
 		<string>Milky Chance - Stolen Dance</string>
 		<string>Ed Sheeran - Photograph</string>
@@ -1269,15 +1398,16 @@
 		<string>Anne-Marie ft. Clean Bandit, Sean Paul - Rockabye</string>
 		<string>Lewis Capaldi - Someone You Loved</string>
 		<string>Justin Bieber - Baby</string>
+		<string>Justin Bieber ft. Ed Sheeran - I Don&apos;t Care</string>
 		<string>Sia - Chandelier</string>
 		<string>Dua Lipa - One Kiss</string>
 		<string>Lorde - Royals</string>
 		<string>5 Seconds Of Summer - Youngblood</string>
 		<string>Lady Gaga - Bad Romance</string>
 		<string>Ed Sheeran - Bad Habits</string>
-		<string>Bruno Mars - Locked Out Of Heaven</string>
 		<string>Dua Lipa - New Rules</string>
 		<string>Zayn ft. Sia - Dusk Till Dawn</string>
+		<string>Ariana Grande - God Is A Woman</string>
 		<string>Zara Larsson ft. Clean Bandit - Symphony</string>
 		<string>Maroon 5 - Maps</string>
 		<string>One Direction - Story Of My Life</string>
@@ -1287,17 +1417,19 @@
 		<string>G-Eazy ft. Bebe Rexha - Me, Myself &amp; I</string>
 		<string>Ariana Grande ft. Nicki Minaj - Side To Side</string>
 		<string>Rihanna - Bitch Better Have My Money</string>
-		<string>The Weekend - Can&apos;t Feel My Face</string>
+		<string>The Weeknd - Can&apos;t Feel My Face</string>
 		<string>Charlie Puth ft. Wiz Khalifa - See You Again</string>
 		<string>Naughty Boy ft. Sam Smith - La La La</string>
+		<string>Alan Walker - Faded</string>
 		<string>The Neighbourhood - Sweater Weather</string>
 		<string>Pitbull ft. Ke$ha - Timber</string>
 		<string>Taylor Swift - Shake It Off</string>
-		<string>The Weekend - Blinding Lights</string>
-		<string>The Weekend - Save Your Tears</string>
-		<string>Lil Nas X - Montero</string>
+		<string>The Weeknd - Blinding Lights</string>
+		<string>The Weeknd - Save Your Tears</string>
+		<string>Lil Nas X - Montero (Call Me By Your Name)</string>
+		<string>Coldplay - Hymn For The Weekend</string>
+		<string>The Chainsmokers ft. Coldplay - Something Just Like This</string>
 		<string>The Kid Laroi ft. Justin Bieber - Stay</string>
-		<string>Masked Wolf - Astronaut In The Ocean</string>
 		<string>Lil Nas X ft. Jack Harlow - Industry Baby</string>
 		<string>Doja Cat ft. SZA - Kiss Me More</string>
 		<string>Maneskin - Beggin</string>
@@ -1305,12 +1437,13 @@
 		<string>The Chainsmokers ft Halsey - Closer</string>
 		<string>Luis Fonsi &amp; Daddy Yankee - Despacito</string>
 		<string>Adele - Rolling In The Deep</string>
+		<string>Halsey - Without Me</string>
 		<string>Adele - Hello</string>
 		<string>Adele - Someone Like You</string>
 		<string>Timbaland ft. OneRepublic - Apologize</string>
 		<string>Maroon 5 ft. Christina Aguilera - Moves Like Jagger</string>
 		<string>Pharrell Williams - Happy</string>
-		<string>Bruno Mars - Just The Way You Are </string>
+		<string>Bruno Mars - Just The Way You Are</string>
 		<string>Bruno Mars - Lazy Song</string>
 		<string>Bruno Mars - Uptown Funk</string>
 		<string>Bruno Mars - When I Was Your Man</string>
@@ -1318,7 +1451,7 @@
 		<string>Michael Jackson - Liberian Girl</string>
 		<string>Michael Jackson - Earth Song</string>
 		<string>Michael Jackson - You Are Not Alone</string>
-		<string>Shakira - Whenever</string>
+		<string>Shakira - Whenever, Wherever</string>
 		<string>Ed Sheeran - Perfect</string>
 		<string>Gotye ft. Kimbra - Somebody That I Used To Know</string>
 		<string>Lady Gaga - Alejandro</string>
@@ -1341,15 +1474,21 @@
 		<string>Miley Cyrus - Wrecking Ball</string>
 		<string>One Republic - Counting Stars</string>
 		<string>John Legend - All Of Me</string>
+		<string>Elley Duhe - Middle Of The Night</string>
 		<string>Hozier - Take Me to Church</string>
+		<string>Sam Smith - Stay With Me</string>
 		<string>Maroon 5 - Sugar</string>
 		<string>Sam Smith - I&apos;m Not The Only One</string>
 		<string>Vance Joy - Riptide</string>
-		<string>21 Pilots - Stressed Out</string>
+		<string>twenty one pilots - Stressed Out</string>
+		<string>Kina - Get You The Moon</string>
+		<string>Kina - Can We Kiss Forever?</string>
+		<string>Kina - Wish I Was Better</string>
 		<string>Charlie Puth ft. Selena Gomez - We Don&apos;t Talk Anymore</string>
 		<string>Charlie Puth - Attention</string>
 		<string>Billie Eilish - Bad Guy</string>
 		<string>Ariana Grande - 7 Rings</string>
+		<string>Ariana Grande - Thank U, Next</string>
 		<string>Maroon 5 - Memories</string>
 		<string>Macklemore ft. Ryan Lewis - Thrift Shop</string>
 		<string>Black Pumas - Colors</string>
@@ -1364,20 +1503,31 @@
 		<string>Bebe Rexa - Say My Name</string>
 		<string>Camila Cabello ft. Young Thug - Havana</string>
 		<string>Cheat Codes ft. Demi Lovato - No Promises</string>
+		<string>Demi Lovato - Cool For The Summer</string>
+		<string>Modjo - Lady</string>
+		<string>Marshmello ft. Anne-Marie - FRIENDS</string>
 		<string>Miley Cyrus - Nothing Breaks Like A Heart</string>
 		<string>DNCE - Cake By The Ocean</string>
+		<string>Swedish House Mafia - Don&apos;t You Worry Child</string>
 		<string>Tones And I - Dance Monkey</string>
+		<string>Zubi ft. anatu - Sugar</string>
+		<string>Zubi ft. anatu, rxpaul - My Time</string>
+		<string>Zubi ft. anatu - Love Her For We</string>
 		<string>Bruno Mars - 24K Magic</string>
 		<string>Topic ft. A7S - Breaking Me</string>
 		<string>Duke Dumont - Ocean Drive</string>
 		<string>Tiesto - The Business</string>
 		<string>Sia - Snowman</string>
 		<string>John Newman - Love Me Again</string>
-		<string>The Weekend ft. Duft Punk - I Feel It Coming</string>
+		<string>The Weeknd - The Hills</string>
+		<string>Olivia Rodrigo - good 4 u</string>
+		<string>Olivia Rodrigo - Drivers License</string>
+		<string>The Weeknd ft. Duft Punk - I Feel It Coming</string>
 	</array>
 	<key>Armenian Nostalgia</key>
 	<array>
 		<string>Սիլվա Հակոբյան - Սիլոյի պարը</string>
+		<string>Արևիկ - Երազանքների փերի</string>
 		<string>Հարութ Փամբուկչյան - Օ, քամի քամի</string>
 		<string>Հարութ Փամբուկչյան - Ես առանց քեզ</string>
 		<string>Հարութ Փամբուկչյան - Թե աչերս քեզ որոնեն</string>
@@ -1395,7 +1545,7 @@
 		<string>Թաթա Սիմոնյան - Երևանս</string>
 		<string>Թաթա Սիմոնյան - Անապատի արև</string>
 		<string>Թաթա Սիմոնյան - Նոր Տարի</string>
-		<string>Թաթա Սիմոնյան - 16 </string>
+		<string>Թաթա Սիմոնյան - 16</string>
 		<string>Թաթա Սիմոնյան - Վերջին զանգ</string>
 		<string>Թաթա Սիմոնյան - Կգնամ հեռու-հեռու</string>
 		<string>Թաթա Սիմոնյան - Անծանոթ աղջիկ</string>
@@ -1414,7 +1564,7 @@
 		<string>Empyrey - Որոգայթ</string>
 		<string>Արամ Ասատրյան - Հայ ես դու</string>
 		<string>Արամե - Իմ արև</string>
-		<string>Սիլվա Հակոբյան - Խաչիկ,Վաչիկ</string>
+		<string>Սիլվա Հակոբյան - Խաչիկ, Վաչիկ</string>
 		<string>Սիլվա Հակոբյան - Ուշացել եմ</string>
 		<string>Սիլվա Հակոբյան - Գիշեր է </string>
 		<string>Ինգա Անուշ Արշակյաններ - Մենք ենք սարերը մեր</string>
@@ -1434,7 +1584,7 @@
 		<string>Մեր Բակ - VIP դրախտ</string>
 		<string>Մարի - Դառը սև սուրճ</string>
 		<string>Լիլիթ Հովհաննիսյան - Ես եմ հորինել</string>
-		<string>Մանուել Մենենգիչյան - Երջանկության Արցունքները</string>
+		<string>Մանուել Մենենգիչյան - Երջանկության արցունքները</string>
 		<string>Արմեն Դարբինյան - Ով սիրուն սիրուն</string>
 		<string>Հարութ Փամբուկչյան - Ղափամա</string>
 		<string>ALL STARS - Ես սիրում եմ իմ երկիրը</string>
@@ -1459,7 +1609,7 @@
 		<string>Քրիստինե Պեպելյան - Մայրիկ</string>
 		<string>Արամե - Մամա</string>
 		<string>Շուշան Պետրոսյան - Մայրիկ</string>
-		<string>Հայկո ft. Շուշան Պետրոսյան - Երազ իմ երկիր </string>
+		<string>Հայկո ft. Շուշան Պետրոսյան - Երազ իմ երկիր</string>
 		<string>Հարութ Փամբուկչյան - Իմ կյանքը</string>
 		<string>Գեորգի Մինասյան - Արևիկ</string>
 		<string>Ռուբեն Հախվերդյան - Շատախոս անձրևը</string>
@@ -1467,7 +1617,7 @@
 		<string>Reincarnation - Յար արի</string>
 		<string>Գեորգի Մինասյան - Սիրո հասակ</string>
 		<string>Գեորգի Մինասյան - Գալիս ես</string>
-		<string>Տղամարդիք ֆիլմ - Քամին զանա</string>
+		<string>Տղամարդիկ - Քամին զանա</string>
 		<string>Արև, արև, ե՛կ, ե՛կ</string>
 		<string>Էլվինա Մակարյան - Մայրամուտ</string>
 		<string>Լենա Չամամյան - Սարերի հովին մեռնեմ</string>
@@ -1484,29 +1634,33 @@
 		<string>Ինգա և Անուշ Արշակյաններ - Հայ-Հայ</string>
 		<string>Նունե Եսայան և Արսեն Գրիգորյան - Միայն ես և դու</string>
 		<string>Սիրուշո և Ռուբեն Հախվերդյան - Եթե իմանայիր</string>
-		<string>Շուշան Պետրոսյան - հայաստան</string>
+		<string>Շուշան Պետրոսյան - Հայաստան</string>
 		<string>Շուշան Պետրոսյան, Ինգա և Անուշ Արշակյաններ և Ալլա Լևոնյան - Բարև երկիր</string>
 		<string>Սերգեյ Դավթյան - Այստեղ եմ ծնվել</string>
 		<string>Էլվինա Մակարյան - Յարո ջան</string>
 		<string>Արմեն Դարբինյան - Հեյ ջան, Երևան</string>
-		<string>ֆորշ - Զբոսանք Երևանով</string>
+		<string>Ֆորշ - Զբոսանք Երևանով</string>
 		<string>Սերգեյ Դավթյան - Երևանի սիրուն աղջիկ</string>
 		<string>Համլետ Գևորգյան - Ջեյրանս դու ես</string>
 		<string>Վարդուհի Վարդանյան - Հայաստան աշխարհ</string>
+		<string>32 ատամ - Պլավկիներ</string>
+		<string>Ծո FM - Բոմբա</string>
 	</array>
 	<key>Armenian Rabiz</key>
 	<array>
 		<string>Արա և Ալիկ Ավետիսյաններ - Ոչ ավել, ոչ պակաս</string>
+		<string>Անդի - Գարուն</string>
+		<string>Անդի - Նազ ունի</string>
 		<string>Գրիշա Աղախանյան - 50 տարի</string>
 		<string>Թաթուլ Ավոյան - Գարուն է</string>
 		<string>Թաթուլ Ավոյան - Մոտ արի կամաց-կամաց</string>
 		<string>Թաթուլ Ավոյան - Իմ ախպերս</string>
 		<string>Թաթուլ Ավոյան - Սրտի բանալի</string>
 		<string>Արամ Ասատրյան - Դրախտի փերի</string>
-		<string>Թաթուլ Ավոյան ft. Dj Davo - Զանգում եմ </string>
+		<string>Թաթուլ Ավոյան ft. Dj Davo - Զանգում եմ</string>
 		<string>Տիգրան Ժամկոչյան - Իմ անմոռաց</string>
 		<string>Տիգրան Ժամկոչյան - Ուր որ գնաս</string>
-		<string>Տիգրան Ժամկոչյան - Աղաչում եմ </string>
+		<string>Տիգրան Ժամկոչյան - Աղաչում եմ</string>
 		<string>Տիգրան Ժամկոչյան - Տեր Աստված</string>
 		<string>Տիգրան Ժամկոչյան - Արցունքոտ են աչքերս</string>
 		<string>Տիգրան Ժամկոչյան - Ես քեզ տեսա</string>
@@ -1516,7 +1670,7 @@
 		<string>Արամ Ասատրյան - Ես կմեռնեմ ու կգնամ</string>
 		<string>Արամ Ասատրյան - Ճանապարհ</string>
 		<string>Արամ Ասատրյան - Էմո</string>
-		<string>Արամ Ասատրյան - Ես քեզ շատ-շատ սիրում եմ </string>
+		<string>Արամ Ասատրյան - Ես քեզ շատ-շատ սիրում եմ</string>
 		<string>Արամ Ասատրյան - Հավատում եմ, Չեմ Հավատում</string>
 		<string>Արամ Ասատրյան - Պիցցա, պիցցա</string>
 		<string>Արտաշ Ասատրյան - Ալիսա</string>
@@ -1530,7 +1684,7 @@
 		<string>Անդո Ռաֆո ft. Սպիտակցի Հայկո - Lady Kobuleti</string>
 		<string>Սպիտակցի Հայկո - Ինչ իմանայի</string>
 		<string>Թաթուլ Ավոյան - ft. Super Saqo - Na Na Na</string>
-		<string>Թաթուլ Ավոյան - Բոմ բոմ բոմ </string>
+		<string>Թաթուլ Ավոյան - Բոմ բոմ բոմ</string>
 		<string>Սպիտակցի Հայկո ft. Super Saqo - Մի գնա</string>
 		<string>Վլե - Տեր-տերի այգում</string>
 		<string>Ուզբեկ - Այլանդակ մուղամ</string>
@@ -1560,6 +1714,7 @@
 		<string>Արամ Ասատրյան - Լուսնյակ գիշերները</string>
 		<string>Արտաշ Ասատրյան - Կոկոմ վարդերը</string>
 		<string>Թաթուլ Ավոյան - Կարապի լճի մոտ</string>
+		<string>Արամ Ասատրյան - Պապիկ եմ դարձել</string>
 	</array>
 	<key>Armenian Hip-Hop</key>
 	<array>
@@ -1590,13 +1745,13 @@
 		<string>HT Hayko - Taxi</string>
 		<string>Միշո ft. Sencho, Felo - Ուղղակի մտքեր</string>
 		<string>Sencho ft. Mos - Ապրել</string>
-		<string>Sencho - Բարև երջանկություն դու ինձ ատում էս</string>
+		<string>Sencho - Բարև երջանկություն դու ինձ ատում ես</string>
 		<string>Sencho - Ժամանակը</string>
 		<string>Sencho ft. Xudo - Քաղաքում անջատել են լույսերը</string>
-		<string>Lyov ft. Vnas, Xudo - Maylamut </string>
+		<string>Lyov ft. Vnas, Xudo - Maylamut</string>
 		<string>Lyov - Երբ որ ես</string>
 		<string>Lyov - Gangin</string>
-		<string>Հայ Տղեք - Մի կաթիլ մեղր </string>
+		<string>Հայ Տղեք - Մի կաթիլ մեղր</string>
 		<string>HT Hayko - Քուանշ</string>
 		<string>Նարեկ Մեծ Հայք - Կարմիր այտերդ</string>
 		<string>3.33 - Տիկնիկներ</string>
@@ -1615,8 +1770,8 @@
 		<string>Միշո - Ծառ</string>
 		<string>Մի Քանի Հոգի - Աղջիկ-Չղջիկ</string>
 		<string>HT Hayko - Անցած էտապ</string>
-		<string>Միշո ft. Գոգա - Չիմանաիր</string>
-		<string>H.A.Y.Q. - Մի պատմություն </string>
+		<string>Միշո ft. Գոգա - Չիմանայիր</string>
+		<string>H.A.Y.Q. - Մի պատմություն</string>
 		<string>HT Hayko - Սիրո հասակ</string>
 		<string>HT Hayko - Պրոֆեսոր Մարգարյան</string>
 		<string>Նարեկ Մեծ Հայք - Բռունցքդ օդ</string>
@@ -1651,6 +1806,13 @@
 		<string>Մի Քանի Հոգի - Եղանակ</string>
 		<string>Միշո - բԱնալիզ</string>
 		<string>Միշո ft. Սաշ - Կորելա կարելի</string>
+		<string>Միշո ft. 47 - Սա</string>
+		<string>Vnasakar - Drug</string>
+		<string>MikS ft. Vnasakar - Անհնար է</string>
+		<string>Գոռ Հակոբյան - Թող ղժան</string>
+		<string>Նարեկ Մեծ Հայք - Դե տժա</string>
+		<string>Միշո - Հարց ու պատասխան</string>
+		<string>Նարեկ Մեծ Հայք ft. HT Hayko - Born in Armenia</string>
 	</array>
 </dict>
 </plist>

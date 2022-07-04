@@ -11,7 +11,7 @@ import UIKit
 class PurchaseViewController: UIViewController {
     // MARK: - Model
 
-    var category: CategoryDescription!
+    var category: Category!
 
     // MARK: - Subviews
 
@@ -28,14 +28,6 @@ class PurchaseViewController: UIViewController {
         super.viewDidLoad()
 
         configureSubviews()
-        let restoreButton = UIBarButtonItem(
-            title: "Restore",
-            style: .plain,
-            target: self,
-            action: #selector(didTapRestore)
-        )
-        restoreButton.tintColor = UIColor(named: "BarButtonItem85")
-        navigationItem.rightBarButtonItem = restoreButton
         SKPaymentQueue.default().add(self)
     }
 
@@ -51,19 +43,33 @@ class PurchaseViewController: UIViewController {
     // MARK: - Helpers
 
     private func configureSubviews() {
-        let fontSize = round(view.frame.height/19)
+        let restoreButton = UIBarButtonItem(
+            title: "Restore",
+            style: .plain,
+            target: self,
+            action: #selector(didTapRestore)
+        )
+        restoreButton.tintColor = UIColor(named: "BarButtonItem85")
+        navigationItem.rightBarButtonItem = restoreButton
 
         indicatorView.layer.cornerRadius = 10
-
-        storeCategoryDescriptionLabel.font = UIFont(
-            name: "Apple SD Gothic Neo",
-            size: round(view.frame.height/40)
-        )
 
         storeCategoryImageView.image = UIImage(named: category.name)
         storeCategoryImageView.layer.cornerRadius = 10
 
-        priceLabel.font = UIFont(name: "Apple SD Gothic Neo", size: fontSize)
+        FontConfigurations.shared.configureFont(
+            label: storeCategoryDescriptionLabel,
+            fontName: "Helvetica Neue",
+            smallestFontSize: 24,
+            frame: view.frame.width
+        )
+
+        FontConfigurations.shared.configureFont(
+            label: priceLabel,
+            fontName: "Apple SD Gothic Neo",
+            smallestFontSize: 42,
+            frame: view.frame.width
+        )
 
         buyButton.layer.cornerRadius = 10
     }
@@ -104,7 +110,16 @@ class PurchaseViewController: UIViewController {
                 paymentRequest.productIdentifier = category.storeID
                 SKPaymentQueue.default().add(paymentRequest)
             } else {
-                print("Unable to make the payment")
+                let alert = UIAlertController(
+                    title: "Something Went Wrong",
+                    message: "Unable to process the payment.",
+                    preferredStyle: .alert
+                )
+                alert.addAction(UIAlertAction(
+                    title: "Ok",
+                    style: .default
+                ))
+                present(alert, animated: true)
             }
         } else {
             let alert = UIAlertController(
@@ -149,9 +164,9 @@ extension PurchaseViewController: SKPaymentTransactionObserver {
             case .restored:
                 SKPaymentQueue.default().finishTransaction(transaction)
             case .deferred:
-                print("deferred")
+                stopActivityIndicator()
             @unknown default:
-                break
+                stopActivityIndicator()
             }
         }
     }
@@ -159,7 +174,8 @@ extension PurchaseViewController: SKPaymentTransactionObserver {
     func paymentQueueRestoreCompletedTransactionsFinished(_ queue: SKPaymentQueue) {
         for transaction in queue.transactions {
             let productID = transaction.payment.productIdentifier as String
-            let purchasedCategories = Categories.allStoreCategories.filter { $0.storeID == productID }.map { $0.name }
+            let purchasedCategories = Categories.allStoreCategories.filter { $0.storeID == productID
+            }.map { $0.name }
 
             if !purchasedCategories.filter({ !Categories.ownedCategoryNames.contains($0) }).isEmpty {
                 Categories.ownedCategoryNames.append(
@@ -168,22 +184,23 @@ extension PurchaseViewController: SKPaymentTransactionObserver {
                 UserDefaults.standard.set(Categories.ownedCategoryNames, forKey: "OwnedCategories")
                 SKPaymentQueue.default().finishTransaction(transaction)
                 stopActivityIndicator()
-            } else {
-                let alert = UIAlertController(
-                    title: "Nothing To Restore",
-                    message: "",
-                    preferredStyle: .alert
-                )
-                alert.addAction(UIAlertAction(
-                    title: "Ok",
-                    style: .default
-                ))
-                SKPaymentQueue.default().finishTransaction(transaction)
-                present(alert, animated: true)
-                stopActivityIndicator()
             }
 
             navigationController?.popViewController(animated: true)
+        }
+
+        if queue.transactions.count == 0 {
+            let alert = UIAlertController(
+                title: "Nothing to Restore",
+                message: "",
+                preferredStyle: .alert
+            )
+            alert.addAction(UIAlertAction(
+                title: "Ok",
+                style: .default
+            ))
+            stopActivityIndicator()
+            present(alert, animated: true)
         }
     }
 }

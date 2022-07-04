@@ -21,17 +21,7 @@ final class CategoryCollectionViewController: UICollectionViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
 
-        if UserDefaults.standard.string(forKey: "isFirstTime") == nil {
-            UserDefaults.standard.setValue("No", forKey: "isFirstTime")
-            if let rulesViewController = UIStoryboard(
-                name: "Main",
-                bundle: nil
-            ).instantiateViewController(
-                withIdentifier: "Rules"
-            ) as? RulesViewController {
-                navigationController?.present(rulesViewController, animated: true)
-            }
-        }
+        checkFirstTimeLaunch()
         collectionViewConfigurations()
         navigationItem.backButtonTitle = ""
     }
@@ -45,6 +35,20 @@ final class CategoryCollectionViewController: UICollectionViewController {
     }
 
     // MARK: - Helpers
+
+    private func checkFirstTimeLaunch() {
+        if UserDefaults.standard.string(forKey: "isFirstTime") == nil {
+            UserDefaults.standard.setValue("No", forKey: "isFirstTime")
+            if let howToPlayViewController = UIStoryboard(
+                name: "Main",
+                bundle: nil
+            ).instantiateViewController(
+                withIdentifier: "HowToPlay"
+            ) as? HowToPlayViewController {
+                navigationController?.present(howToPlayViewController, animated: true)
+            }
+        }
+    }
 
     private func collectionViewConfigurations() {
         collectionView.showsVerticalScrollIndicator = false

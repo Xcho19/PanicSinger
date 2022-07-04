@@ -16,9 +16,9 @@
                         <rect key="frame" x="0.0" y="0.0" width="896" height="414"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="wordWrap" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="tsg-TB-w7q">
-                                <rect key="frame" x="64" y="180.5" width="768" height="53"/>
-                                <fontDescription key="fontDescription" name="AppleSDGothicNeo-Bold" family="Apple SD Gothic Neo" pointSize="44"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="wordWrap" numberOfLines="0" baselineAdjustment="alignBaselines" minimumFontSize="32" translatesAutoresizingMaskIntoConstraints="NO" id="tsg-TB-w7q">
+                                <rect key="frame" x="68" y="181" width="760" height="52.5"/>
+                                <fontDescription key="fontDescription" name="HelveticaNeue-Bold" family="Helvetica Neue" pointSize="44"/>
                                 <color key="textColor" red="0.98039215800000001" green="0.97647058959999999" blue="0.96470588450000005" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                 <nil key="highlightedColor"/>
                                 <size key="shadowOffset" width="0.0" height="0.0"/>
@@ -39,14 +39,18 @@
                                     <constraint firstItem="Vzp-KX-5kh" firstAttribute="centerX" secondItem="a7M-9E-YWI" secondAttribute="centerX" id="cB2-ql-XdR"/>
                                 </constraints>
                             </view>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Qft-Qr-4LA">
-                                <rect key="frame" x="448" y="363" width="0.0" height="0.0"/>
-                                <fontDescription key="fontDescription" name="AppleSDGothicNeo-Medium" family="Apple SD Gothic Neo" pointSize="35"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="00:00" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Qft-Qr-4LA">
+                                <rect key="frame" x="404" y="322" width="88" height="41"/>
+                                <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="35"/>
                                 <color key="textColor" red="0.98039215800000001" green="0.97647058959999999" blue="0.96470588450000005" alpha="0.79937396523178794" colorSpace="custom" customColorSpace="displayP3"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <button opaque="NO" alpha="0.80000000000000004" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="PDl-ZO-jVa">
-                                <rect key="frame" x="851" y="15" width="30" height="30"/>
+                                <rect key="frame" x="830" y="16" width="50" height="50"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="50" id="Mh6-so-a6C"/>
+                                    <constraint firstAttribute="width" constant="50" id="pGT-vY-f7c"/>
+                                </constraints>
                                 <color key="tintColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
                                 <state key="normal" image="cross"/>
@@ -72,24 +76,24 @@
                             </view>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="vDu-zF-Fre"/>
-                        <color key="backgroundColor" red="0.0078431372550000003" green="0.01176470588" blue="0.10980392160000001" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                        <color key="backgroundColor" red="0.0078431372550000003" green="0.01176470588" blue="0.1333333333" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                         <constraints>
                             <constraint firstItem="3v6-z2-b2S" firstAttribute="leading" secondItem="5EZ-qb-Rvc" secondAttribute="leading" id="GtB-dX-Adt"/>
                             <constraint firstItem="Qft-Qr-4LA" firstAttribute="centerX" secondItem="5EZ-qb-Rvc" secondAttribute="centerX" id="H05-nt-S27"/>
                             <constraint firstItem="tsg-TB-w7q" firstAttribute="centerY" secondItem="5EZ-qb-Rvc" secondAttribute="centerY" id="Jza-VV-AMc"/>
-                            <constraint firstItem="tsg-TB-w7q" firstAttribute="leading" secondItem="vDu-zF-Fre" secondAttribute="leading" constant="20" id="MIO-eK-nVs"/>
+                            <constraint firstItem="tsg-TB-w7q" firstAttribute="leading" secondItem="vDu-zF-Fre" secondAttribute="leading" constant="24" id="MIO-eK-nVs"/>
                             <constraint firstAttribute="trailing" secondItem="3v6-z2-b2S" secondAttribute="trailing" id="NeC-zn-8qc"/>
                             <constraint firstItem="vDu-zF-Fre" firstAttribute="bottom" secondItem="Qft-Qr-4LA" secondAttribute="bottom" constant="30" id="OeR-ru-ESm"/>
                             <constraint firstAttribute="bottom" secondItem="a7M-9E-YWI" secondAttribute="bottom" id="Y7u-zh-k2Y"/>
                             <constraint firstItem="a7M-9E-YWI" firstAttribute="leading" secondItem="5EZ-qb-Rvc" secondAttribute="leading" id="ZPB-c7-9Hh"/>
-                            <constraint firstItem="vDu-zF-Fre" firstAttribute="trailing" secondItem="tsg-TB-w7q" secondAttribute="trailing" constant="20" id="dk4-Ts-Yov"/>
+                            <constraint firstItem="vDu-zF-Fre" firstAttribute="trailing" secondItem="tsg-TB-w7q" secondAttribute="trailing" constant="24" id="dk4-Ts-Yov"/>
                             <constraint firstItem="tsg-TB-w7q" firstAttribute="centerX" secondItem="5EZ-qb-Rvc" secondAttribute="centerX" id="eeT-72-wiD"/>
                             <constraint firstItem="a7M-9E-YWI" firstAttribute="top" secondItem="5EZ-qb-Rvc" secondAttribute="top" id="gZR-XW-bSX"/>
-                            <constraint firstItem="PDl-ZO-jVa" firstAttribute="top" secondItem="5EZ-qb-Rvc" secondAttribute="top" constant="15" id="lyp-hX-kwh"/>
+                            <constraint firstItem="PDl-ZO-jVa" firstAttribute="top" secondItem="5EZ-qb-Rvc" secondAttribute="top" constant="16" id="lyp-hX-kwh"/>
                             <constraint firstAttribute="trailing" secondItem="a7M-9E-YWI" secondAttribute="trailing" id="pbW-D8-HCJ"/>
                             <constraint firstAttribute="bottom" secondItem="3v6-z2-b2S" secondAttribute="bottom" id="pn2-Xj-9gg"/>
                             <constraint firstItem="3v6-z2-b2S" firstAttribute="top" secondItem="5EZ-qb-Rvc" secondAttribute="top" id="uwt-te-qTL"/>
-                            <constraint firstAttribute="trailing" secondItem="PDl-ZO-jVa" secondAttribute="trailing" constant="15" id="vLA-Nu-pSW"/>
+                            <constraint firstAttribute="trailing" secondItem="PDl-ZO-jVa" secondAttribute="trailing" constant="16" id="vLA-Nu-pSW"/>
                         </constraints>
                     </view>
                     <connections>

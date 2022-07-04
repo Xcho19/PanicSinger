@@ -11,8 +11,8 @@ import UIKit
 final class ConfigurationsViewController: UIViewController {
     // MARK: - Model
 
+    static var usedSongs: [String] = []
     var totalTime = 60
-    var usedSongs: [String] = []
     var state = ConfigurationsState.normalView { didSet {
         configureState()
     }}
@@ -43,7 +43,9 @@ final class ConfigurationsViewController: UIViewController {
         super.viewDidLoad()
 
         configureState()
+        configureFonts()
         configureSubviews()
+        UIApplication.shared.isIdleTimerDisabled = false
     }
 
     override func viewDidAppear(_ animated: Bool) {
@@ -63,16 +65,13 @@ final class ConfigurationsViewController: UIViewController {
         resultView.layer.zPosition = CGFloat(Float.greatestFiniteMagnitude)
     }
 
-    override func viewWillLayoutSubviews() {
-        super.viewWillLayoutSubviews()
-
-        configureFont(frameWidth: view.frame.width)
-    }
-
     // MARK: - Helpers
 
     private func configureSubviews() {
         resultsScrollView.layer.cornerRadius = 10
+
+        increaseTimeButton.layer.cornerRadius = 10
+        decreaseTimeButton.layer.cornerRadius = 10
 
         for category in Categories.allCategories where category.name == Categories.ownedCategoryName {
             categoryDescriptionLabel.text = category.description
@@ -88,22 +87,28 @@ final class ConfigurationsViewController: UIViewController {
         resultView.layer.cornerRadius = 10
     }
 
-    private func configureFont(frameWidth: Double) {
-        let fontSize = round(frameWidth/14)
-
-        guessedSongsRightSideLabel.font = UIFont(
-            name: "Arial Rounded MT Bold",
-            size: fontSize
+    private func configureFonts() {
+        FontConfigurations.shared.configureFont(
+            label: categoryDescriptionLabel,
+            fontName: "Helvetica Neue",
+            smallestFontSize: 22,
+            frame: view.frame.width
         )
 
-        guessedSongsLeftSideLabel.font = UIFont(
-            name: "Arial Rounded MT Bold",
-            size: fontSize
+        FontConfigurations.shared.configureFont(
+            label: guessedSongsLeftSideLabel,
+            smallestFontSize: 28,
+            frame: view.frame.width
         )
-
-        guessedSongsCountLabel.font = UIFont(
-            name: "Arial Rounded MT Bold",
-            size: fontSize + 14
+        FontConfigurations.shared.configureFont(
+            label: guessedSongsRightSideLabel,
+            smallestFontSize: 28,
+            frame: view.frame.width
+        )
+        FontConfigurations.shared.configureFont(
+            label: guessedSongsCountLabel,
+            smallestFontSize: 38,
+            frame: view.frame.width
         )
     }
 
@@ -114,7 +119,7 @@ final class ConfigurationsViewController: UIViewController {
 
     private func formatTime(_ totalSeconds: Int) -> String {
         let seconds: Int = totalSeconds % 60
-        let minutes: Int = (totalSeconds/60) % 60
+        let minutes: Int = (totalSeconds / 60) % 60
 
         return String(format: "%02d:%02d", minutes, seconds)
     }
@@ -127,10 +132,22 @@ final class ConfigurationsViewController: UIViewController {
             songLabel.textColor = .white
             songLabel.alpha = alpha
             songLabel.numberOfLines = 0
-            songLabel.font = UIFont(
-                name: "Apple SD Gothic Neo",
-                size: round(view.frame.width/32)
-            )
+
+            if #available(iOS 16, *) {
+                FontConfigurations.shared.configureFont(
+                    label: songLabel,
+                    fontName: "Helvetica Neue Bold",
+                    smallestFontSize: 18,
+                    frame: view.frame.width
+                )
+            } else {
+                FontConfigurations.shared.configureFont(
+                    label: songLabel,
+                    fontName: "Helvetica Neue Bold",
+                    smallestFontSize: 18,
+                    frame: view.frame.height
+                )
+            }
 
             return songLabel
         }
@@ -139,7 +156,7 @@ final class ConfigurationsViewController: UIViewController {
     // MARK: - Callbacks
 
     @IBAction func didTapDecreaseTimeButton(_ sender: Any) {
-        if totalTime > 60 {
+        if totalTime > 30 {
             totalTime -= 30
             timerLabel.text = formatTime(totalTime)
         }
@@ -179,13 +196,12 @@ final class ConfigurationsViewController: UIViewController {
 
         resultsStackView.subviews.forEach { $0.removeFromSuperview() }
         gamePlayViewController.totalTime = totalTime
-        gamePlayViewController.usedSongs = usedSongs
         gamePlayViewController.delegate = self
     }
 }
 
 extension ConfigurationsViewController: GamePlayViewControllerDelegate {
-    func getResultsFrom(correctSongs: [String], skippedSongs: [String], usedSongs: [String]) {
+    func getResultsFrom(correctSongs: [String], skippedSongs: [String]) {
         correctResultsLabels = createLabels(from: correctSongs)
         skippedResultsLabels = createLabels(from: skippedSongs, alpha: 0.4)
 
@@ -196,7 +212,6 @@ extension ConfigurationsViewController: GamePlayViewControllerDelegate {
         }
 
         guessedSongsCountLabel.text = "\(correctSongs.count)"
-        self.usedSongs = usedSongs
     }
 
     func getTotalTime(time: Int) {

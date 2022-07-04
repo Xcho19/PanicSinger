@@ -13,141 +13,132 @@ final class Categories: Codable {
     static var ownedCategoryNames = UserDefaults.standard.object(
         forKey: "OwnedCategories"
     ) as? [String] ?? [
-        "Armenian Mix", "Armenian Pop Hits", "Russian Mix", "Russian Hits", "World Mix", "World Pop Hits"
+        "Armenian Mix", "Armenian Pop", "Russian Mix", "Russian Pop",
+        "World Mix", "World Pop Hits"
     ]
 
-    static var allCategories: [CategoryDescription] = [
-        CategoryDescription(
+    static var allCategories: [Category] = [
+        Category(
             name: "World Mix",
             description: "All genres mixed together",
             storeID: ""
         ),
-        CategoryDescription(
+        Category(
             name: "World Pop Hits",
             description: "All I wanna say is that they don't really care about us . . .",
             storeID: ""
         ),
-        CategoryDescription(
+        Category(
             name: "Hip-Hop Hits",
             description: "Out on bail fresh outta jail, California dreamin . . .",
             storeID: ""
         ),
-        CategoryDescription(
+        Category(
             name: "Rock Hits",
             description: "Show must go on . . .",
             storeID: ""
         ),
-        CategoryDescription(
+        Category(
             name: "World Nostalgia",
             description: "Fly me to the Moon . . .",
             storeID: ""
         ),
-        CategoryDescription(
+        Category(
             name: "Armenian Mix",
             description: "Ամեն ինչից՝ մի քիչ, մի քիչ",
             storeID: ""
         ),
-        CategoryDescription(
+        Category(
             name: "Armenian Nostalgia",
             description: "Հա՞յ ես դու, Հայ եմ ես . . .",
             storeID: ""
         ),
-        CategoryDescription(
+        Category(
             name: "Armenian Rabiz",
             description: "Ուր որ գնաս հետդ կգա՜մ . . .",
             storeID: ""
         ),
-        CategoryDescription(
+        Category(
             name: "Armenian Hip-Hop",
             description: "Ավելի լավա չիմանյիր ինձ . . .",
             storeID: ""
         ),
-        CategoryDescription(
-            name: "Armenian Pop Hits",
+        Category(
+            name: "Armenian Pop",
             description: "Ա՜խ, լուսին լուսին ուզում եմ \nքեզ գրկել . . .",
             storeID: ""
         ),
-        CategoryDescription(
+        Category(
             name: "Russian Mix",
             description: "Все жанры по немножку",
             storeID: ""
         ),
-        CategoryDescription(
-            name: "Russian Hits",
-            description: "Наверно ты меня не помнишь . . .",
-            storeID: ""
-        ),
-        CategoryDescription(
+        Category(
             name: "Russian Nostalgia",
             description: "Группа крови на рукаве . . .",
             storeID: ""
         ),
-        CategoryDescription(
+        Category(
             name: "Russian Pop",
             description: "Ну что ты братишка притих . . .",
             storeID: ""
         ),
-        CategoryDescription(
+        Category(
             name: "Russian Hip-Hop",
             description: "Не звонишь, летишь в Париж \n Я не звоню, прыгаю с крыш . . .",
             storeID: ""
         ),
-        CategoryDescription(
+        Category(
             name: "Armenian Patriotic",
-            description: "Հերոս տղերքը մեր, ելան բարցունքն ի վեր . . .",
+            description: "Գնացին տղերքը ու կորան հեռվում . . .",
             storeID: ""
         )
     ]
 
-    static var allStoreCategories: [CategoryDescription] = [
-        CategoryDescription(
+    static var allStoreCategories: [Category] = [
+        Category(
             name: "World Nostalgia",
-            description: "Contains Nostalgic songs of the world.",
+            description: "Nostalgic songs of the world",
             storeID: "com.Khachatur.PanicSinger.WorldNostalgia"
         ),
-        CategoryDescription(
+        Category(
             name: "Hip-Hop Hits",
-            description: "Contains top songs from Hip-Hop genre.",
+            description: "Top Hip-Hop songs of the world",
             storeID: "com.Khachatur.PanicSinger.HipHopHits"
         ),
-        CategoryDescription(
+        Category(
             name: "Rock Hits",
-            description: "Contains top songs from Rock genre.",
+            description: "Top Rock songs of the world",
             storeID: "com.Khachatur.PanicSinger.RockHits"
         ),
-        CategoryDescription(
+        Category(
             name: "Armenian Nostalgia",
-            description: "Contains most liked Armenian songs of all times.",
+            description: "Nostalgic songs in Armenian",
             storeID: "com.Khachatur.PanicSinger.ArmenianNostalgia"
         ),
-        CategoryDescription(
+        Category(
             name: "Armenian Rabiz",
-            description: "Contains top songs from Armenian Rabiz genre.",
+            description: "Top Rabiz songs in Armenian",
             storeID: "com.Khachatur.PanicSinger.ArmenianRabiz"
         ),
-        CategoryDescription(
+        Category(
             name: "Armenian Hip-Hop",
-            description: "Contains top songs from Armenian Hip-Hop genre.",
+            description: "Top Hip-Hop songs in Armenian",
             storeID: "com.Khachatur.PanicSinger.ArmenianHipHop"
         ),
-        CategoryDescription(
+        Category(
             name: "Russian Nostalgia",
-            description: "Contains most liked Russian songs of all times.",
+            description: "Nostalgic songs in Russian",
             storeID: "com.Khachatur.PanicSinger.RussianNostalgia"
         ),
-        CategoryDescription(
-            name: "Russian Pop",
-            description: "Contains top songs from Russian Pop genre.",
-            storeID: "com.Khachatur.PanicSinger.RussianPop"
-        ),
-        CategoryDescription(
+        Category(
             name: "Russian Hip-Hop",
-            description: "Contains top songs from Russian Hip-Hop genre.",
+            description: "Top Hip-Hop songs in Russian",
             storeID: "com.Khachatur.PanicSinger.RussianHipHop"
         ),
-        CategoryDescription(
+        Category(
             name: "Armenian Patriotic",
-            description: "Contains Armenian patriotic songs.",
+            description: "Armenian patriotic songs",
             storeID: "com.Khachatur.PanicSinger.ArmenianPatriotic"
         )
     ]

@@ -10,6 +10,210 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
+        <!--How To Play View Controller-->
+        <scene sceneID="QsK-YS-KyY">
+            <objects>
+                <viewController storyboardIdentifier="HowToPlay" useStoryboardIdentifierAsRestorationIdentifier="YES" id="U08-TU-Bga" customClass="HowToPlayViewController" customModule="PanicSinger" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="KeG-AV-QZu">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" directionalLockEnabled="YES" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ULA-Mh-BX5">
+                                <rect key="frame" x="0.0" y="71" width="414" height="771"/>
+                                <subviews>
+                                    <stackView opaque="NO" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" axis="vertical" spacing="48" translatesAutoresizingMaskIntoConstraints="NO" id="Zri-gl-dhz">
+                                        <rect key="frame" x="0.0" y="0.0" width="414" height="1206.5"/>
+                                        <subviews>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="1000" text="How To Play" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="kn2-bN-djT">
+                                                <rect key="frame" x="8" y="8" width="398" height="42"/>
+                                                <fontDescription key="fontDescription" name="HelveticaNeue-Bold" family="Helvetica Neue" pointSize="35"/>
+                                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="16" translatesAutoresizingMaskIntoConstraints="NO" id="zEL-HP-dyE">
+                                                <rect key="frame" x="8" y="98" width="398" height="1100.5"/>
+                                                <subviews>
+                                                    <stackView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="A4W-sF-fq9">
+                                                        <rect key="frame" x="0.0" y="0.0" width="398" height="30"/>
+                                                        <subviews>
+                                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="At8-gH-pkN">
+                                                                <rect key="frame" x="0.0" y="0.0" width="70" height="30"/>
+                                                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                                <constraints>
+                                                                    <constraint firstAttribute="width" constant="70" id="fyi-cz-O3I"/>
+                                                                    <constraint firstAttribute="height" constant="30" id="suf-g9-4ea"/>
+                                                                </constraints>
+                                                            </view>
+                                                            <segmentedControl opaque="NO" contentMode="scaleToFill" verticalHuggingPriority="251" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="plain" selectedSegmentIndex="0" translatesAutoresizingMaskIntoConstraints="NO" id="iov-tH-WCz">
+                                                                <rect key="frame" x="70" y="0.0" width="258" height="31"/>
+                                                                <color key="backgroundColor" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                                <segments>
+                                                                    <segment title="🇺🇸"/>
+                                                                    <segment title="🇦🇲"/>
+                                                                    <segment title="🇷🇺"/>
+                                                                </segments>
+                                                                <color key="selectedSegmentTintColor" red="0.95686274770000002" green="0.95686274770000002" blue="0.97647058959999999" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                                                <connections>
+                                                                    <action selector="didChangeSegment:" destination="U08-TU-Bga" eventType="valueChanged" id="KaA-W3-86o"/>
+                                                                </connections>
+                                                            </segmentedControl>
+                                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="oWp-Bm-jrh">
+                                                                <rect key="frame" x="328" y="0.0" width="70" height="30"/>
+                                                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                                <constraints>
+                                                                    <constraint firstAttribute="width" constant="70" id="61m-ZN-HwN"/>
+                                                                    <constraint firstAttribute="height" constant="30" id="ZnK-9M-7gk"/>
+                                                                </constraints>
+                                                            </view>
+                                                        </subviews>
+                                                    </stackView>
+                                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="28" translatesAutoresizingMaskIntoConstraints="NO" id="Ck5-9T-cda">
+                                                        <rect key="frame" x="0.0" y="46" width="398" height="1054.5"/>
+                                                        <subviews>
+                                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="999" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="OcS-Pm-fdq">
+                                                                <rect key="frame" x="0.0" y="0.0" width="398" height="536.5"/>
+                                                                <mutableString key="text">To start the game, choose a category, then choose the duration of the game and press “Start”. A random song alongside a timer will be displayed. To skip a song, swipe up on any part of the screen. If you got it correctly, swipe down. When the timer runs out you will see your results on the screen.
+
+There are two ways to play “Panic Singer”.
+
+1) A player tries to sing the song to other players.
+Here, the player singing has the phone facing towards themselves so only they can see the name of the song. 
+
+2) A player tries to guess the song while others try to sing it.
+Here, the player trying to guess has the phone facing towards others, so that everyone can see the name of the song, except the player trying to guess.
+
+Participants should sing the song without using its name.</mutableString>
+                                                                <fontDescription key="fontDescription" name="HelveticaNeue-Bold" family="Helvetica Neue" pointSize="18"/>
+                                                                <color key="textColor" red="0.98000001907348633" green="0.97600001096725464" blue="0.9649999737739563" alpha="0.96040979205377841" colorSpace="custom" customColorSpace="displayP3"/>
+                                                                <nil key="highlightedColor"/>
+                                                            </label>
+                                                            <label hidden="YES" opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="999" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="g2I-YC-CbV">
+                                                                <rect key="frame" x="0.0" y="550.5" width="398" height="0.0"/>
+                                                                <mutableString key="text">Խաղը սկսելու համար ընտրեք ենթաբաժին: Ապա ընտրեք տևողությունը և սեղմեք «Start» կոճակը: Էկրանին կհայտնվի պատահական երգ։ Երգը բաց թողնելու համար, էկրանի ցանկացած հատվածից սեղմեք և բարձրացրեք վերև: Եթե ճիշտ եք պատասխանել՝ սեղմեք և իջեցրեք ներքև: Երբ ժամանակը ավարտվի, դուք կտեսնեք ձեր միավորները:
+
+“Panic Singer” խաղը կարող եք խաղալ 2 տարբերակով՝
+
+1) Խաղացողներից մեկը՝ երգում է երգը, մնացածը փորձում են կռահել: 
+Այս տարբերակով երգող խաղացողը հեռախոսը պահում է այնպես, որ միայն նա տեսնի երգի անվանումը:
+
+2) Խաղացողներից մեկը փորձում է կռահել երգը, իսկ մնացածը՝ երգել: 
+Այս տարբերակով կռահող խաղացողը հեռախոսը պահում է այնպես, որ բոլորը տեսնեն երգի անվանումը՝ բացի իրենից։
+
+Խաղի մասնակիցները պետք է երգեն երգը չօգտագործելով անվանումը:</mutableString>
+                                                                <fontDescription key="fontDescription" name="HelveticaNeue-Bold" family="Helvetica Neue" pointSize="18"/>
+                                                                <color key="textColor" red="0.98000001910000001" green="0.976000011" blue="0.96499997380000002" alpha="0.96040979209999999" colorSpace="custom" customColorSpace="displayP3"/>
+                                                                <nil key="highlightedColor"/>
+                                                            </label>
+                                                            <label hidden="YES" opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="999" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="1sh-bu-mnN">
+                                                                <rect key="frame" x="0.0" y="550.5" width="398" height="0.0"/>
+                                                                <mutableString key="text">Чтобы начать игру, выберите категорию, затем выберите продолжительность игры и нажмите "Start". На экране появится случайная песня и таймер. Чтобы пропустить песню, проведите пальцем вверх по любой части экрана. Если вы ответили правильно, проведите пальцем вниз. Когда таймер закончится, вы увидите результаты на экране.
+
+"Panic Singer" можно играть двумя способами.
+
+1) Один игрок пытается объяснить песню другим игрокам. 
+При этом игрок, объясняющий, держит телефон лицом к себе, чтобы только он мог видеть название песни. 
+
+2) Один игрок пытается угадать песню, в то время как другие пытаются ее объяснить. 
+Здесь игрок, пытающийся угадать, держит телефон лицом к другим игрокам, так что все видят название песни, кроме того, кто пытается угадать.
+
+Участники игры должны попытаться спеть песню, не используя название песни.</mutableString>
+                                                                <fontDescription key="fontDescription" name="HelveticaNeue-Bold" family="Helvetica Neue" pointSize="18"/>
+                                                                <color key="textColor" red="0.98000001910000001" green="0.976000011" blue="0.96499997380000002" alpha="0.96040979209999999" colorSpace="custom" customColorSpace="displayP3"/>
+                                                                <nil key="highlightedColor"/>
+                                                            </label>
+                                                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="20" translatesAutoresizingMaskIntoConstraints="NO" id="sW0-yD-kaK">
+                                                                <rect key="frame" x="0.0" y="564.5" width="398" height="490"/>
+                                                                <subviews>
+                                                                    <stackView opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" axis="vertical" spacing="6" translatesAutoresizingMaskIntoConstraints="NO" id="fhS-gg-pIF">
+                                                                        <rect key="frame" x="0.0" y="0.0" width="398" height="235"/>
+                                                                        <subviews>
+                                                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="1000" text="Swipe Down" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="4yx-8N-RAe">
+                                                                                <rect key="frame" x="0.0" y="0.0" width="398" height="29"/>
+                                                                                <fontDescription key="fontDescription" name="ArialRoundedMTBold" family="Arial Rounded MT Bold" pointSize="25"/>
+                                                                                <color key="textColor" red="0.98000001910000001" green="0.976000011" blue="0.96499997380000002" alpha="0.69999999999999996" colorSpace="custom" customColorSpace="displayP3"/>
+                                                                                <nil key="highlightedColor"/>
+                                                                            </label>
+                                                                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="70m-mE-LWY">
+                                                                                <rect key="frame" x="0.0" y="35" width="398" height="200"/>
+                                                                                <constraints>
+                                                                                    <constraint firstAttribute="height" constant="200" id="VxX-cP-BTp"/>
+                                                                                </constraints>
+                                                                            </imageView>
+                                                                        </subviews>
+                                                                    </stackView>
+                                                                    <stackView opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" axis="vertical" spacing="6" translatesAutoresizingMaskIntoConstraints="NO" id="Fb5-x2-tll">
+                                                                        <rect key="frame" x="0.0" y="255" width="398" height="235"/>
+                                                                        <subviews>
+                                                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="1000" text="Swipe Up" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Z04-zn-PYR">
+                                                                                <rect key="frame" x="0.0" y="0.0" width="398" height="29"/>
+                                                                                <fontDescription key="fontDescription" name="ArialRoundedMTBold" family="Arial Rounded MT Bold" pointSize="25"/>
+                                                                                <color key="textColor" red="0.98000001910000001" green="0.976000011" blue="0.96499997380000002" alpha="0.69999999999999996" colorSpace="custom" customColorSpace="displayP3"/>
+                                                                                <nil key="highlightedColor"/>
+                                                                            </label>
+                                                                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Pass.gif" translatesAutoresizingMaskIntoConstraints="NO" id="aJf-A5-oxH">
+                                                                                <rect key="frame" x="0.0" y="35" width="398" height="200"/>
+                                                                                <constraints>
+                                                                                    <constraint firstAttribute="height" constant="200" id="Yeo-td-X3U"/>
+                                                                                </constraints>
+                                                                            </imageView>
+                                                                        </subviews>
+                                                                    </stackView>
+                                                                </subviews>
+                                                            </stackView>
+                                                        </subviews>
+                                                    </stackView>
+                                                </subviews>
+                                            </stackView>
+                                        </subviews>
+                                        <directionalEdgeInsets key="directionalLayoutMargins" top="8" leading="8" bottom="8" trailing="8"/>
+                                    </stackView>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstItem="Zri-gl-dhz" firstAttribute="top" secondItem="ULA-Mh-BX5" secondAttribute="top" id="DHX-45-9Gz"/>
+                                    <constraint firstItem="Zri-gl-dhz" firstAttribute="leading" secondItem="ULA-Mh-BX5" secondAttribute="leading" id="TRg-Rt-U6z"/>
+                                    <constraint firstAttribute="bottom" secondItem="Zri-gl-dhz" secondAttribute="bottom" id="d0E-k9-smI"/>
+                                    <constraint firstAttribute="trailing" secondItem="Zri-gl-dhz" secondAttribute="trailing" id="hy1-a7-3F9"/>
+                                    <constraint firstItem="Zri-gl-dhz" firstAttribute="width" secondItem="ULA-Mh-BX5" secondAttribute="width" id="imw-N2-Zeg"/>
+                                </constraints>
+                            </scrollView>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="1bU-Ld-vp5">
+                                <rect key="frame" x="189" y="54" width="36" height="5"/>
+                                <color key="backgroundColor" red="0.98039215800000001" green="0.97647058959999999" blue="0.96470588450000005" alpha="0.79937396520000004" colorSpace="custom" customColorSpace="displayP3"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="5" id="4mL-hn-Daz"/>
+                                    <constraint firstAttribute="width" constant="36" id="8TQ-lf-nXz"/>
+                                </constraints>
+                            </view>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="0Ze-x3-ml5"/>
+                        <color key="backgroundColor" red="0.0078431372549019607" green="0.011764705882352941" blue="0.13333333333333333" alpha="0.92000000000000004" colorSpace="custom" customColorSpace="displayP3"/>
+                        <constraints>
+                            <constraint firstItem="ULA-Mh-BX5" firstAttribute="leading" secondItem="0Ze-x3-ml5" secondAttribute="leading" id="Exf-Uz-BFc"/>
+                            <constraint firstItem="ULA-Mh-BX5" firstAttribute="trailing" secondItem="0Ze-x3-ml5" secondAttribute="trailing" id="Kki-IQ-tuK"/>
+                            <constraint firstItem="ULA-Mh-BX5" firstAttribute="bottom" secondItem="0Ze-x3-ml5" secondAttribute="bottom" id="UcR-rg-6Cp"/>
+                            <constraint firstItem="1bU-Ld-vp5" firstAttribute="top" secondItem="KeG-AV-QZu" secondAttribute="topMargin" constant="10" id="WZ2-9X-SGR"/>
+                            <constraint firstItem="1bU-Ld-vp5" firstAttribute="centerX" secondItem="KeG-AV-QZu" secondAttribute="centerX" id="kTB-kq-fnt"/>
+                            <constraint firstItem="ULA-Mh-BX5" firstAttribute="top" secondItem="1bU-Ld-vp5" secondAttribute="bottom" constant="12" id="rvo-RR-gHJ"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" id="neg-DV-ktr"/>
+                    <connections>
+                        <outlet property="armenianRulesLabel" destination="g2I-YC-CbV" id="5xh-K9-Fi2"/>
+                        <outlet property="correctImageView" destination="70m-mE-LWY" id="AQh-0H-xvP"/>
+                        <outlet property="englishRulesLabel" destination="OcS-Pm-fdq" id="udo-Pi-BbU"/>
+                        <outlet property="headerLabel" destination="kn2-bN-djT" id="4jb-Kh-6IH"/>
+                        <outlet property="indicatorView" destination="1bU-Ld-vp5" id="kQq-Ta-s8B"/>
+                        <outlet property="languageSegmentedControl" destination="iov-tH-WCz" id="LZ9-Fl-EP7"/>
+                        <outlet property="passImageView" destination="aJf-A5-oxH" id="k7s-oK-HQh"/>
+                        <outlet property="russianRulesLabel" destination="1sh-bu-mnN" id="Mhq-Zj-zYH"/>
+                        <outlet property="swipeDownLabel" destination="4yx-8N-RAe" id="8Nr-9x-Dy6"/>
+                        <outlet property="swipeUpLabel" destination="Z04-zn-PYR" id="hsY-PY-Kx2"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="VyB-FE-FWN" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="614" y="864"/>
+        </scene>
         <!--Categories-->
         <scene sceneID="lyV-h9-wA5">
             <objects>
@@ -17,7 +221,7 @@
                     <collectionView key="view" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="prototypes" id="xug-OM-rhF">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" red="0.0078431372549019607" green="0.011764705882352941" blue="0.10980392156862745" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                        <color key="backgroundColor" red="0.0078431372550000003" green="0.01176470588" blue="0.1333333333" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                         <collectionViewFlowLayout key="collectionViewLayout" automaticEstimatedItemSize="YES" minimumLineSpacing="10" minimumInteritemSpacing="10" id="N4Y-en-o8H">
                             <size key="itemSize" width="167" height="204"/>
                             <size key="headerReferenceSize" width="0.0" height="0.0"/>
@@ -58,10 +262,10 @@
                         </connections>
                     </collectionView>
                     <navigationItem key="navigationItem" title="Categories" id="ueT-qN-QwW">
-                        <barButtonItem key="rightBarButtonItem" title="Rules" id="Bmx-JF-Z7y">
+                        <barButtonItem key="rightBarButtonItem" title="How To" id="Bmx-JF-Z7y">
                             <color key="tintColor" name="BarButtonItem85"/>
                             <connections>
-                                <segue destination="A2X-LI-ETs" kind="showDetail" identifier="" id="RAD-Ak-waF"/>
+                                <segue destination="U08-TU-Bga" kind="presentation" id="7ih-mK-ed7"/>
                             </connections>
                         </barButtonItem>
                     </navigationItem>
@@ -69,113 +273,6 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="FF3-8l-cMV" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="614.49275362318849" y="127.90178571428571"/>
-        </scene>
-        <!--Rules-->
-        <scene sceneID="Yl0-z0-mvy">
-            <objects>
-                <viewController storyboardIdentifier="Rules" useStoryboardIdentifierAsRestorationIdentifier="YES" id="A2X-LI-ETs" customClass="RulesViewController" customModule="PanicSinger" customModuleProvider="target" sceneMemberID="viewController">
-                    <view key="view" contentMode="scaleToFill" id="GGE-lL-yXP">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
-                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <subviews>
-                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="8oK-sA-Zav">
-                                <rect key="frame" x="189" y="12" width="36" height="5"/>
-                                <color key="backgroundColor" red="0.98039215800000001" green="0.97647058959999999" blue="0.96470588450000005" alpha="0.79937396520000004" colorSpace="custom" customColorSpace="displayP3"/>
-                                <constraints>
-                                    <constraint firstAttribute="height" constant="5" id="1tC-Nx-qM5"/>
-                                    <constraint firstAttribute="width" constant="36" id="87x-Yu-mCY"/>
-                                </constraints>
-                            </view>
-                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="27" translatesAutoresizingMaskIntoConstraints="NO" id="7yf-CT-usG">
-                                <rect key="frame" x="10" y="25" width="394" height="817"/>
-                                <subviews>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Rules" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="c3B-7x-WZR">
-                                        <rect key="frame" x="0.0" y="0.0" width="394" height="41"/>
-                                        <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="35"/>
-                                        <color key="textColor" red="0.98039215800000001" green="0.97647058959999999" blue="0.96470588450000005" alpha="0.90423220199999998" colorSpace="custom" customColorSpace="displayP3"/>
-                                        <nil key="highlightedColor"/>
-                                    </label>
-                                    <segmentedControl opaque="NO" contentMode="scaleToFill" verticalHuggingPriority="251" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="plain" selectedSegmentIndex="0" translatesAutoresizingMaskIntoConstraints="NO" id="S2k-11-4O0">
-                                        <rect key="frame" x="0.0" y="68" width="394" height="32"/>
-                                        <segments>
-                                            <segment title="🇺🇸"/>
-                                            <segment title="🇦🇲"/>
-                                        </segments>
-                                        <color key="selectedSegmentTintColor" red="0.95686274770000002" green="0.95686274770000002" blue="0.97647058959999999" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
-                                        <connections>
-                                            <action selector="didChangeSegment:" destination="A2X-LI-ETs" eventType="valueChanged" id="gHB-ki-Pis"/>
-                                        </connections>
-                                    </segmentedControl>
-                                    <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" editable="NO" selectable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="eyD-wb-xnl">
-                                        <rect key="frame" x="0.0" y="126" width="394" height="691"/>
-                                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                        <mutableString key="text">“Panic SInger” is a fun and entertaining game which can be played during gatherings with friends and family.
-
-To start the game, choose the category that you would like to play, then choose the duration of the game and press “Start”. The screen will automaticly rotate to landscape mode and a random song alongside a timer will be displayed on the screen. To skip the song, swipe up on any part of the screen. If you got it correctly, swipe down on any part of the screen. When the timer ends you will see the results on the screen.
-
-There are two ways that you can play “Panic Singer”.
-
-1) One player will try explaining the song to the other players. Here, the player explaining has the phone facing towards themselves so only they can see the name of the song. 
-
-1) One player trying to guess the song while others try to explain it. Here, the player trying to guess has the phone facing towards the other players so that everyone can see the name of the song, except the person trying to guess.
-
-The player/players explaining should try to sing the song, without using the name of the song.
-
-These rules are only guidelines.
-Play the way you like it and most importantly, HAVE FUN!</mutableString>
-                                        <color key="textColor" red="0.98039215800000001" green="0.97647058959999999" blue="0.96470588450000005" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
-                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                        <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
-                                    </textView>
-                                    <textView hidden="YES" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" editable="NO" selectable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="eIf-Jz-bcG">
-                                        <rect key="frame" x="0.0" y="817" width="394" height="0.0"/>
-                                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                        <mutableString key="text">«Panic Singer»-ը ուրախ և ժամանցային խաղ է, որը կարող եք խաղալ ընկերական կամ ընտանեկան միջավայրում:
-
-Խաղը սկսելու համար ընտրեք ենթաբաժին: Ապա ընտրեք տևողականությունը և սեղմեք «Start» կոճակը: Էկրանին կհայտնվի պատահական երգ։ Երգը բաց թողնելու համար, էկրանի ցանկացած հատվածից սեղմեք և բարձրացրեք վերև: Եթե ճիշտ եք պատասխանել՝ սեղմեք և իջեցրեք ներքև: Երբ ժամանակը ավարտվի, դուք կտեսնեք ձեր միավորները:
-
-“Panic Singer” խաղը կարող եք խաղալ 2 տարբերակով՝
-
-1) Խաղացողներից մեկը՝ բացատրում է մնացածին: Այս տարբերակով բացատրող խաղացողը հեռախոսը պահում է այնպես, որ միայն նա տեսնի երգի անունը:
-
-2) Խաղացողներից մեկը փորձում է գուշակել երգը, իսկ մնացածը՝ բացատրել: Այս տարբերակով գուշակող անձը հեռախոսը պահում է այնպես, որ բոլորը տեսնեն երգը՝ բացի իրենից։
-
-Բացատրող մասնակիցները պետք է երգեն երգը կամ փորձեն բացատրել առանց երգելու՝ չօգտագործելով երգի անունը:
-
-Խաղի կանոնները հանդիսանում են  պարզապես ուղեցույց:
-Խաղացեք այնպես՝ ինչպես ձեզ դուր է գալիս։ Եվ ամենակարևորը՝ ստացեք հաճույք ձեր խաղից։</mutableString>
-                                        <color key="textColor" red="0.98039215800000001" green="0.97647058959999999" blue="0.96470588450000005" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
-                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                        <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
-                                    </textView>
-                                </subviews>
-                            </stackView>
-                        </subviews>
-                        <viewLayoutGuide key="safeArea" id="zVu-fq-2rf"/>
-                        <color key="backgroundColor" red="0.0078431372549019607" green="0.011764705882352941" blue="0.10980392156862745" alpha="0.94999999999999996" colorSpace="custom" customColorSpace="displayP3"/>
-                        <constraints>
-                            <constraint firstItem="7yf-CT-usG" firstAttribute="bottom" secondItem="zVu-fq-2rf" secondAttribute="bottom" id="D7b-HX-TbI"/>
-                            <constraint firstItem="8oK-sA-Zav" firstAttribute="top" secondItem="GGE-lL-yXP" secondAttribute="top" constant="12" id="IJC-V9-rFA"/>
-                            <constraint firstItem="7yf-CT-usG" firstAttribute="top" secondItem="GGE-lL-yXP" secondAttribute="top" constant="25" id="Zbj-cl-aWy"/>
-                            <constraint firstItem="7yf-CT-usG" firstAttribute="leading" secondItem="zVu-fq-2rf" secondAttribute="leading" constant="10" id="iY6-5j-K1E"/>
-                            <constraint firstItem="8oK-sA-Zav" firstAttribute="centerX" secondItem="zVu-fq-2rf" secondAttribute="centerX" id="mRQ-2D-7q8"/>
-                            <constraint firstItem="zVu-fq-2rf" firstAttribute="trailing" secondItem="7yf-CT-usG" secondAttribute="trailing" constant="10" id="sMI-Np-xN4"/>
-                        </constraints>
-                    </view>
-                    <navigationItem key="navigationItem" title="Rules" largeTitleDisplayMode="never" id="a3j-QL-l85">
-                        <barButtonItem key="backBarButtonItem" title=" " id="MAf-pC-T5a"/>
-                    </navigationItem>
-                    <connections>
-                        <outlet property="armenianRules" destination="eIf-Jz-bcG" id="oRE-t9-peP"/>
-                        <outlet property="englishRules" destination="eyD-wb-xnl" id="SEB-VW-rac"/>
-                        <outlet property="indicatorView" destination="8oK-sA-Zav" id="HrH-8k-VZ5"/>
-                        <outlet property="languageSegmentedControl" destination="S2k-11-4O0" id="dma-Q6-dOl"/>
-                        <outlet property="titleLabel" destination="c3B-7x-WZR" id="Jyc-xi-OuU"/>
-                    </connections>
-                </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="Hc2-PK-ly4" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="614" y="851"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="wKD-ht-TgU">
@@ -186,7 +283,7 @@ Play the way you like it and most importantly, HAVE FUN!</mutableString>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" barStyle="black" largeTitles="YES" id="NUc-nl-7SZ">
                         <rect key="frame" x="0.0" y="44" width="414" height="103"/>
                         <autoresizingMask key="autoresizingMask"/>
-                        <color key="barTintColor" red="0.0078431377190000002" green="0.01176470611" blue="0.109803915" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                        <color key="barTintColor" red="0.0078431372550000003" green="0.01176470588" blue="0.1333333333" alpha="0.94999999999999996" colorSpace="custom" customColorSpace="displayP3"/>
                         <textAttributes key="titleTextAttributes">
                             <fontDescription key="fontDescription" name="HelveticaNeue-Medium" family="Helvetica Neue" pointSize="21"/>
                             <color key="textColor" red="0.98039215800000001" green="0.97647058959999999" blue="0.96470588450000005" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
@@ -207,6 +304,7 @@ Play the way you like it and most importantly, HAVE FUN!</mutableString>
         </scene>
     </scenes>
     <resources>
+        <image name="Pass.gif" width="1024" height="530"/>
         <namedColor name="BarButtonItem85">
             <color red="0.98000001907348633" green="0.97600001096725464" blue="0.9649999737739563" alpha="0.85000002384185791" colorSpace="custom" customColorSpace="displayP3"/>
         </namedColor>

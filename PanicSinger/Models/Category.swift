@@ -7,7 +7,7 @@
 
 import Foundation
 
-struct CategoryDescription: Codable, Equatable {
+struct Category: Codable, Equatable {
     var name: String
     var description: String
     var storeID: String
